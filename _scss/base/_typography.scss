@@ -1,4 +1,14 @@
 body {
-    font-size: $base-font-size;
-    font-family: $base-font-family;
+    @include typeface(sans-serif);
+}
+
+dl {
+    margin-bottom: 0;
+}
+dt {
+    font-weight: weight(bold);
+}
+dd {
+    margin-left: 0;
+    @include margin-bottom(1);
 }

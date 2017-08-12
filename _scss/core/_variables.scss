@@ -1,3 +1,9 @@
 // Type
 
-$base-font-family: 'Roboto', sans-serif;
+$roboto: extend-font-stack("Roboto", $sans-serif-stack);
+
+$typefaces: (
+  sans-serif: (
+    font-family: $roboto
+  )
+);

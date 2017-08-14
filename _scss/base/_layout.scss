@@ -3,3 +3,13 @@
 *::after {
   box-sizing: border-box;
 }
+
+.page {
+    display: flex;
+    flex-direction: column;
+    &__sidebar {
+    }
+    &__content {
+        @include padding(1);
+    }
+}

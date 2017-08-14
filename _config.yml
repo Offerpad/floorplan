@@ -24,9 +24,8 @@ destination: _site
 sass:
     sass_dir: _scss
     #style: :compressed
-
-# Serve settings
-livereload: false
+plugins:
+    - jekyll-autoprefixer
 
 # Exclude
 exclude:

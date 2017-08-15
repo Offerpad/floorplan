@@ -13,4 +13,10 @@
     &__content {
         @include padding(1);
     }
+    @media #{$bp-navigation} {
+        flex-direction: row;
+        &__navigation {
+            min-width: 20rem;
+        }
+    }
 }

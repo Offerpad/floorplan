@@ -1,3 +1,7 @@
+// Breakpoints and media queries
+
+$bp-navigation: "(min-width: 992px)";
+
 // Type
 
 $roboto: extend-font-stack("Roboto", $sans-serif-stack);

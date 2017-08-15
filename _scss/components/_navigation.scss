@@ -1,0 +1,27 @@
+.page__navigation {
+    &__group {
+        border-top: 3px solid #ccc;
+    }
+    ul {
+        padding-left: 0;
+        margin: 0;
+    }
+    li {
+        list-style: none;
+        text-align: center;
+        font-weight: 600;
+        font-style: italic;
+        a {
+            display: block;
+            text-decoration: none;
+            @include padding(0 1);
+        }
+    }
+    .list-header {
+        text-transform: uppercase;
+        font-style: normal;
+        a {
+            @include padding(1);
+        }
+    }
+}

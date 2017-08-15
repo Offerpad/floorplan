@@ -26,6 +26,28 @@ sass:
     #style: :compressed
 plugins:
     - jekyll-autoprefixer
+collections:
+    docs:
+        output: true
+        permalink: /:path
+defaults:
+    -
+        scope:
+            path: "_docs"
+        values:
+            layout: default
+            type: doc
+    -
+        scope:
+            path: "_docs/get-started"
+        values:
+            type: "get-started"
+    -
+        scope:
+            path: "_docs/base"
+        values:
+            type: "base"
+
 
 # Exclude
 exclude:

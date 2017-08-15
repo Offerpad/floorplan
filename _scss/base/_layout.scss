@@ -7,7 +7,8 @@
 .page {
     display: flex;
     flex-direction: column;
-    &__sidebar {
+    &__navigation {
+        @include padding(1);
     }
     &__content {
         @include padding(1);

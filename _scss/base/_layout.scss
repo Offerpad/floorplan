@@ -13,7 +13,7 @@
     &__content {
         @include padding(1);
     }
-    @media #{$bp-navigation} {
+    @include bp-navigation {
         flex-direction: row;
         &__navigation {
             min-width: 20rem;

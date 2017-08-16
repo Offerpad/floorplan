@@ -2,6 +2,27 @@
 
 $bp-desktop: 992px;
 
+// colors
+
+$op-colors: (
+    'black':        #333333,
+    'grey-dark':    #686868,
+    'grey':         #aeadaf,
+    'grey-light':   #d7d4d3,
+    'offwhite':     #f7f7f7,
+    'white':        #ffffff,
+
+    'orange':       #ff6c2c,
+    'orange-light': #fdbca6,
+
+    'grey-blue':    #2c3238,
+    'blue-iris':    #14c0c0
+);
+
+@function op-color($key: 'grey') {
+    @return map-get($op-colors, $key);
+}
+
 // Type
 
 $roboto: extend-font-stack("Roboto", $sans-serif-stack);
@@ -9,5 +30,10 @@ $roboto: extend-font-stack("Roboto", $sans-serif-stack);
 $typefaces: (
   sans-serif: (
     font-family: $roboto
+  ),
+  monospace: (
+    font-family: $monospace-stack
   )
 );
+
+$color-text: op-color('black');

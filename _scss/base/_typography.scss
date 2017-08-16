@@ -1,5 +1,6 @@
 body {
     @include typeface(sans-serif);
+    color: $color-text;
 }
 
 dl {

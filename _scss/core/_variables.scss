@@ -14,6 +14,7 @@ $op-colors: (
 
     'orange':       #ff6c2c,
     'orange-light': #fdbca6,
+    'orange-dark':  #d74000,
 
     'grey-blue':    #2c3238,
     'blue-iris':    #14c0c0
@@ -36,4 +37,6 @@ $typefaces: (
   )
 );
 
-$color-text: op-color('black');
+$text-color: op-color('black');
+$link-color: op-color('orange-dark');
+$link-color-hover: op-color('orange');

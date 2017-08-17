@@ -51,6 +51,11 @@ The official OfferPad orange and its variants are used to direct attention, bein
         <code class="swatches__label">orange</code>
         <code class="swatches__hex">#ff6c2c</code>
     </li>
+    <li class="swatches__item swatches--orange-dark">
+        <span class="swatches__swatch"></span>
+        <code class="swatches__label">orange-dark</code>
+        <code class="swatches__hex">#d74000</code>
+    </li>
     <li class="swatches__item swatches--orange-light">
         <span class="swatches__swatch"></span>
         <code class="swatches__label">orange-light</code>

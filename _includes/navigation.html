@@ -1,38 +1,45 @@
-<nav class="page__navigation">
-    <a href="{{ site.baseurl }}/" class="page__navigation__logo">
-        <img src="{{ site.images }}/offerpad-logo.svg" alt="{{ site.title }}" />
-    </a>
-    <div class="page__navigation__group">
-        <ul>
-            <li class="list-header">
-                <a href="{{ site.baseurl }}/"{% if page.url == '/' %} class="active"{% endif %}>Overview</a>
-            </li>
-        </ul>
+<nav class="navigation">
+    <div class="navigation__header">
+        <div class="menu-icon js-menu-button">
+            <span></span>
+        </div>
+        <div class="navigation__logo">
+            <img src="{{ site.images }}/offerpad-logo.svg" alt="{{ site.title }}" />
+        </div>
     </div>
-    {% assign get-started = site.docs | where: 'type', 'get-started' | sort: 'name' %}
-    <div class="page__navigation__group">
-        <ul>
-            <li class="list-header">
-                <a href="{{ site.baseurl }}/get-started"{% if page.url == '/get-started' %} class="active"{% endif %}>Getting Started</a>
-            </li>
-            {% for doc in get-started %}
-            <li>
-                <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-    {% assign base = site.docs | where: 'type', 'base' | sort: 'name' %}
-    <div class="page__navigation__group">
-        <ul>
-            <li class="list-header">
-                <a href="{{ site.baseurl }}/base"{% if page.url == '/base' %} class="active"{% endif %}>Base Styling</a>
-            </li>
-            {% for doc in base %}
-            <li>
-                <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
-            </li>
-            {% endfor %}
-        </ul>
+    <div class="navigation__list js-nav-menu">
+        <div class="navigation__group">
+            <ul>
+                <li class="list-header">
+                    <a href="{{ site.baseurl }}/"{% if page.url == '/' %} class="active"{% endif %}>Overview</a>
+                </li>
+            </ul>
+        </div>
+        {% assign get-started = site.docs | where: 'type', 'get-started' | sort: 'name' %}
+        <div class="navigation__group">
+            <ul>
+                <li class="list-header">
+                    <a href="{{ site.baseurl }}/get-started"{% if page.url == '/get-started' %} class="active"{% endif %}>Getting Started</a>
+                </li>
+                {% for doc in get-started %}
+                <li>
+                    <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% assign base = site.docs | where: 'type', 'base' | sort: 'name' %}
+        <div class="navigation__group">
+            <ul>
+                <li class="list-header">
+                    <a href="{{ site.baseurl }}/base"{% if page.url == '/base' %} class="active"{% endif %}>Base Styling</a>
+                </li>
+                {% for doc in base %}
+                <li>
+                    <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </nav>

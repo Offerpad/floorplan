@@ -5,18 +5,10 @@
 }
 
 .page {
-    display: flex;
-    flex-direction: column;
-    &__navigation {
-        @include padding(1);
+    &__main {
+        @include padding-top(2);
     }
     &__content {
         @include padding(1);
-    }
-    @include bp-navigation {
-        flex-direction: row;
-        &__navigation {
-            min-width: 20rem;
-        }
     }
 }

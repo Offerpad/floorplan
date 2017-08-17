@@ -1,8 +1,29 @@
-.page__navigation {
-    &__logo img {
+$header-height: 3rem;
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: $bg-color;
+    &__header {
+        display: flex;
+        align-items: center;
+        height: $header-height;
+        @include padding(0 1);
+        @include box_shadow(1);
+    }
+    &__logo {
         display: block;
-        height: 1.2rem;
-        @include margin(0 auto 1);
+        img {
+            display: block;
+            height: 1.2rem;
+        }
+    }
+    &__list {
+        display: none;
+        height: calc(100vh - #{$header-height});
     }
     &__group {
         border-top: 3px solid op-color('grey-light');

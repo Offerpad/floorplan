@@ -5,6 +5,7 @@ description: OfferPad Style Guiide and Pattern Library
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 styles: /css/styles.css
+images: /static/images
 
 # Processing settings
 highlighter: rouge

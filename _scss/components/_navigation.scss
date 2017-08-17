@@ -1,4 +1,9 @@
 .page__navigation {
+    &__logo img {
+        display: block;
+        height: 1.2rem;
+        @include margin(0 auto 1);
+    }
     &__group {
         border-top: 3px solid op-color('grey-light');
     }

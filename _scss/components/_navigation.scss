@@ -1,6 +1,6 @@
 .page__navigation {
     &__group {
-        border-top: 3px solid #ccc;
+        border-top: 3px solid op-color('grey-light');
     }
     ul {
         padding-left: 0;
@@ -13,8 +13,12 @@
         font-style: italic;
         a {
             display: block;
-            text-decoration: none;
             @include padding(0 1);
+            color: op-color('grey-dark');
+            text-decoration: none;
+            @include hover-focus {
+                background-color: op-color('offwhite');
+            }
         }
     }
     .list-header {
@@ -22,6 +26,7 @@
         font-style: normal;
         a {
             @include padding(1);
+            color: op-color('black');
         }
     }
 }

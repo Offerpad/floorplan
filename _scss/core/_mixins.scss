@@ -3,3 +3,10 @@
         @content;
     }
 }
+
+@mixin hover-focus {
+    &:focus,
+    &:hover {
+        @content
+    }
+}

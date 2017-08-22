@@ -18,7 +18,7 @@ var OP = (function (op, $) {
 
     function closeMenuOnDelay() {
 
-        if($('.navigation__header').css('height') != '100%') { // if mobile
+        if($('.navigation__header').css('width') != '48px') { // if mobile
             closeMenu();
             xToHam();
             $body.removeClass(bodyNavOpen);
@@ -48,14 +48,14 @@ var OP = (function (op, $) {
 
     function openMenu() {
         $navBar.removeClass('js-collapsed');
-        if($('.navigation__header').css('height') != '100%') { // if mobile
+        if($('.navigation__header').css('width') != '48px') { // if mobile
             $navMenu.slideDown('fast');
         }
     }
 
     function closeMenu() {
         $navBar.addClass('js-collapsed');
-        if($('.navigation__header').css('height') != '100%') { // if mobile
+        if($('.navigation__header').css('width') != '48px') { // if mobile
             $navMenu.slideUp('fast');
         }
     }

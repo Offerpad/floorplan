@@ -1,3 +1,5 @@
+// basics
+
 body {
     @include typeface(sans-serif);
     color: $text-color;
@@ -32,4 +34,17 @@ dt {
 dd {
     margin-left: 0;
     @include margin-bottom(1);
+}
+
+pre {
+    display: block;
+    overflow: auto;
+    @include padding(1);
+}
+
+// special classes
+
+p.lead {
+    @include type-layout(l, 1);
+    @include margin(1 0, l);
 }

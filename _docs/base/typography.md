@@ -1,6 +1,29 @@
 ---
 title: Typography
+description: Documentation and examples for typography used on the OfferPad website.
 ---
+
+## Font stacks
+
+OfferPad uses a sans-serif font stack for most type, with the exception being code and other elements where a monospace font stack is more appropriate.
+
+The typeface we use specifically is Roboto.
+
+### Sans-serif
+
+```css
+font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+```
+
+### Monospace
+
+```css
+font-family: monospace, monospace;
+```
+
+
+
+## Raw output for testing
 
 This is a paragraph. Mollit do ipsum nisi eiusmod veniam dolore amet est amet officia laboris id irure nisi. Deserunt enim velit veniam velit qui eiusmod esse elit non do Lorem in anim. Ex anim veniam nulla sunt occaecat ullamco pariatur dolore et consectetur proident nostrud eu dolor. Fugiat voluptate veniam incididunt ad do laboris ut dolore.
 

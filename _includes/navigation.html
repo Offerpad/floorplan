@@ -12,7 +12,7 @@
         </div>
         <div class="navigation__group">
             <ul>
-                <li class="list-header">
+                <li>
                     <a href="{{ site.baseurl }}/"{% if page.url == '/' %} class="active"{% endif %}>Overview</a>
                 </li>
             </ul>
@@ -20,9 +20,7 @@
         {% assign get-started = site.docs | where: 'type', 'get-started' | sort: 'name' %}
         <div class="navigation__group">
             <ul>
-                <li class="list-header">
-                    <a href="{{ site.baseurl }}/get-started"{% if page.url == '/get-started' %} class="active"{% endif %}>Getting Started</a>
-                </li>
+                <li class="list-header">Getting Started</li>
                 {% for doc in get-started %}
                 <li>
                     <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
@@ -33,10 +31,30 @@
         {% assign base = site.docs | where: 'type', 'base' | sort: 'name' %}
         <div class="navigation__group">
             <ul>
-                <li class="list-header">
-                    <a href="{{ site.baseurl }}/base"{% if page.url == '/base' %} class="active"{% endif %}>Base Styling</a>
-                </li>
+                <li class="list-header">Base Styling</li>
                 {% for doc in base %}
+                <li>
+                    <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% assign elements = site.docs | where: 'type', 'elements' | sort: 'name' %}
+        <div class="navigation__group">
+            <ul>
+                <li class="list-header">Page Elements</li>
+                {% for doc in elements %}
+                <li>
+                    <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% assign patterns = site.docs | where: 'type', 'patterns' | sort: 'name' %}
+        <div class="navigation__group">
+            <ul>
+                <li class="list-header">Design Patterns</li>
+                {% for doc in patterns %}
                 <li>
                     <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
                 </li>

@@ -1,8 +1,8 @@
 ---
 title: Colors
+description: All the colors used in OfferPad digital branding.
 ---
 
-Here are all the colors used in OfferPad digital branding.
 
 ## Greys
 

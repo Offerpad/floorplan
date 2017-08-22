@@ -1,5 +1,6 @@
 ---
-title: Tables
+title: Installation
+description: It's easy to install this style guide project on your machine. That's the hope, anyway.
 ---
 
 | Table Header 1 | Table Header 2 | Table Header 3 |

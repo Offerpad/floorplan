@@ -8,8 +8,8 @@ styles: /css/styles.css
 images: /static/images
 
 # Processing settings
-highlighter: rouge
 markdown: kramdown
+highlighter: rouge
 permalink: /:categories/:title
 destination: _site
 sass:
@@ -36,6 +36,16 @@ defaults:
             path: "_docs/base"
         values:
             type: "base"
+    -
+        scope:
+            path: "_docs/elements"
+        values:
+            type: "elements"
+    -
+        scope:
+            path: "_docs/patterns"
+        values:
+            type: "patterns"
 
 # Plugins
 plugins:

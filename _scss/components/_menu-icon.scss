@@ -7,7 +7,6 @@ $menu-bar-height: 0.1875rem;
     justify-content: center;
     height: 1.75rem;
     width: 2rem;
-    @include margin-right(2/3);
     cursor: pointer;
     border-radius: 0.25em;
     color: op-color('grey');

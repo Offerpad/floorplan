@@ -3,32 +3,61 @@ var OP = (function (op, $) {
         throw new Error('site.js requires jQuery');
     }
 
-    var $body =     $('body'),
-        $menuButton = $('.js-menu-button'),
-        $navMenu =  $('.js-nav-menu');
+    var $body =         $('body'),
+        bodyNavOpen =   'body--nav-open',
+        $navBar =       $('.navigation'),
+        $menuButton =   $('.js-menu-button'),
+        $navMenu =      $('.js-nav-menu');
+
+    var resizeTimer;
+
+    $(window).on('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(closeMenuOnDelay, 100);
+    });
+
+    function closeMenuOnDelay() {
+
+        if($('.navigation__header').css('height') != '100%') { // if mobile
+            closeMenu();
+            xToHam();
+            $body.removeClass(bodyNavOpen);
+        }
+        else {
+            $navMenu.css('display', '');
+            xToHam();
+            $body.removeClass(bodyNavOpen);
+        }
+    }
 
     $menuButton.on('click', function () {
         navToggle();
     });
 
     function navToggle() {
-        if (!$body.hasClass('js-nav-open')) {
+        if (!$body.hasClass(bodyNavOpen)) {
             openMenu();
             hamToX();
-            $body.addClass('js-nav-open');
+            $body.addClass(bodyNavOpen);
         } else {
             closeMenu();
             xToHam();
-            $body.removeClass('js-nav-open');
+            $body.removeClass(bodyNavOpen);
         }
     }
 
     function openMenu() {
-        $navMenu.slideDown('fast');
+        $navBar.removeClass('js-collapsed');
+        if($('.navigation__header').css('height') != '100%') { // if mobile
+            $navMenu.slideDown('fast');
+        }
     }
 
     function closeMenu() {
-        $navMenu.slideUp('fast');
+        $navBar.addClass('js-collapsed');
+        if($('.navigation__header').css('height') != '100%') { // if mobile
+            $navMenu.slideUp('fast');
+        }
     }
 
     function hamToX() {

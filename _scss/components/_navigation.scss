@@ -50,7 +50,7 @@ body.body--nav-open {
         display: flex;
         align-items: center;
         height: $header-height;
-        @include padding(0 1);
+        @include padding(0 0.5);
         .menu-icon {
             @include margin-right(2/3);
         }
@@ -60,17 +60,23 @@ body.body--nav-open {
         height: 1.125rem;
         width: 8.625rem;
         background-image: url('../static/images/offerpad-logo.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
         @include hide-text;
     }
     &__list {
         display: none;
         height: calc(100vh - #{$header-height});
+        @include padding(0 1);
+        overflow: auto;
         .navigation__logo {
             display: none;
+            + .navigation__group {
+                border-top: 2px solid op-color('grey-light');
+                @include padding-top(0.125);
+            }
         }
-    }
-    &__group {
-        border-top: 3px solid op-color('grey-light');
     }
     ul {
         padding-left: 0;
@@ -78,12 +84,12 @@ body.body--nav-open {
     }
     li {
         list-style: none;
-        text-align: center;
+        text-align: left;
         font-weight: 600;
         font-style: italic;
         a {
             display: block;
-            @include padding(0 1);
+            @include padding(0.25 1);
             color: op-color('grey-dark');
             text-decoration: none;
             @include hover-focus {
@@ -94,10 +100,10 @@ body.body--nav-open {
     .list-header {
         text-transform: uppercase;
         font-style: normal;
-        a {
-            @include padding(1);
-            color: op-color('black');
-        }
+        @include margin-top(1);
+        @include padding-bottom(0.125);
+        @include margin-bottom(0.125);
+        border-bottom: 2px solid op-color('grey-light');
     }
     @include bp-navigation {
         left: 0;
@@ -127,10 +133,10 @@ body.body--nav-open {
             display: block;
             height: 100%;
             width: $navigation-width;
-            @include padding(1);
+            @include padding(0 1);
             .navigation__logo {
                 display: block;
-                @include margin(0 auto 1);
+                height: $header-height;
             }
         }
     }

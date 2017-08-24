@@ -1,10 +1,9 @@
-$nav-slide-duration: 0.4s;
-$nav-slide-easing: ease;
+$nav-slide-duration: 0.3s;
 
 .page__main {
     transition-property: margin-left, margin-right;
     transition-duration: $nav-slide-duration;
-    transition-timing-function: $nav-slide-easing;
+    transition-timing-function: ease-out;
     position: relative;
     &:after {
         content: '';
@@ -19,7 +18,7 @@ $nav-slide-easing: ease;
         pointer-events: none;
         transition-property: opacity;
         transition-duration: $nav-slide-duration;
-        transition-timing-function: $nav-slide-easing;
+        transition-timing-function: ease-out;
     }
 }
 
@@ -29,9 +28,11 @@ body.body--nav-open {
         .page__main {
             margin-left: $navigation-width;
             margin-right: -1 * $navigation-width;
+            transition-timing-function: ease-in;
             &:after {
                 opacity: 0.5;
                 pointer-events: initial;
+                transition-timing-function: ease-in;
             }
         }
     }
@@ -113,9 +114,10 @@ body.body--nav-open {
         justify-content: space-between;
         transition-property: margin-left;
         transition-duration: $nav-slide-duration;
-        transition-timing-function: $nav-slide-easing;
+        transition-timing-function: ease-in;
         &.js-collapsed {
             margin-left: -1 * $navigation-width;
+            transition-timing-function: ease-out;
         }
         &__header {
             height: 100%;

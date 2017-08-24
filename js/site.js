@@ -49,14 +49,14 @@ var OP = (function (op, $) {
     function openMenu() {
         $navBar.removeClass('js-collapsed');
         if($('.navigation__header').css('width') != '48px') { // if mobile
-            $navMenu.slideDown('fast');
+            $navMenu.slideDown(400, "swing");
         }
     }
 
     function closeMenu() {
         $navBar.addClass('js-collapsed');
         if($('.navigation__header').css('width') != '48px') { // if mobile
-            $navMenu.slideUp('fast');
+            $navMenu.slideUp(400, "swing");
         }
     }
 

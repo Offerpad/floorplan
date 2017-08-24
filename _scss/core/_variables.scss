@@ -26,14 +26,16 @@ $op-colors: (
 
 // Type
 
-$roboto: extend-font-stack("Roboto", $sans-serif-stack);
+$op-roboto: extend-font-stack("Roboto", $sans-serif-stack);
+
+$op-monospace: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; // thanks, bootstrap!
 
 $typefaces: (
   sans-serif: (
-    font-family: $roboto
+    font-family: $op-roboto
   ),
   monospace: (
-    font-family: $monospace-stack
+    font-family: $op-monospace
   )
 );
 

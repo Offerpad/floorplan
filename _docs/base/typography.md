@@ -3,6 +3,13 @@ title: Typography
 description: Documentation and examples for typography used on the OfferPad website.
 ---
 
+## Overview
+
+Typography is a critical part of web design. The goals for text are to create a harmonious system that follows consistent rules, while also keeping considerations like accessibility in mind.
+
+- By default, we start with a base font size of 16px. This is the browser default. All other font sizes, and really, all sizes in general, are based on this value. This is critical for accessibility. When a user changes their browser default to something else, the entire website will intelligently scale with it. To that end, the site's sizing uses the `rem` unit.
+- To achieve this goal, we use a framework called [Typey](https://github.com/jptaranto/typey){:target="_blank"}. Typey provides the math to create a font system that is _rhythmic_, where font sizes and line-heights follow a harmonious pattern. As a Sass framework, Typey also provides us with mixins and functions to carry this approach throughout the site. For example, you can use a spacing mixin like `@include margin(1 0)` to add the exact amount of vertical spacing around an element that follows the pattern established by Typey.
+
 ## Font stacks
 
 OfferPad uses a sans-serif font stack for most type, with the exception being code and other elements where a monospace font stack is more appropriate.
@@ -11,17 +18,17 @@ The typeface we use specifically is Roboto.
 
 ### Sans-serif
 
-```css
+{% highlight css %}
 font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
-```
+{% endhighlight %}
 
 ### Monospace
 
-```css
-font-family: monospace, monospace;
-```
+{% highlight css %}
+font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+{% endhighlight %}
 
-
+---
 
 ## Raw output for testing
 

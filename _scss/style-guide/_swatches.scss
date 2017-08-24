@@ -30,5 +30,8 @@
         display: block;
         white-space: pre;
         @include type-layout(s, 1);
+        border-radius: 0;
+        background-color: transparent;
+        padding: 0;
     }
 }

@@ -1,0 +1,46 @@
+.highlight {
+    @include margin(1 -1);
+    @include padding(1);
+    @include bp-navigation {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    pre {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: transparent;
+        border: 0;
+        code {
+            color: #000; //TODO: variable
+        }
+    }
+}
+
+.op-example {
+    position: relative;
+    @include padding(1);
+    @include margin(1 -1 0);
+    border: solid $code-bg-color;
+    border-width: 0.125rem 0 0;
+    @include bp-navigation {
+        margin-left: 0;
+        margin-right: 0;
+        border-width: 0.125rem;
+    }
+    &:before {
+        content: 'Example';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include type-layout(xs, 1);
+        @include padding(0 0.5);
+        background-color: $code-bg-color;
+        color: $text-color-muted;
+        text-transform: uppercase;
+    }
+    + .highlight {
+        margin-top: 0;
+    }
+}

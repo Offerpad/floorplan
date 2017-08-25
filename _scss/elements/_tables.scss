@@ -1,0 +1,25 @@
+table {
+    border-collapse: collapse;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    @include margin-bottom(1);
+    background-color: op-color('white'); //TODO: make a variable
+    th, td {
+        @include padding(1);
+        vertical-align: top;
+        border-top: 1px solid $border-color;
+    }
+    thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid $border-color;
+    }
+    tbody + tbody {
+        border-top: 2px solid $border-color;
+    }
+    .table {
+        background-color: $bg-color;
+    }
+}

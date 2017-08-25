@@ -28,6 +28,27 @@ font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
 font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 {% endhighlight %}
 
+## Headings
+
+|---
+| Code | Output
+|---
+| `<h1></h1>` | {::nomarkdown}<h1>Heading 1</h1>{:/}
+| `<h2></h2>` | {::nomarkdown}<h2>Heading 2</h2>{:/}
+| `<h3></h3>` | {::nomarkdown}<h3>Heading 3</h3>{:/}
+| `<h4></h4>` | {::nomarkdown}<h4>Heading 4</h4>{:/}
+| `<h5></h5>` | {::nomarkdown}<h5>Heading 5</h5>{:/}
+| `<h6></h6>` | {::nomarkdown}<h6>Heading 6</h6>{:/}
+{: .table }
+
+## Lead paragraph
+
+Add the `.lead` class to a paragraph to help it stand out, especially in introductory contexts.
+
+{% example html %}
+<p class="lead">Hey, I'm a lead paragraph. Check me out!</p>
+{% endexample %}
+
 ---
 
 ## Raw output for testing

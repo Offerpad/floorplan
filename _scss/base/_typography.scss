@@ -36,11 +36,17 @@ dd {
     @include margin-bottom(1);
 }
 
+hr {
+    @include margin(1 0);
+    border: 0;
+    border-top: 0.125rem solid $border-color;
+}
+
 code {
     @include padding(0.2 0.4);
     font-size: 90%;
-    background-color: #f8f8f8; //TODO: variable
-    color: #d14; //TODO: variable
+    background-color: $code-bg-color;
+    color: $code-text-color;
     border-radius: 0.25rem;
     @include typeface(monospace);
     pre & {
@@ -49,9 +55,6 @@ code {
         color: inherit;
         background-color: transparent;
         border-radius: 0;
-        .highlight & {
-            color: #000; //TODO: variable
-        }
     }
 }
 

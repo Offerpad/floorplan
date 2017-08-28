@@ -63,52 +63,77 @@ Add the `.lead` class to a paragraph to help it stand out, especially in introdu
 <p>Here is some <code>inline code</code>.</p>
 {% endexample %}
 
----
+## Blockquotes
 
-## Raw output for testing
+As blockquotes can have additional uses besides their common form in text content, use `.blockquote` as a class for complete styling. It will increase the font size of child elements and add a border.
 
-This is a paragraph. Mollit do ipsum nisi eiusmod veniam dolore amet est amet officia laboris id irure nisi. Deserunt enim velit veniam velit qui eiusmod esse elit non do Lorem in anim. Ex anim veniam nulla sunt occaecat ullamco pariatur dolore et consectetur proident nostrud eu dolor. Fugiat voluptate veniam incididunt ad do laboris ut dolore.
+Add citations by wrapping them in a `<footer>` with class `.blockquote__footer`, and wrapping the citation source name with `<cite>`.
 
+{% example html %}
+<blockquote class="blockquote">
+    <p>Mollit do ipsum nisi eiusmod veniam dolore amet est amet officia laboris id irure nisi. Deserunt enim velit veniam velit qui eiusmod esse elit non do Lorem in anim.</p>
+    <footer class="blockquote__footer">A person, <cite title="Title">Title</cite></footer>
+</blockquote>
+{% endexample %}
 
+## Lists
 
-Here is a [simple link](https://www.offerpad.com/){:target="_blank"}.
+There are four types of lists available: unstyled, unordered, ordered, and description (definition) lists.
 
----
+### Unstyled lists
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+Unstyled lists, borrowed from Bootstrap, use the `.list--unstyled` class to remove padding and `list-style` from a list. This styling only applies to immediate child list items, so you'll need to add the class to nested lists as well.
 
----
+{% example html %}
+<ul class="list--unstyled">
+    <li>List item 1</li>
+    <li>List item 2
+        <ul class="list--unstyled">
+            <li>List item A</li>
+            <li>List item B</li>
+        </ul>
+    </li>
+    <li>List item 3</li>
+</ul>
+{% endexample %}
 
-Here is an unordered, nested list.
-- List item 1
-- List item 2
-    - List item A
-    - List item B
-- List item 3
+### Unordered lists
 
-Here is an ordered list.
-1. List item 1
-2. List item 2
-3. List item 3
+{% example html %}
+<ul>
+    <li>List item 1</li>
+    <li>List item 2
+        <ul>
+            <li>List item A</li>
+            <li>List item B</li>
+        </ul>
+    </li>
+    <li>List item 3</li>
+</ul>
+{% endexample %}
 
-Here is a definition list.
+### Ordered lists
 
-Definition title 1
-: Definition item 1
+{% example html %}
+<ol>
+    <li>List item 1</li>
+    <li>List item 2
+        <ol>
+            <li>List item A</li>
+            <li>List item B</li>
+        </ol>
+    </li>
+    <li>List item 3</li>
+</ol>
+{% endexample %}
 
-Definition title 2
-: Definition item 2
+### Descripton lists
 
----
-
-> Here is a blockquote.
-
-
-```
-Here is block code.
-```
+{% example html %}
+<dl>
+    <dt>Definition title 1</dt>
+    <dd>Definition item 1</dd>
+    <dt>Definition title 2</dt>
+    <dd>Definition item 2</dd>
+</dl>
+{% endexample %}

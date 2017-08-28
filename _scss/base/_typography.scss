@@ -25,6 +25,23 @@ a:not([href]):not([tabindex]) {
     }
 }
 
+.blockquote {
+    margin-left: 0;
+    @include margin-bottom(1);
+    @include padding-left($indent-amount);
+    font-size: 1.25rem;
+    border-left: 0.125rem solid $border-color;
+    &__footer {
+        display: block;
+        font-size: 80%;
+        color: $text-color-muted;
+        &:before {
+            content: "\2014 \00A0";
+        }
+
+    }
+}
+
 dl {
     margin-bottom: 0;
 }
@@ -68,4 +85,9 @@ pre {
 p.lead {
     @include type-layout(l, 1);
     @include margin(1 0, l);
+}
+
+.list--unstyled {
+    padding-left: 0;
+    list-style: none;
 }

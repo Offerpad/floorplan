@@ -34,7 +34,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        @include type-layout(xs, 1);
+        @include type-layout(xs, 0.9);
         @include padding(0 0.5);
         background-color: $code-bg-color;
         color: $text-color-muted;

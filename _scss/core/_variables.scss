@@ -31,12 +31,15 @@ $op-roboto: extend-font-stack("Roboto", $sans-serif-stack);
 $op-monospace: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; // thanks, bootstrap!
 
 $typefaces: (
-  sans-serif: (
-    font-family: $op-roboto
-  ),
-  monospace: (
-    font-family: $op-monospace
-  )
+    body: (
+        font-family: $op-roboto
+    ),
+    headline: (
+        font-family: $op-roboto
+    ),
+    monospace: (
+        font-family: $op-monospace
+    )
 );
 
 $header-height: 3rem;

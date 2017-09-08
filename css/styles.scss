@@ -2,11 +2,15 @@
 # welcome to the core sass file!!!!
 ---
 
+// project variables
+@import 'core/variables/__variables-dir';
+
 // vendor
 @import 'vendor/__vendor-dir';
 
+@import 'core/mixins';
+@import 'core/reset';
 
-@import 'core/__core-dir';
 @import 'base/__base-dir';
 @import 'elements/__elements-dir';
 @import 'components/__components-dir';

@@ -1,8 +1,4 @@
-// Breakpoints and media queries
-
-$bp-desktop: 992px;
-
-// colors
+// Color Palette Map
 
 $op-colors: (
     'black':        #333333,
@@ -24,34 +20,17 @@ $op-colors: (
     @return map-get($op-colors, $key);
 }
 
-// Type
-
-$op-roboto: extend-font-stack("Roboto", $sans-serif-stack);
-
-$op-monospace: Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace; // thanks, bootstrap!
-
-$typefaces: (
-    body: (
-        font-family: $op-roboto
-    ),
-    headline: (
-        font-family: $op-roboto
-    ),
-    monospace: (
-        font-family: $op-monospace
-    )
-);
-
-$header-height: 3rem;
-$navigation-width: 20rem;
+// layout colors
 
 $bg-color: op-color('white');
 $border-color: op-color('grey-light');
 
-$code-bg-color: #f8f8f8;
-$code-text-color: #dd1144;
+// text colors
 
 $text-color: op-color('black');
 $text-color-muted: op-color('grey');
 $link-color: op-color('orange-dark');
 $link-color-hover: op-color('orange');
+
+$code-bg-color: #f8f8f8;
+$code-text-color: #dd1144;

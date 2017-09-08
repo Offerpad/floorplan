@@ -12,6 +12,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title
 destination: _site
+incremental: true
 sass:
     sass_dir: _scss
     #style: :compressed

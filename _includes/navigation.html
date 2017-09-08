@@ -61,5 +61,16 @@
                 {% endfor %}
             </ul>
         </div>
+        {% assign examples = site.examples | where: 'type', 'examples' | sort: 'name' %}
+        <div class="navigation__group">
+            <ul>
+                <li class="list-header">Example Pages</li>
+                {% for example in examples %}
+                <li>
+                    <a href="{{ site.baseurl }}{{ example.url }}"{% if example.url == page.url %} class="active"{% endif %}>{{ example.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </nav>

@@ -20,6 +20,9 @@ collections:
     docs:
         output: true
         permalink: /:path
+    examples:
+        output: true
+        permalink: /examples/:path
 defaults:
     -
         scope:
@@ -47,6 +50,12 @@ defaults:
             path: "_docs/patterns"
         values:
             type: "patterns"
+    -
+        scope:
+            path: "_examples"
+        values:
+            layout: example
+            type: "examples"
 
 # Plugins
 plugins:

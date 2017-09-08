@@ -86,7 +86,7 @@ pre {
 // special classes
 
 p.lead {
-    @include type-layout(l, 1);
+    @include type-layout(l, 1.25);
     @include margin(1 0, l);
 }
 

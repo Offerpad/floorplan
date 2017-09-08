@@ -20,6 +20,12 @@ $op-colors: (
     @return map-get($op-colors, $key);
 }
 
+$op-color-theme: (
+    primary: op-color('orange-dark'),
+    secondary: op-color('grey-blue'),
+    neutral: op-color('grey-light')
+);
+
 // layout colors
 
 $bg-color: op-color('white');

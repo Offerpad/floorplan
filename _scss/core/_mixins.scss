@@ -1,5 +1,14 @@
+// mixins used generally across all sass files go here.
+// if a mixin is specific to one sass file, place it in that file instead.
+
 @mixin bp-navigation {
     @media (min-width: #{$bp-desktop}) {
+        @content;
+    }
+}
+
+@mixin hover {
+    &:hover {
         @content;
     }
 }
@@ -9,6 +18,29 @@
     &:hover {
         @content;
     }
+}
+
+// Color contrast via bootstrap
+@mixin color-yiq($color) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+
+  @if ($yiq >= 150) {
+      color: op-color('black');
+  } @else {
+      color: op-color('white');
+  }
+}
+
+@mixin op-gradient($color) {
+    $color-light-adjust: lighten(adjust-hue($color, 9deg), 5%);
+    $color-dark-adjust: darken(adjust-hue($color, -9deg), 5%);
+    background-color: $color;
+    background-image: linear-gradient($color-light-adjust, $color-dark-adjust);
+    background-repeat: repeat-x;
 }
 
 // https://gist.github.com/paulmelnikow/7fcfbe4f68e5df7fe326

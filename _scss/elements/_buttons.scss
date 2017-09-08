@@ -1,40 +1,80 @@
 $button-border-width: 0.125rem;
 
+@mixin button-variant($background) {
+    $hover-background: lighten($background, 7.5%);
+    @include color-yiq($background);
+    background-color: $background;
+    border-color: darken($background, 5%);
+    background-repeat: repeat-x;
+    @include hover-focus {
+        background-color: $hover-background;
+    }
+    &:disabled,
+    &.disabled {
+        background-color: $background;
+    }
+    &:active {
+        background-color: $hover-background;
+        background-image: none;
+        box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    }
+}
+
+@mixin button-gradient-variant($background) {
+    $hover-background: lighten($background, 7.5%);
+    @include color-yiq($background);
+    @include op-gradient($background);
+    border-color: darken($background, 5%);
+    background-repeat: repeat-x;
+    @include hover-focus {
+        @include op-gradient($hover-background);
+    }
+    &:disabled,
+    &.disabled {
+        background-color: $background;
+        background-image: none;
+    }
+    &:active {
+        @include op-gradient($hover-background);
+        box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    }
+}
+
 .btn {
     display: inline-block;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
     user-select: none;
-    border: $button-border-width solid transparentize(op-color('black'), 0.8);
+    border: $button-border-width solid transparent;
     padding: 0.5rem 0.75rem;
     @include typeface(body);
     font-size: 1rem;
     line-height: 1.25;
     border-radius: 0.25rem;
+    @include box_shadow(1);
     cursor: pointer;
     &:focus {
         outline: 0;
+        box-shadow: 0 0 10px op-color('blue-iris'),
+            0 0 5px op-color('blue-iris');
     }
     &:disabled,
     &.disabled {
         opacity: 0.65;
         cursor: not-allowed;
+        box-shadow: none;
     }
-
-    &--primary {
-        color: op-color('white');
-        background-color: op-color('orange-dark');
-        @include hover-focus {
-            background-color: op-color('orange');
-        }
+    &:active {
+        box-shadow: none;
     }
+}
 
-    &--neutral {
-        color: op-color('white');
-        background-color: op-color('grey');
-        @include hover-focus {
-            background-color: op-color('grey-light');
-        }
+@each $color, $value in $op-color-theme {
+    .btn--#{$color} {
+        @include button-variant($value);
+    }
+    .btn--gradient--#{$color} {
+        @include button-gradient-variant($value);
     }
 }

@@ -35,11 +35,18 @@
   }
 }
 
-@mixin op-gradient($color) {
-    $color-light-adjust: lighten(adjust-hue($color, 9deg), 5%);
-    $color-dark-adjust: darken(adjust-hue($color, -9deg), 5%);
+@mixin op-gradient($color, $direction: 180deg) {
+    $sat: saturation($color);
+    @if ($sat >= 15) {
+        $color-light-adjust: adjust-hue($color, 12deg);
+        $color-dark-adjust: adjust-hue($color, -12deg);
+        background-image: linear-gradient($direction, $color-light-adjust, $color-dark-adjust);
+    } @else {
+        $color-light-adjust: lighten($color, 5%);
+        $color-dark-adjust: darken($color, 5%);
+        background-image: linear-gradient($direction, $color-light-adjust, $color-dark-adjust);
+    }
     background-color: $color;
-    background-image: linear-gradient($color-light-adjust, $color-dark-adjust);
     background-repeat: repeat-x;
 }
 

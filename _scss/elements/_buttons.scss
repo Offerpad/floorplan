@@ -13,7 +13,8 @@ $button-border-width: 0.125rem;
     &.disabled {
         background-color: $background;
     }
-    &:active {
+    &:active,
+    &.is-active {
         background-color: $hover-background;
         background-image: none;
         box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
@@ -34,8 +35,9 @@ $button-border-width: 0.125rem;
         background-color: $background;
         background-image: none;
     }
-    &:active {
-        @include op-gradient($hover-background);
+    &:active,
+    &.is-active {
+        @include op-gradient($hover-background, 0deg);
         box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
     }
 }
@@ -65,7 +67,8 @@ $button-border-width: 0.125rem;
         cursor: not-allowed;
         box-shadow: none;
     }
-    &:active {
+    &:active,
+    &.is-active {
         box-shadow: none;
     }
 }

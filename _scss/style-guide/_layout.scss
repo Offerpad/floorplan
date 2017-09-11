@@ -1,0 +1,14 @@
+.page {
+    &__main--styleguide {
+        @include bp-navigation {
+            padding-top: 0;
+            margin-left: $header-height;
+        }
+    }
+    &__content--styleguide {
+        max-width: 43.75rem + 1.5rem + 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        @include padding(1);
+    }
+}

@@ -5,17 +5,15 @@
 }
 
 .page {
+    position: relative;
     &__main {
         padding-top: $header-height;
-        @include bp-navigation {
-            padding-top: 0;
-            margin-left: $header-height;
-        }
+        height: 100%;
     }
-    &__content {
-        max-width: 43.75rem + 1.5rem + 1.5rem;
-        margin-left: auto;
-        margin-right: auto;
-        @include padding(1);
-    }
+}
+
+.content {
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
 }

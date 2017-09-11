@@ -38,5 +38,14 @@ $text-color-muted: op-color('grey');
 $link-color: op-color('orange-dark');
 $link-color-hover: op-color('orange');
 
+$placeholder-color: op-color('grey');
+
 $code-bg-color: #f8f8f8;
 $code-text-color: #dd1144;
+
+// miscellaneous colors
+
+$focus-color: op-color('blue-iris');
+$focus-shadow: 0 0 10px op-color('blue-iris'),
+    0 0 5px op-color('blue-iris');
+$disabled-bg-color: op-color('grey-light');

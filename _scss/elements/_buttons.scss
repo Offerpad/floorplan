@@ -58,8 +58,7 @@ $button-border-width: 0.125rem;
     cursor: pointer;
     &:focus {
         outline: 0;
-        box-shadow: 0 0 10px op-color('blue-iris'),
-            0 0 5px op-color('blue-iris');
+        box-shadow: $focus-shadow;
     }
     &:disabled,
     &.disabled {

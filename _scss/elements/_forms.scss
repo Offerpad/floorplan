@@ -1,0 +1,84 @@
+$input-font-size: 1rem;
+$input-line-height: 1.5;
+$input-padding-y: 0.5rem;
+$input-padding-x: 0.75rem;
+$input-border-width: 0.0625rem;
+$input-box-shadow: inset 0 1px 1px rgba(op-color('black'),.075);
+
+// these are used to enforce heights.
+$input-height-border: $input-border-width * 2;
+$input-height-inner: ($input-font-size * $input-line-height) + ($input-padding-y * 2);
+$input-height: calc(#{$input-height-inner} + #{$input-height-border});
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group {
+    @include margin-bottom(1);
+}
+
+.form-control { // via bootstrap
+    display: block;
+    width: 100%;
+    font-size: $input-font-size;
+    line-height: $input-line-height;
+    padding: $input-padding-y $input-padding-x;
+    color: op-color('black');
+    background-color: op-color('white');
+    background-image: none;
+    background-clip: padding-box;
+    border: $input-border-width solid $border-color;
+    border-radius: 0;
+    box-shadow: $input-box-shadow;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    &::-ms-expand {
+        background-color: transparent;
+        border: 0;
+    }
+    &:focus {
+        border-color: $focus-color;
+        outline: none;
+        box-shadow: $input-box-shadow, $focus-shadow;
+    }
+    &::placeholder {
+        color: $placeholder-color;
+        opacity: 1;
+    }
+    &:disabled,
+    &[readonly] {
+        background-color: $disabled-bg-color;
+        opacity: 1;
+    }
+}
+
+select.form-control {
+    &:not([size]):not([multiple]) {
+        height: $input-height;
+    }
+    &:focus::-ms-value {
+        color: op-color('black');
+        background-color: op-color('white');
+    }
+}
+
+.form-check {
+    position: relative;
+    display: block;
+    @include margin-bottom(1);
+    &__label {
+        @include padding-left(1);
+        margin-bottom: 0;
+    }
+    &__input {
+        position: absolute;
+        @include margin-left(-1);
+        margin-top: 0.25rem;
+    }
+}

@@ -1,6 +1,11 @@
 // mixins used generally across all sass files go here.
 // if a mixin is specific to one sass file, place it in that file instead.
 
+@mixin bp-desktop {
+    @media (min-width: #{$bp-desktop}) {
+        @content;
+    }
+}
 @mixin bp-navigation {
     @media (min-width: #{$bp-desktop}) {
         @content;

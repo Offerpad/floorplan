@@ -3,16 +3,36 @@ title: Home Page Example
 description: Example of OfferPad home page.
 ---
 
-<div class="site-header">
-    <div class="navigation__logo">
-        OfferPad
+<div class="page">
+    <div class="site-header">
+        <div class="navigation__logo">
+            OfferPad
+        </div>
     </div>
-</div>
-<main class="page__main">
-    <div class="hero">
-        <section class="content">
-            <h1>Click. Sold. Move.</h1>
-            <p>Tell us about the home you're selling and our experts will send you a competitive purchase offer.</p>
+    <main class="page__main">
+        <section class="hero">
+            <div class="content">
+                <h1>Click. Sold. Move.</h1>
+                <p>Tell us about the home you're selling and our experts will send you a competitive purchase offer.</p>
+                <form class="form-inline">
+                    <label class="sr-only" for="address-input">Enter your address</label>
+                    <input type="text" class="form-control" id="address-input" placeholder="Enter your address" />
+                    <button type="submit" class="btn btn--gradient--primary">
+                        Request offer
+                    </button>
+                </form>
+            </div>
         </section>
-    </div>
-</main>
+        <section class="content">
+            <h2>OfferPad is a Direct Home Buyer</h2>
+            <blockquote class="blockquote">
+                <p>We buy quality homes at competitive prices and deliver homeowners the ultimate home-selling experience.</p>
+                <footer class="blockquote__footer">
+                    Brian Bair, Co-Founder and CEO
+                </footer>
+            </blockquote>
+            <img class="img-fluid" src="http://img.youtube.com/vi/LFqQ54Dzjeg/maxresdefault.jpg" alt="Example video" />
+            <p class="lead">If you are selling your house, sell it to us! Join the thousands of homeowners who have experienced our dream move.</p>
+        </section>
+    </main>
+</div>

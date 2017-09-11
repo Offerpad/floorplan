@@ -70,3 +70,13 @@ description: How forms and inputs are displayed on the OfferPad website.
     </fieldset>
 </form>
 {% endexample %}
+
+## Inline form
+
+{% example html %}
+<form class="form-inline">
+    <label class="sr-only" for="inlineAddress">Home Address</label>
+    <input type="text" class="form-control mr-s" id="inlineAddress" name="inlineAddress" placeholder="Enter your home address..." />
+    <button type="submit" class="btn btn--primary">Continue</button>
+</form>
+{% endexample %}

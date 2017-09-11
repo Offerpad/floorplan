@@ -17,3 +17,6 @@
 @import 'components/__components-dir';
 
 @import 'style-guide/__style-guide-dir';
+
+// load utilities last
+@import 'core/utilities';

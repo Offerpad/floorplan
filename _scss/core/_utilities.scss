@@ -1,0 +1,54 @@
+// margin and padding util classes
+
+$op-spacing: (
+    z: 0,
+    xs: 0.25,
+    s: 0.5,
+    m: 1,
+    l: 2,
+    xl: 4
+);
+
+@each $prop, $abbr in (margin: m, padding: p) {
+    @each $size, $length in $op-spacing {
+        .#{$abbr}-#{$size} {
+            #{$prop}: $length * 1.5rem !important;
+        }
+        .#{$abbr}t-#{$size},
+        .#{$abbr}y-#{$size} {
+            #{$prop}-top: $length * 1.5rem !important;
+        }
+        .#{$abbr}r-#{$size},
+        .#{$abbr}x-#{$size} {
+            #{$prop}-right: $length * 1.5rem !important;
+        }
+        .#{$abbr}b-#{$size},
+        .#{$abbr}y-#{$size} {
+            #{$prop}-bottom: $length * 1.5rem !important;
+        }
+        .#{$abbr}l-#{$size},
+        .#{$abbr}x-#{$size} {
+            #{$prop}-left: $length * 1.5rem !important;
+        }
+    }
+}
+
+.m-auto {
+    margin: auto !important;
+}
+.mt-auto,
+.my-auto {
+    margin-top: auto !important;
+}
+.mr-auto,
+.mx-auto {
+    margin-right: auto !important;
+}
+.mb-auto,
+.my-auto {
+    margin-bottom: auto !important;
+}
+.ml-auto,
+.mx-auto {
+    margin-left: auto !important;
+}

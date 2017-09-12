@@ -89,6 +89,10 @@ p.lead {
     @include type-layout(l, 1.25);
     @include margin(1 0, l);
 }
+p.fine-print {
+    @include type-layout(xs, 1);
+    @include margin(0.5 0, xs);
+}
 
 .list--unstyled {
     padding-left: 0;

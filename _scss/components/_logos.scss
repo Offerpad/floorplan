@@ -1,0 +1,10 @@
+.offerpad-logo {
+    display: block;
+    background-image: url('../static/images/offerpad-logo.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include hide-text;
+    height: 1.125rem; // default sizes. overwritten where implemented
+    width: 8.625rem;
+}

@@ -60,11 +60,6 @@ body.body--nav-open {
         display: block;
         height: 1.125rem;
         width: 8.625rem;
-        background-image: url('../static/images/offerpad-logo.svg');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        @include hide-text;
     }
     &__list {
         display: none;

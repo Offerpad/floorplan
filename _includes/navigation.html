@@ -11,7 +11,7 @@
         <div class="navigation__logo offerpad-logo">
         </div>
         <div class="navigation__group">
-            <ul>
+            <ul class="nav-list">
                 <li>
                     <a href="{{ site.baseurl }}/"{% if page.url == '/' %} class="active"{% endif %}>Overview</a>
                 </li>
@@ -19,7 +19,7 @@
         </div>
         {% assign get-started = site.docs | where: 'type', 'get-started' | sort: 'name' %}
         <div class="navigation__group">
-            <ul>
+            <ul class="nav-list">
                 <li class="list-header">Getting Started</li>
                 {% for doc in get-started %}
                 <li>
@@ -30,7 +30,7 @@
         </div>
         {% assign base = site.docs | where: 'type', 'base' | sort: 'name' %}
         <div class="navigation__group">
-            <ul>
+            <ul class="nav-list">
                 <li class="list-header">Base Styling</li>
                 {% for doc in base %}
                 <li>
@@ -41,7 +41,7 @@
         </div>
         {% assign elements = site.docs | where: 'type', 'elements' | sort: 'name' %}
         <div class="navigation__group">
-            <ul>
+            <ul class="nav-list">
                 <li class="list-header">Page Elements</li>
                 {% for doc in elements %}
                 <li>
@@ -52,7 +52,7 @@
         </div>
         {% assign patterns = site.docs | where: 'type', 'patterns' | sort: 'name' %}
         <div class="navigation__group">
-            <ul>
+            <ul class="nav-list">
                 <li class="list-header">Design Patterns</li>
                 {% for doc in patterns %}
                 <li>
@@ -63,7 +63,7 @@
         </div>
         {% assign examples = site.examples | where: 'type', 'examples' | sort: 'name' %}
         <div class="navigation__group">
-            <ul>
+            <ul class="nav-list">
                 <li class="list-header">Example Pages</li>
                 {% for example in examples %}
                 <li>

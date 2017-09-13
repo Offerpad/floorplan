@@ -74,20 +74,11 @@ body.body--nav-open {
             }
         }
     }
-    ul {
-        padding-left: 0;
-        margin: 0;
-    }
-    li {
-        list-style: none;
-        text-align: left;
+    .nav-list li {
         font-weight: 600;
         font-style: italic;
         a {
-            display: block;
-            @include padding(0.25 1);
             color: op-color('grey-dark');
-            text-decoration: none;
             @include hover-focus {
                 background-color: op-color('offwhite');
             }
@@ -96,7 +87,6 @@ body.body--nav-open {
     .list-header {
         text-transform: uppercase;
         font-style: normal;
-        @include margin-top(1);
         @include padding-bottom(0.125);
         @include margin-bottom(0.125);
         border-bottom: 2px solid op-color('grey-light');

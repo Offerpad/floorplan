@@ -91,7 +91,7 @@ p.lead {
 }
 p.fine-print {
     @include type-layout(xs, 1);
-    @include margin(0.5 0, xs);
+    @include margin(1 0, xs);
 }
 
 .list--unstyled {

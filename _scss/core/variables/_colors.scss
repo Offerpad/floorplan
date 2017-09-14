@@ -29,14 +29,19 @@ $op-color-theme: (
 // layout colors
 
 $bg-color: op-color('white');
+$bg-color-dark: op-color('grey-blue');
 $border-color: op-color('grey-light');
 
 // text colors
 
 $text-color: op-color('black');
 $text-color-muted: op-color('grey');
+$text-color-light: op-color('white');
+
 $link-color: op-color('orange-dark');
 $link-color-hover: op-color('orange');
+$link-color-light: op-color('grey-light');
+$link-color-light-hover: op-color('white');
 
 $placeholder-color: op-color('grey');
 

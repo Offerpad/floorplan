@@ -68,5 +68,87 @@ var OP = (function (op, $) {
         $menuButton.removeClass('menu-icon--x');
     }
 
+    // blizzard's media query toggle thing
+    function Media() {
+        this.elems = [],
+        this.matches = {}
+    }
+    Media.sizes = ["original", "mobile-large", "tablet", "desktop"];
+    Media.widths = [0, 576, 768, 992];
+    Media.attrs = Media.sizes.map(function (size) {
+         return "media-" + size;
+     });
+    Media.query = Media.attrs.map(function (attr) {
+        return "[" + attr + "]"
+    }).join(",");
+    Media.spaceReg = /\s+/;
+    Media.prototype = {
+        init: function () {
+    		this.update();
+            $media = this;
+            $(Media.query).each(function() {
+                $media.addElem(this);
+            })
+    		$(window).on("resize", this.update.bind(this));
+    		$(window).on("load", this.resize.bind(this));
+    	},
+        resize: function () {
+    		if (window.trigger) {
+    			window.trigger("resize");
+    		} else {
+    			this.update();
+    		}
+    	},
+        addElem: function (elem) {
+    		// save the original classes and always apply them
+        	$(elem).attr("media-original", elem.className);
+    		this.elems.push(elem);
+    		this.updateElem(elem);
+    	},
+        update: function () {
+    		this.width = window.innerWidth;
+    		var minWidth = Media.widths[1];
+    		if (this.width < minWidth) {
+    			this.width = minWidth;
+    		}
+    		Media.widths.map(this.updateWidth.bind(this))
+    		this.elems.map(this.updateElem.bind(this));
+    	},
+        updateWidth: function (width, i) {
+    		var media = "media-" + Media.sizes[i];
+    		this.matches[media] = this.width >= width;
+    	},
+        updateElem: function (elem) {
+    		Media.attrs.map(this.updateMedia.bind(this, elem));
+    	},
+        updateMedia: function (elem, media) {
+    		var attr = $(elem).attr(media);
+    		if (attr) {
+    			var classes = attr.split(Media.spaceReg);
+    			classes.map(this.updateClass.bind(this, elem, media))
+    		}
+	    },
+        updateClass: function (elem, media, elemClass) {
+    		var match = this.matches[media];
+    		var negate = elemClass.charAt(0) === "!";
+    		if (negate) {
+    			if (match) {
+    				var doubleNegate = elemClass.charAt(1) === "!";
+    				if (doubleNegate) {
+    					elem.classList.add(elemClass.slice(2));
+    				} else {
+    					elem.classList.remove(elemClass.slice(1));
+    				}
+    			}
+    		} else {
+    			elem.classList[match ? "add" : "remove"](elemClass);
+    		}
+    	}
+    };
+    var media = new Media();
+    media.init();
+    window.Media = Media;
+    window.media = media;
+
     return op;
 }(OP || {}, jQuery));

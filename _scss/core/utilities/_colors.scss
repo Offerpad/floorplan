@@ -1,0 +1,40 @@
+// yanked from bootstrap
+
+@mixin bg-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color !important;
+  }
+  a#{$parent} {
+    @include hover-focus {
+      background-color: darken($color, 10%) !important;
+      // TODO: standardize these darken functions elsewhere
+    }
+  }
+}
+
+@each $color, $value in $op-colors {
+  @include bg-variant('.bg-#{$color}', $value);
+}
+
+.bg-transparent { background-color: transparent !important; }
+
+
+// text colors
+
+@mixin text-color-variant($parent, $color) {
+  #{$parent} {
+    color: $color !important;
+  }
+  a#{$parent} {
+    @include hover-focus {
+      color: darken($color, 10%) !important;
+      // TODO: see above
+    }
+  }
+}
+
+@each $color, $value in $op-colors {
+  @include text-color-variant('.text-#{$color}', $value);
+}
+
+.text-muted { color: $text-color-muted !important; }

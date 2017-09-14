@@ -6,7 +6,8 @@ $op-spacing: (
     s: 0.5,
     m: 1,
     l: 2,
-    xl: 4
+    xl: 4,
+    xxl: 8
 );
 
 @each $prop, $abbr in (margin: m, padding: p) {
@@ -51,4 +52,14 @@ $op-spacing: (
 .ml-auto,
 .mx-auto {
     margin-left: auto !important;
+}
+
+// spacing elements
+
+@each $size, $length in $op-spacing {
+    .spacer-#{$size} {
+        display: block;
+        width: 100%;
+        height: $length * 1.5rem;
+    }
 }

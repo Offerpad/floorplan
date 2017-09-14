@@ -1,0 +1,57 @@
+.site-footer {
+    @include padding(4 0 0.5);
+    background-color: $bg-color-dark;
+    background-image: url('../static/images/offerpad-logo-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center 2rem;
+    background-size: 3rem auto;
+    color: $text-color-light;
+    .content {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    &__nav {
+        display: flex;
+        flex-flow: row wrap;
+        @include margin(0 -0.5 0.5);
+        @include bp-tablet {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+    }
+    .nav-list {
+        width: 50%;
+        @include margin-bottom(1);
+        @include bp-tablet {
+            width: auto;
+        }
+        li {
+            @include type-layout(xs, 1);
+            letter-spacing: 0.1em;
+            a {
+                @include padding(0 0.5);
+                color: $link-color-light;
+                @include hover-focus {
+                    color: $link-color-light-hover;
+                }
+            }
+        }
+        i.fa {
+            margin-right: 0.25em;
+        }
+    }
+    &__legal {
+        p {
+            @include type-layout(xs, 1);
+            @include margin(0 0 1, xs);
+            letter-spacing: 0.1em;
+        }
+        @include bp-tablet {
+            text-align: center;
+            @include margin-bottom(1);
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

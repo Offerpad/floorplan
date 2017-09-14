@@ -23,10 +23,12 @@
 }
 
 @mixin container() {
-    max-width: $content-width + ($content-padding * 2);
     padding-left: $content-padding;
     padding-right: $content-padding;
-    @include margin(0 auto);
+    @include bp-tablet {
+        padding-left: calc(50% - (#{$content-width} * 0.5));
+        padding-right: calc(50% - (#{$content-width} * 0.5));
+    }
 }
 
 @mixin hover {

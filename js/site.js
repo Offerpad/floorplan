@@ -73,8 +73,8 @@ var OP = (function (op, $) {
         this.elems = [],
         this.matches = {}
     }
-    Media.sizes = ["original", "mobile-large", "tablet", "desktop"];
-    Media.widths = [0, 576, 768, 992];
+    Media.sizes = ["original", "mobile-large", "tablet", "desktop", "desktop-large"];
+    Media.widths = [0, 576, 768, 992, 1200];
     Media.attrs = Media.sizes.map(function (size) {
          return "media-" + size;
      });

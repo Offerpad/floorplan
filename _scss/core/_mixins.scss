@@ -16,6 +16,13 @@
         @content;
     }
 }
+@mixin bp-desktop-large {
+    @media (min-width: #{$bp-desktop-large}) {
+        @content;
+    }
+}
+
+
 @mixin bp-navigation {
     @media (min-width: #{$bp-desktop}) {
         @content;

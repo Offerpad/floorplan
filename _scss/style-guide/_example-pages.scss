@@ -1,0 +1,35 @@
+.serving-locations {
+    display: flex;
+    flex-direction: column;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+    h3 {
+        @include padding-bottom(1, l);
+        border: solid $border-color;
+        border-width: 0 0 0.0625rem 0;
+        margin-bottom: 0;
+    }
+    dt:not(:first-child) {
+        @include margin-top(1);
+    }
+    dd {
+        margin: 0;
+    }
+    @include bp-tablet {
+        flex-direction: row;
+        h3 {
+            padding-bottom: 0;
+            @include padding-right(1, l);
+            border-bottom-width: 0;
+            border-right-width: 0.0625rem;
+            @include margin-right(1, l);
+        }
+        dl:first-of-type {
+            @include margin-right(2);
+        }
+    }
+    @include bp-desktop-large {
+        max-width: none;
+    }
+}

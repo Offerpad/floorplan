@@ -12,6 +12,15 @@
     }
 }
 
-.content {
-    @include container();
+.container {
+    @include container(normal);
+    &-base {
+        @include container();
+    }
+    &-large {
+        @include container(large);
+    }
+    &-small {
+        @include container(small);
+    }
 }

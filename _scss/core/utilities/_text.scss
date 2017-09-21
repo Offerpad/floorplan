@@ -1,0 +1,13 @@
+@each $size, $value in $font-size {
+    .text-size-#{$size} {
+        @include font-size($size);
+        line-height: 1;
+    }
+}
+
+
+.text-left   { text-align: left !important; }
+.text-right  { text-align: right !important; }
+.text-center { text-align: center !important; }
+
+.text-nowrap { white-space: nowrap !important; }

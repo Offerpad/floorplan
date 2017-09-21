@@ -54,4 +54,9 @@
             }
         }
     }
+    &--no-nav {
+        .site-footer__nav {
+            display: none;
+        }
+    }
 }

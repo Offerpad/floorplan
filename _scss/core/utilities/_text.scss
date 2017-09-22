@@ -5,9 +5,19 @@
     }
 }
 
+.text-headline {
+    @include typeface(headline);
+}
+.text-copy {
+    @include typeface(body);
+}
 
 .text-left   { text-align: left !important; }
 .text-right  { text-align: right !important; }
 .text-center { text-align: center !important; }
 
 .text-nowrap { white-space: nowrap !important; }
+
+.text-lowercase  { text-transform: lowercase !important; }
+.text-uppercase  { text-transform: uppercase !important; }
+.text-capitalize { text-transform: capitalize !important; }

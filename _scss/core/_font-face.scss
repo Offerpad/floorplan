@@ -1,0 +1,38 @@
+//@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:300,300i,400,400i,700,700i');
+
+@font-face {
+    font-family: "FFMark";
+    font-weight: 200;
+    font-style: normal;
+    src: url('/static/fonts/ff-mark/FFMark-Light.woff2') format('woff2'),
+         url('/static/fonts/ff-mark/FFMark-Light.woff') format('woff'),
+         url('/static/fonts/ff-mark/FFMark-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "FFMark";
+    font-weight: 400;
+    font-style: normal;
+    src: url('/static/fonts/ff-mark/FFMark-Regular.woff2') format('woff2'),
+         url('/static/fonts/ff-mark/FFMark-Regular.woff') format('woff'),
+         url('../assets/fonsts/FFMark-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "FFMark";
+    font-weight: 500;
+    font-style: normal;
+    src: url('/static/fonts/ff-mark/FFMark-Medium.woff2') format('woff2'),
+         url('/static/fonts/ff-mark/FFMark-Medium.woff') format('woff'),
+         url('/static/fonts/ff-mark/FFMark-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "FFMark";
+    font-weight: 700;
+    font-style: normal;
+    src: url('/static/fonts/ff-mark/FFMark-Bold.woff2') format('woff2'),
+         url('/static/fonts/ff-mark/FFMark-Bold.woff') format('woff'),
+         url('/static/fonts/ff-mark/FFMark-Bold.ttf') format('truetype');
+}

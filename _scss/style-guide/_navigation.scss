@@ -76,7 +76,6 @@ body.body--nav-open {
     }
     .nav-list li {
         font-weight: 600;
-        font-style: italic;
         a {
             color: op-color('grey-dark');
             @include hover-focus {

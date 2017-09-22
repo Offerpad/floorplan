@@ -33,3 +33,27 @@
         max-width: none;
     }
 }
+
+.offer-details {
+    &__row {
+        display: flex;
+    }
+    &__column {
+        flex-basis: 50%;
+        &:first-child {
+            @include margin-right(0.25);
+        }
+    }
+    &__cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include padding(0.5);
+        @include typeface(headline);
+        text-align: center;
+        font-weight: bold;
+        @include bp-mobile-large {
+            @include type-layout(l, 1);
+        }
+    }
+}

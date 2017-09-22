@@ -1,0 +1,9 @@
+.box {
+    max-width: $content-width;
+    margin-left: auto;
+    margin-right: auto;
+    @include box_shadow(1);
+    &--large {
+        max-width: $content-width-large;
+    }
+}

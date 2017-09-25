@@ -13,7 +13,7 @@ $nav-slide-duration: 0.3s;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: op-color('grey-blue');
+        background-color: op-color('gray-900');
         opacity: 0;
         pointer-events: none;
         transition-property: opacity;
@@ -69,7 +69,7 @@ body.body--nav-open {
         .navigation__logo {
             display: none;
             + .navigation__group {
-                border-top: 2px solid op-color('grey-light');
+                border-top: $border-width-2 solid $border-color;
                 @include padding-top(0.125);
             }
         }
@@ -77,9 +77,10 @@ body.body--nav-open {
     .nav-list li {
         font-weight: 600;
         a {
-            color: op-color('grey-dark');
+            color: $link-color-alt;
             @include hover-focus {
-                background-color: op-color('offwhite');
+                color: $link-color-alt;
+                background-color: op-color('gray-50');
             }
         }
     }
@@ -88,7 +89,7 @@ body.body--nav-open {
         font-style: normal;
         @include padding-bottom(0.125);
         @include margin-bottom(0.125);
-        border-bottom: 2px solid op-color('grey-light');
+        border-bottom: $border-width-2 solid $border-color;
     }
     @include bp-navigation {
         left: 0;

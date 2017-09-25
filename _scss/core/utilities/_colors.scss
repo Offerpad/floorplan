@@ -6,8 +6,7 @@
   }
   a#{$parent} {
     @include hover-focus {
-      background-color: darken($color, 10%) !important;
-      // TODO: standardize these darken functions elsewhere
+      background-color: link-hover-focus($color) !important;
     }
   }
 }
@@ -27,13 +26,12 @@
   }
   a#{$parent} {
     @include hover-focus {
-      color: darken($color, 10%) !important;
-      // TODO: see above
+        color: link-hover-focus($color) !important;
     }
   }
 }
 
-@each $color, $value in $op-colors {
+@each $color, $value in $op-color-theme {
   @include text-color-variant('.text-#{$color}', $value);
 }
 

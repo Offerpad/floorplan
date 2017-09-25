@@ -12,26 +12,30 @@
     overflow: hidden;
     list-style: none;
     &__item {
-        display: inline-block;
-        @include margin(0 0.5 0.5 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include margin-bottom(0.25);
         @include padding(0.25);
-        width: 7rem;
-        border: 1px solid op-color('grey');
+        border: $border-width-1 solid op-color('gray-100');
     }
     &__swatch {
         display: block;
-        width: 100%;
-        height: 0;
-        padding-bottom: 100%;
-        @include margin(0 auto 0.25);
+        min-width: 2rem;
+        height: 4rem;
+        flex-grow: 2;
+        @include margin-right(0.125);
+    }
+    &__label {
+        min-width: 9rem;
     }
     &__label,
     &__hex {
         display: block;
         white-space: pre;
         @include type-layout(s, 1);
+        @include margin-right(0.125);
         border-radius: 0;
         background-color: transparent;
-        padding: 0;
     }
 }

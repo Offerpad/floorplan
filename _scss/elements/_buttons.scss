@@ -1,7 +1,7 @@
-$button-border-width: 0.125rem;
+$button-border-width: $border-width-1;
 
 @mixin button-variant($background) {
-    $hover-background: lighten($background, 7.5%);
+    $hover-background: link-hover-focus($background);
     @include color-yiq($background);
     background-color: $background;
     border-color: darken($background, 5%);
@@ -17,28 +17,7 @@ $button-border-width: 0.125rem;
     &.is-active {
         background-color: $hover-background;
         background-image: none;
-        box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
-    }
-}
-
-@mixin button-gradient-variant($background) {
-    $hover-background: lighten($background, 7.5%);
-    @include color-yiq($background);
-    @include op-gradient($background);
-    border-color: darken($background, 5%);
-    background-repeat: repeat-x;
-    @include hover-focus {
-        @include op-gradient($hover-background);
-    }
-    &:disabled,
-    &.disabled {
-        background-color: $background;
-        background-image: none;
-    }
-    &:active,
-    &.is-active {
-        @include op-gradient($hover-background, 0deg);
-        box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+        box-shadow: inset 0 3px 8px rgba(0,0,0,0.25);
     }
 }
 
@@ -75,8 +54,5 @@ $button-border-width: 0.125rem;
 @each $color, $value in $op-color-theme {
     .btn--#{$color} {
         @include button-variant($value);
-    }
-    .btn--gradient--#{$color} {
-        @include button-gradient-variant($value);
     }
 }

@@ -36,7 +36,7 @@ a:not([href]):not([tabindex]) {
     @include margin-bottom(1);
     @include padding-left($indent-amount);
     font-size: 1.25rem;
-    border-left: 0.125rem solid $border-color;
+    border-left: $border-width-2 solid $border-color;
     &__footer {
         display: block;
         font-size: 80%;
@@ -61,7 +61,7 @@ dd {
 hr {
     @include margin(1 0);
     border: 0;
-    border-top: 0.125rem solid $border-color;
+    border-top: $border-width-2 solid $border-color;
 }
 
 code {

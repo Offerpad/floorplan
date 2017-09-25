@@ -9,10 +9,10 @@ $menu-bar-height: 0.1875rem;
     width: 2rem;
     cursor: pointer;
     border-radius: 0.25em;
-    color: op-color('grey');
+    color: $link-color-alt;
     @include hover-focus {
         color: $link-color-hover;
-        background: op-color('offwhite');
+        background: op-color('gray-100');
     }
     span,
     span:before,

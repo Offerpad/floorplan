@@ -36,3 +36,7 @@
 }
 
 .text-muted { color: $text-color-muted !important; }
+
+@each $color, $value in $op-colors {
+  @include text-color-variant('.text-#{$color}', $value);
+}

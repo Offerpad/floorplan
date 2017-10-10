@@ -32,15 +32,15 @@ $op-monospace: Menlo,
     monospace;
 
 $op-roboto: join("Roboto", $op-sans-serif, comma);
-$op-catamaran: join("Catamaran", $op-sans-serif, comma);
+$op-rubik: join("Rubik", $op-sans-serif, comma);
 $op-ffmark: join("FFMark", $op-sans-serif, comma);
 
 $typefaces: (
     body: (
-        font-family: $op-catamaran
+        font-family: $op-rubik
     ),
     headline: (
-        font-family: $op-ffmark
+        font-family: $op-rubik
     ),
     monospace: (
         font-family: $op-monospace

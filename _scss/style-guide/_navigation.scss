@@ -45,7 +45,7 @@ body.body--nav-open {
     z-index: 100;
     top: 0;
     width: 100%;
-    background: $bg-color;
+    background: $bg-color-dark;
     @include box_shadow(1);
     &__header {
         display: flex;
@@ -69,27 +69,28 @@ body.body--nav-open {
         .navigation__logo {
             display: none;
             + .navigation__group {
-                border-top: $border-width-2 solid $border-color;
+                border-top: $border-width-2 solid op-color('gray-800');
                 @include padding-top(0.125);
             }
         }
     }
     .nav-list li {
-        font-weight: 600;
+        font-weight: 500;
         a {
-            color: $link-color-alt;
+            color: $link-color-light;
             @include hover-focus {
-                color: $link-color-alt;
-                background-color: op-color('gray-50');
+                color: $link-color-light-hover;
+                background-color: op-color('black');
             }
         }
     }
     .list-header {
         text-transform: uppercase;
         font-style: normal;
+        color: $text-color-light;
         @include padding-bottom(0.125);
         @include margin-bottom(0.125);
-        border-bottom: $border-width-2 solid $border-color;
+        border-bottom: $border-width-2 solid op-color('gray-800');
     }
     @include bp-navigation {
         left: 0;

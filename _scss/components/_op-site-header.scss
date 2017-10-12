@@ -1,12 +1,32 @@
 .site-header {
     display: flex;
+    justify-content: space-between;
     position: absolute;
     z-index: 2;
     top: 0;
     align-items: center;
     width: 100%;
     height: $header-height;
-    @include padding(0 0.5);
+    @include padding-left(0.5);
     background: $bg-color;
     @include box_shadow(1);
+    @include bp-navigation {
+        padding: 0;
+    }
+    &__nav {
+        display: flex;
+        align-items: stretch;
+    }
+    &__link {
+        display: block;
+        @include padding(0.5);
+        color: $link-color-alt;
+        @include type-layout(s, 1);
+        font-weight: 500;
+        text-decoration: none;
+        @include hover-focus {
+            color: $link-color-hover;
+            background-color: op-color('gray-50');
+        }
+    }
 }

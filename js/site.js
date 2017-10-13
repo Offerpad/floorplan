@@ -5,7 +5,7 @@ var OP = (function (op, $) {
 
     var $body =         $('body'),
         bodyNavOpen =   'body--nav-open',
-        $navBar =       $('.navigation'),
+        $navBar =       $('.site-header'),
         $menuButton =   $('.js-menu-button'),
         $navMenu =      $('.js-nav-menu');
 
@@ -17,8 +17,8 @@ var OP = (function (op, $) {
     });
 
     function closeMenuOnDelay() {
-
-        if($('.navigation__header').css('width') != '48px') { // if mobile
+        $('.js-nav-drawer').hide();
+        if($menuButton.css('display') != 'none') { // if mobile
             closeMenu();
             xToHam();
             $body.removeClass(bodyNavOpen);
@@ -48,14 +48,14 @@ var OP = (function (op, $) {
 
     function openMenu() {
         $navBar.removeClass('js-collapsed');
-        if($('.navigation__header').css('width') != '48px') { // if mobile
+        if($menuButton.css('display') != 'none') { // if mobile
             $navMenu.slideDown(400, "swing");
         }
     }
 
     function closeMenu() {
         $navBar.addClass('js-collapsed');
-        if($('.navigation__header').css('width') != '48px') { // if mobile
+        if($menuButton.css('display') != 'none') { // if mobile
             $navMenu.slideUp(400, "swing");
         }
     }
@@ -68,13 +68,23 @@ var OP = (function (op, $) {
         $menuButton.removeClass('menu-icon--x');
     }
 
+    // nav drawers
+
+    $('.js-nav-link').on('click', function() {
+        $(this).next().toggle();
+    });
+
+    $('.js-drawer-close').on('click', function() {
+        $('.js-nav-drawer').hide();
+    })
+
     // blizzard's media query toggle thing
     function Media() {
         this.elems = [],
         this.matches = {}
     }
-    Media.sizes = ["original", "mobile-large", "tablet", "desktop", "desktop-large"];
-    Media.widths = [0, 576, 768, 992, 1200];
+    Media.sizes = ["original", "mobile-large", "tablet", "nav-bp", "desktop", "desktop-large"];
+    Media.widths = [0, 576, 768, 768, 992, 1200];
     Media.attrs = Media.sizes.map(function (size) {
          return "media-" + size;
      });

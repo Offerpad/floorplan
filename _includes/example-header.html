@@ -1,38 +1,57 @@
-<header class="site-header">
-    <div class="site-header__nav" media-desktop="display-none">
-        <div class="menu-icon">
-            <span></span>
-        </div>
+<header class="site-header justify-content-between">
+    <div class="menu-icon js-menu-button mr-s">
+        <span></span>
     </div>
-    <div class="site-header__nav">
-        <a href="#" class="site-header__link mr-s">
+    <div class="display-flex">
+        <a class="site-header__link mr-s" href="{{ site.baseurl }}/">
             <div class="site-header__logo offerpad-logo">
                 OfferPad
             </div>
         </a>
-        <a href="#" class="site-header__link display-none" media-desktop="!display-none">
-            Sell
-        </a>
-        <a href="#" class="site-header__link display-none" media-desktop="!display-none">
-            Buy
-        </a>
-        <a href="#" class="site-header__link display-none" media-desktop="!display-none">
-            Pricing
-        </a>
-        <a href="#" class="site-header__link display-none" media-desktop="!display-none">
-            Benefits
-        </a>
-        <a href="#" class="site-header__link display-none" media-desktop="!display-none">
-            How It Works
-        </a>
-        <a href="#" class="site-header__link display-none" media-desktop="!display-none">
-            Company
-        </a>
+        <nav class="site-header__nav js-nav-menu site-header__nav--mobile">
+            <ul class="list--unstyled">
+                <li>
+                    <a class="js-nav-link site-header__link" tabindex="0">
+                        Sell
+                    </a>
+                </li>
+                <li>
+                    <a class="js-nav-link site-header__link" tabindex="0">
+                        Buy
+                    </a>
+                    <div class="js-nav-drawer site-header__drawer">
+                        <button class="js-drawer-close site-header__drawer__close">
+                            <i class="fa fa-chevron-left"></i>
+                            Go back
+                        </button>
+                        <div class="site-header__drawer__inner">
+                            <ul>
+                                <li>
+                                    <a href="#">Phoenix, AZ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tampa, FL</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="js-nav-link site-header__link" tabindex="0">
+                        Pricing
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div class="site-header__nav">
-        <a href="tel:18443884539" class="site-header__link text-size-l" media-desktop="!text-size-l">
-            <i class="fa fa-phone"></i>
-            <span class="sr-only"  media-desktop="!sr-only">1-844-388-4539</span>
-        </a>
-    </div>
+    <nav class="site-header__nav">
+        <ul class="list--unstyled">
+            <li>
+                <a href="tel:18443884539" class="site-header__link text-size-l" media-nav-bp="!text-size-l" tabindex="0">
+                    <i class="fa fa-phone"></i>
+                    <span class="sr-only ml-xs"  media-nav-bp="!sr-only">1-844-388-4539</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>

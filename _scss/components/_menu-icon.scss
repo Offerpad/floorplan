@@ -65,7 +65,7 @@ $menu-bar-height: 0.1875rem;
             }
         }
     }
-    &__dark {
+    &--dark {
         @include hover-focus {
             background: op-color('gray-800');
         }

@@ -126,3 +126,36 @@
         }
     }
 }
+
+.fancy-drawer {
+    @include padding(2 0 0);
+    @include bp-navigation {
+        padding: 0;
+    }
+    ul {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        @include bp-navigation {
+            flex-direction: row;
+        }
+    }
+    li {
+        display: block;
+        width: 100%;
+    }
+    &__box {
+        display: block;
+        position: relative;
+        width: 100%;
+        padding-bottom: 50%;
+        text-align: center;
+        span {
+            display: block;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

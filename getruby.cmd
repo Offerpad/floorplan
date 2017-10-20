@@ -51,7 +51,7 @@ popd
 
 :end
 
-REM Need to be in Reposistory
+REM Need to be in Repository
 cd %DEPLOYMENT_SOURCE%
 cd
 
@@ -64,6 +64,6 @@ cd %DEPLOYMENT_SOURCE%
 cd
 
 ECHO Running Jekyll
-call bundle exec jekyll build
+call bundle exec jekyll build --verbose --trace
 
 REM KuduSync is after this!

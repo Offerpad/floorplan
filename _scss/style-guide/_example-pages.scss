@@ -1,3 +1,9 @@
+.hero--home {
+    background-image: url('../static/images/examples/op-tile-bg.svg');
+    background-size: 10em auto;
+    background-position: top right;
+}
+
 .serving-locations {
     display: flex;
     flex-direction: column;

@@ -6,18 +6,25 @@ description: Example of OfferPad home page.
 <div class="page">
     {% include example-header.html %}
     <main class="page__main">
-        <section class="container hero hero--light pt-l pb-l" style="background-image: url(/static/images/examples/hero-home.jpg);">
-            <h1>Click. Sold. Move.</h1>
+        <section class="container hero--home bg-gray-900 text-white pt-m pb-l" media-tablet="!pt-m !pb-l pt-xl pb-xl">
+            <h1 class="h2 text-gray-100" media-tablet="!h2">Click. Sold. Move.</h1>
             <p>Tell us about the home you're selling and our experts will send you a competitive purchase offer.</p>
-            <form class="form-inline">
+            <form class="form-inline justify-content-end" media-tablet="!justify-content-end">
                 <label class="sr-only" for="address-input">Enter your address</label>
-                <input type="text" class="form-control" id="address-input" placeholder="Enter your address" />
-                <button type="submit" class="btn btn--primary">
-                    Request offer
+                <input type="text" class="form-control mb-s" media-tablet="mr-s" id="address-input" placeholder="Enter your address" />
+                <button type="submit" class="btn btn--special mb-s">
+                    Request an offer
+                    <i class="fa fa-chevron-right"></i>
                 </button>
             </form>
-            <div class="spacer-xs" media-tablet="!spacer-xs spacer-xxl"></div>
-            <div class="spacer-xs" media-tablet="!spacer-xs spacer-xxl"></div>
+            <div class="spacer-m" media-tablet="!spacer-m spacer-xl"></div>
+            <div class="hero-testimonial">
+                <img src="http://i.pravatar.cc/200" alt="avatar" />
+                <blockquote>
+                    <p>The experience that I had selling to OfferPad was nothing short of amazing.</p>
+                    <footer class="">Jordan P. &bull; Seffner, FL</footer>
+                </blockquote>
+            </div>
         </section>
         <section class="container">
             <h2>OfferPad is a Direct Home Buyer</h2>

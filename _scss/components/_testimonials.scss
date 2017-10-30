@@ -1,0 +1,58 @@
+.hero-testimonial {
+    position: relative;
+    margin-left: $content-padding * -1;
+    margin-right: $content-padding * -1;
+    @include bp-tablet {
+        margin: 0;
+    }
+    img {
+        display: block;
+        position: absolute;
+        background-color: $bg-color-dark;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 6.25rem;
+        height: 6.25rem;
+        border: $border-width-2 solid op-color("gray-200");
+        border-radius: 50%;
+        @include box_shadow(2);
+    }
+    blockquote {
+        @include type-layout(s, 1.25/1.5);
+        margin: 0;
+        @include margin-left(2);
+        @include padding(0.5 1 0.5 3);
+        border: $border-width-2 solid op-color("gray-200");
+        border-right-width: 0;
+        background-color: transparentize($bg-color-dark, 0.2);
+        @include box_shadow(1);
+        @include bp-tablet {
+            border-right-width: $border-width-2;
+        }
+        p {
+            position: relative;
+            margin: 0;
+            font-style: italic;
+            &::before {
+                content: '\f10d';
+                left: -1rem;
+            }
+            &::after {
+                content: '\f10e';
+                right: -1rem;
+            }
+            &::before,
+            &::after {
+                position: absolute;
+                font-family: FontAwesome;
+                @include font-size(xl);
+                opacity: 0.1;
+                font-style: normal;
+            }
+        }
+        footer {
+            @include margin-top(0.5);
+            text-align: right;
+        }
+    }
+}

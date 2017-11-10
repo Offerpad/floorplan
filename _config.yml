@@ -1,7 +1,7 @@
 # Site settings
-title: OfferPad Style Guide
+title: OfferPad Floorplan
 email: your-email@example.com
-description: OfferPad Style Guide and Pattern Library
+description: CSS Framework and Pattern Library for OfferPad Projects
 baseurl: /floorplan # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 styles: /assets/css/styles.css

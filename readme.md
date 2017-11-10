@@ -1,16 +1,16 @@
-This is a prototype style guide and pattern library I am working on for OfferPad.
+OfferPad Floorplan is a CSS framework and pattern library being built for future web projects. Floorplan allows for a solid foundation in creating new OfferPad websites and apps, as well as an easy way to understand and update existing properties.
 
-It's built currently with Jekyll and Sass, which means you will need Ruby to build it.
+This documentation is built currently with Jekyll and Sass, which means you will need Ruby to build it.
 
 ## Installation
 
 ### Windows
 
-Install directly into Windows using Ruby for Windows. (Allen has this setup)
+Install directly into Windows using Ruby for Windows. (More instructions to come.)
 
 ### Windows Linux Subsystem
 
-Install using the Linux subsystem (Ubuntu) in Windows 10. (Daniel and Will have this setup).
+Install using the Linux subsystem (Ubuntu) in Windows 10.
 
 Prequisites:
 - Windows 10 Creators Update

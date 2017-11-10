@@ -1,8 +1,6 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+title: OfferPad Floorplan
 layout: default
 ---
-<h1>OfferPad Floorplan</h1>
-## test
+
+OfferPad Floorplan is a CSS framework and pattern library being built for future web projects. Floorplan allows for a solid foundation in creating new OfferPad websites and apps, as well as an easy way to understand and update existing properties.

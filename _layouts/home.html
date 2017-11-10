@@ -7,8 +7,18 @@
         <div class="page">
             {% include header.html %}
             <div class="page__main page__main--styleguide">
+                <div class="hero-floorplan">
+                    <div class="spacer-m" media-tablet="spacer-xl"></div>
+                    <div media-tablet="hero-floorplan__door hero-floorplan__door--left"></div>
+                    <div media-tablet="hero-floorplan__door hero-floorplan__door--right"></div>
+                    <div class="container">
+                        <h1 class="text-center" media-tablet="display-1">Floorplan</h1>
+                    </div>
+                    <div class="spacer-m" media-tablet="spacer-xl"></div>
+                </div>
+                <div class="hero-floorplan__measure js-fp-measure" data-value="1200 px">
+                </div>
                 <div class="page__content page__content--styleguide">
-                    <h1>{{ site.title }}</h1>
                     {{ content }}
                 </div>
             </div>

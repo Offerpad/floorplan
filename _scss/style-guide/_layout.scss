@@ -6,3 +6,74 @@
         @include padding(1);
     }
 }
+
+$floorplan-color: op-color(gray-200);
+
+.hero-floorplan {
+    position: relative;
+    background-color: op-color(gray-50);
+    border-bottom: 1rem solid $floorplan-color;
+    .container {
+        position: relative;
+    }
+    &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 50%;
+        height: 1.5rem;
+        left: 25%;
+        right: 25%;
+        bottom: -1.25rem;
+        background-color: $bg-color;
+        background-image: linear-gradient(
+            transparent 0,
+            transparent 45%,
+            $floorplan-color 45%,
+            $floorplan-color 55%,
+            transparent 55%,
+            transparent 100%
+            );
+        border: $border-width-2 solid $floorplan-color;
+    }
+    &__door {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10rem;
+        height: 10rem;
+        background-color: $bg-color;
+        border-color: $floorplan-color;
+        border-style: solid;
+        &--left {
+            left: 0;
+            border-width: 0.25rem 0.25rem 0.25rem 0;
+            border-radius: 0 100% 0 0;
+        }
+        &--right {
+            right: 0;
+            border-width: 0.25rem 0 0.25rem 0.25rem;
+            border-radius: 100% 0 0 0;
+        }
+    }
+    &__measure {
+        position: relative;
+        height: 2rem;
+        @include margin(0.5 0.5 1);
+        text-align: center;
+        border: 0.25rem solid op-color(blue-200);
+        border-top: 0;
+        color: op-color(blue-200);
+        &::after {
+            display: inline-block;
+            position: absolute;
+            content: attr(data-value);
+            line-height: 2rem;
+            bottom: -1.125rem;
+            left: 50%;
+            transform: translateX(-50%);
+            @include padding(0 1);
+            background-color: $bg-color;
+        }
+    }
+}

@@ -7,14 +7,23 @@ var OP = (function (op, $) {
         bodyNavOpen =   'body--nav-open',
         $navBar =       $('.site-header'),
         $menuButton =   $('.js-menu-button'),
-        $navMenu =      $('.js-nav-menu');
+        $navMenu =      $('.js-nav-menu'),
+        $fpMeasure =    $('.js-fp-measure');
 
     var resizeTimer;
+    fpMeasureUpdate();
 
     $(window).on('resize', function () {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(closeMenuOnDelay, 100);
+        fpMeasureUpdate();
     });
+
+    function fpMeasureUpdate() {
+        if ($fpMeasure) {
+            $fpMeasure.attr('data-value', $(window).width() + " px");
+        }
+    }
 
     function closeMenuOnDelay() {
         $('.js-nav-drawer').hide();

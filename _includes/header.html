@@ -9,7 +9,7 @@
     </a>
     <nav class="site-header__nav site-header__nav--mobile js-nav-menu">
         <ul class="list--unstyled">
-            <li>
+            <!-- <li>
                 <a class="js-nav-link site-header__link" tabindex="0">
                     Branding
                 </a>
@@ -18,7 +18,7 @@
                 <a class="js-nav-link site-header__link" tabindex="0">
                     Marketing
                 </a>
-            </li>
+            </li> -->
             <li>
                 <a class="js-nav-link site-header__link" tabindex="0">
                     Development
@@ -56,7 +56,7 @@
                             </li>
                             {% endfor %}
                         </ul>
-                        {% assign examples = site.examples | where: 'type', 'examples' | sort: 'name' %}
+                        <!-- {% assign examples = site.examples | where: 'type', 'examples' | sort: 'name' %}
                         <ul class="nav-list" media-nav-bp="w-25">
                             <li class="list-header">Example Pages</li>
                             {% for example in examples %}
@@ -64,7 +64,7 @@
                                 <a href="{{ site.baseurl }}{{ example.url }}"{% if example.url == page.url %} class="active"{% endif %}>{{ example.title }}</a>
                             </li>
                             {% endfor %}
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
             </li>

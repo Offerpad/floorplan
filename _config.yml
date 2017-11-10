@@ -4,8 +4,8 @@ email: your-email@example.com
 description: OfferPad Style Guide and Pattern Library
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-styles: /css/styles.css
-images: /static/images
+styles: /assets/css/styles.css
+images: /assets/images
 
 # Processing settings
 markdown: kramdown

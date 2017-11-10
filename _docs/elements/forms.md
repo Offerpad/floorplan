@@ -3,7 +3,7 @@ title: Forms & Inputs
 description: How forms and inputs are displayed on the OfferPad website.
 ---
 
-{% example html %}
+{% highlight html %}
 <form>
     <div class="form-group">
         <label for="name">Name</label>
@@ -38,11 +38,11 @@ description: How forms and inputs are displayed on the OfferPad website.
     </div>
     <button type="submit" class="btn btn--primary">Submit</button>
 </form>
-{% endexample %}
+{% endhighlight %}
 
 ## Disabled
 
-{% example html %}
+{% highlight html %}
 <form>
     <fieldset disabled>
         <div class="form-group">
@@ -69,14 +69,14 @@ description: How forms and inputs are displayed on the OfferPad website.
         <button type="submit" class="btn btn--primary">Submit</button>
     </fieldset>
 </form>
-{% endexample %}
+{% endhighlight %}
 
 ## Inline form
 
-{% example html %}
+{% highlight html %}
 <form class="form-inline">
     <label class="sr-only" for="inlineAddress">Home Address</label>
     <input type="text" class="form-control mr-s" id="inlineAddress" name="inlineAddress" placeholder="Enter your home address..." />
     <button type="submit" class="btn btn--primary">Continue</button>
 </form>
-{% endexample %}
+{% endhighlight %}

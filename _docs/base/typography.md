@@ -45,13 +45,13 @@ font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospac
 
 Add the `.lead` class to a paragraph to help it stand out, especially in introductory contexts.
 
-{% example html %}
+{% highlight html %}
 <p class="lead">Hey, I'm a lead paragraph. Check me out!</p>
-{% endexample %}
+{% endhighlight %}
 
 ## Inline text
 
-{% example html %}
+{% highlight html %}
 <p>You can use the mark tag to <mark>highlight</mark> text.</p>
 <p><del>This line of text is meant to be treated as deleted text.</del></p>
 <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
@@ -61,7 +61,7 @@ Add the `.lead` class to a paragraph to help it stand out, especially in introdu
 <p><strong>This line rendered as bold text.</strong></p>
 <p><em>This line rendered as italicized text.</em></p>
 <p>Here is some <code>inline code</code>.</p>
-{% endexample %}
+{% endhighlight %}
 
 ## Blockquotes
 
@@ -69,12 +69,12 @@ As blockquotes can have additional uses besides their common form in text conten
 
 Add citations by wrapping them in a `<footer>` with class `.blockquote__footer`, and wrapping the citation source name with `<cite>`.
 
-{% example html %}
+{% highlight html %}
 <blockquote class="blockquote">
     <p>Mollit do ipsum nisi eiusmod veniam dolore amet est amet officia laboris id irure nisi. Deserunt enim velit veniam velit qui eiusmod esse elit non do Lorem in anim.</p>
     <footer class="blockquote__footer">A person, <cite title="Title">Title</cite></footer>
 </blockquote>
-{% endexample %}
+{% endhighlight %}
 
 ## Lists
 
@@ -84,7 +84,7 @@ There are four types of lists available: unstyled, unordered, ordered, and descr
 
 Unstyled lists, borrowed from Bootstrap, use the `.list--unstyled` class to remove padding and `list-style` from a list. This styling only applies to immediate child list items, so you'll need to add the class to nested lists as well.
 
-{% example html %}
+{% highlight html %}
 <ul class="list--unstyled">
     <li>List item 1</li>
     <li>List item 2
@@ -95,11 +95,11 @@ Unstyled lists, borrowed from Bootstrap, use the `.list--unstyled` class to remo
     </li>
     <li>List item 3</li>
 </ul>
-{% endexample %}
+{% endhighlight %}
 
 ### Unordered lists
 
-{% example html %}
+{% highlight html %}
 <ul>
     <li>List item 1</li>
     <li>List item 2
@@ -110,11 +110,11 @@ Unstyled lists, borrowed from Bootstrap, use the `.list--unstyled` class to remo
     </li>
     <li>List item 3</li>
 </ul>
-{% endexample %}
+{% endhighlight %}
 
 ### Ordered lists
 
-{% example html %}
+{% highlight html %}
 <ol>
     <li>List item 1</li>
     <li>List item 2
@@ -125,15 +125,15 @@ Unstyled lists, borrowed from Bootstrap, use the `.list--unstyled` class to remo
     </li>
     <li>List item 3</li>
 </ol>
-{% endexample %}
+{% endhighlight %}
 
 ### Descripton lists
 
-{% example html %}
+{% highlight html %}
 <dl>
     <dt>Definition title 1</dt>
     <dd>Definition item 1</dd>
     <dt>Definition title 2</dt>
     <dd>Definition item 2</dd>
 </dl>
-{% endexample %}
+{% endhighlight %}

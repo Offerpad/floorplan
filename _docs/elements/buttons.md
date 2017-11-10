@@ -5,27 +5,27 @@ description: How buttons and related UI elements are displayed and used on the O
 
 ## Normal buttons
 
-{% example html %}
+{% highlight html %}
 <button type="button" class="btn btn--primary">Primary</button>
 <button type="button" class="btn btn--secondary">Secondary</button>
 <button type="button" class="btn btn--neutral">Neutral</button>
 <button type="button" class="btn btn--special">Special</button>
-{% endexample %}
+{% endhighlight %}
 
 ### Active state
 
-{% example html %}
+{% highlight html %}
 <button type="button" class="btn btn--primary is-active">Primary</button>
 <button type="button" class="btn btn--secondary is-active">Secondary</button>
 <button type="button" class="btn btn--neutral is-active">Neutral</button>
 <button type="button" class="btn btn--special is-active">Special</button>
-{% endexample %}
+{% endhighlight %}
 
 ### Disabled state
 
-{% example html %}
+{% highlight html %}
 <button type="button" class="btn btn--primary" disabled>Primary</button>
 <button type="button" class="btn btn--secondary" disabled>Secondary</button>
 <button type="button" class="btn btn--neutral" disabled>Neutral</button>
 <button type="button" class="btn btn--special" disabled>Special</button>
-{% endexample %}
+{% endhighlight %}

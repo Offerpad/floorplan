@@ -5,34 +5,34 @@
     font-family: "FFMark";
     font-weight: 200;
     font-style: normal;
-    src: url('/assets/fonts/ff-mark/FFMark-Light.woff2') format('woff2'),
-         url('/assets/fonts/ff-mark/FFMark-Light.woff') format('woff'),
-         url('/assets/fonts/ff-mark/FFMark-Light.ttf') format('truetype');
+    src: url('{{ site.baseurl }}/assets/fonts/ff-mark/FFMark-Light.woff2') format('woff2'),
+         url('{{ site.baseurl }}/assets/fonts/ff-mark/FFMark-Light.woff') format('woff'),
+         url('{{ site.baseurl }}/assets/fonts/ff-mark/FFMark-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "FFMark";
     font-weight: 400;
     font-style: normal;
-    src: url('/assets/fonts/ff-mark/FFMark-Regular.woff2') format('woff2'),
-         url('/assets/fonts/ff-mark/FFMark-Regular.woff') format('woff'),
-         url('../assets/fonsts/FFMark-Regular.ttf') format('truetype');
+    src: url('{{ site.baseurl }}/assets/fonts/ff-mark/FFMark-Regular.woff2') format('woff2'),
+         url('{{ site.baseurl }}/assets/fonts/ff-mark/FFMark-Regular.woff') format('woff'),
+         url('..{{ site.baseurl }}/assets/fonsts/FFMark-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "FFMark";
     font-weight: 500;
     font-style: normal;
-    src: url('/assets/fonts/ff-mark/FFMark-Medium.woff2') format('woff2'),
-         url('/assets/fonts/ff-mark/FFMark-Medium.woff') format('woff'),
-         url('/assets/fonts/ff-mark/FFMark-Medium.ttf') format('truetype');
+    src: url('{{ site.baseurl }}/assets/fonts/ff-mark/FFMark-Medium.woff2') format('woff2'),
+         url('{{ site.baseurl }}/assets/fonts/ff-mark/FFMark-Medium.woff') format('woff'),
+         url('{{ site.baseurl }}/assets/fonts/ff-mark/FFMark-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "FFMark";
     font-weight: 700;
     font-style: normal;
-    src: url('/assets/fonts/ff-mark/FFMark-Bold.woff2') format('woff2'),
-         url('/assets/fonts/ff-mark/FFMark-Bold.woff') format('woff'),
-         url('/assets/fonts/ff-mark/FFMark-Bold.ttf') format('truetype');
+    src: url('{{ site.baseurl }}/assets/fonts/ff-mark/FFMark-Bold.woff2') format('woff2'),
+         url('{{ site.baseurl }}/assets/fonts/ff-mark/FFMark-Bold.woff') format('woff'),
+         url('{{ site.baseurl }}/assets/fonts/ff-mark/FFMark-Bold.ttf') format('truetype');
 }

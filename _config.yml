@@ -2,7 +2,7 @@
 title: OfferPad Style Guide
 email: your-email@example.com
 description: OfferPad Style Guide and Pattern Library
-baseurl: /floorplan # the subpath of your site, e.g. /blog
+baseurl: /Floorplan
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 styles: /assets/css/styles.css
 images: /assets/images

@@ -12,7 +12,11 @@ h1, h2, h3, h4, h5, h6,
     color: op-color('gray-800');
 }
 
-.display {
+.hero-heading {
+    &-1, &-2, &-3,
+    &-4, &-5, &-6 {
+        line-height: 1;
+    }
     &-1 {
         font-size: 5rem;
     }

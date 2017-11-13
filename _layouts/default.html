@@ -6,10 +6,16 @@
     <body>
         <div class="page">
             {% include header.html %}
-            <div class="page__main page__main--styleguide">
-                <div class="page__content page__content--styleguide">
-                    <h1>{{ page.title }}</h1>
-                    {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+            <div class="page__main">
+                <div class="bg-gray-50">
+                    <div class="container">
+                        <div class="spacer-m"></div>
+                        <h1>{{ page.title }}</h1>
+                        {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+                        <div class="spacer-m"></div>
+                    </div>
+                </div>
+                <div class="container pt-m pb-m">
                     {{ content }}
                 </div>
             </div>

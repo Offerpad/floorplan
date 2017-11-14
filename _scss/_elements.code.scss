@@ -1,0 +1,20 @@
+code {
+    @include padding(0.2 0.4);
+    font-size: 90%;
+    background-color: $code-bg-color;
+    color: $code-text-color;
+    border-radius: 0.25rem;
+    @include typeface(monospace);
+    pre & {
+        padding: 0;
+        color: inherit;
+        background-color: transparent;
+        border-radius: 0;
+    }
+}
+
+pre {
+    display: block;
+    overflow: auto;
+    @include padding(1);
+}

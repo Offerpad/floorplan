@@ -1,0 +1,15 @@
+.blockquote {
+    margin-left: 0;
+    @include margin-bottom(1);
+    @include padding-left($indent-amount);
+    font-size: 1.25rem;
+    border-left: $border-width-2 solid $border-color;
+    &__footer {
+        display: block;
+        font-size: 80%;
+        color: $text-color-muted;
+        &:before {
+            content: "\2014 \00A0";
+        }
+    }
+}

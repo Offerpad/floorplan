@@ -12,6 +12,25 @@
     @include typeface(body);
 }
 
+p.lead {
+    @include type-layout(l, 1.25);
+    @include margin(1 0, l);
+}
+p.small {
+    @include type-layout(s, 1);
+    @include margin(1 0, s);
+}
+p.fine-print {
+    @include type-layout(xs, 0.75);
+    @include margin(1 0, xs);
+}
+
+.list--unstyled {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
 .text-left   { text-align: left !important; }
 .text-right  { text-align: right !important; }
 .text-center { text-align: center !important; }

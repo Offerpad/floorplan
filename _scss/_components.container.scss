@@ -1,22 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-.page {
-    position: relative;
-    &__main {
-        padding-top: $header-height;
-        height: 100%;
-    }
-}
-
 .container {
     @include container(normal);
     &-base {

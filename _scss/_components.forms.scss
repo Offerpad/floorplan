@@ -12,17 +12,6 @@ $input-height: calc(#{$input-height-inner} + #{$input-height-border});
 
 
 // input parents
-
-fieldset {
-    border: 0;
-    padding: 0;
-}
-
-label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-}
-
 .form-group {
     @include margin-bottom(1);
 }

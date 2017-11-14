@@ -1,0 +1,5 @@
+hr {
+    @include margin(1 0);
+    border: 0;
+    border-top: $border-width-2 solid $border-color;
+}

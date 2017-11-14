@@ -1,0 +1,7 @@
+.page {
+    position: relative;
+    &__main {
+        padding-top: $header-height;
+        height: 100%;
+    }
+}

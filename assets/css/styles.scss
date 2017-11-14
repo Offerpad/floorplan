@@ -1,25 +1,66 @@
 ---
 ---
 
-@charset "utf-8";
+// these files contain global variables and other settings
+@import "settings.fonts";
+@import "settings.colors";
+@import "settings.measurements";
 
-// project font face
-@import 'core/font-face';
+// vendors required for global functionality
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/typey/typey';
 
-// project variables
-@import 'core/variables/__variables-dir';
+// globally used mixins. component/object mixins
+// belong with their matching styles
+@import 'tools.mixins';
 
-// vendor
-@import 'vendor/__vendor-dir';
+// base styles
+@import 'base.reset';
+@import 'base.box-sizing';
+@import 'base.focus';
+@import 'base.highlight';
 
-@import 'core/mixins';
-@import 'core/reset';
+// classless element styling
+@import 'elements.code';
+@import 'elements.forms';
+@import 'elements.headings';
+@import 'elements.hr';
+@import 'elements.links';
+@import 'elements.lists';
+@import 'elements.page';
+@import 'elements.tables';
 
-@import 'base/__base-dir';
-@import 'elements/__elements-dir';
-@import 'components/__components-dir';
+// abstracted classes that don't apply
+// to any specific component
+@import 'objects.aspect-ratio';
+@import 'objects.img-fluid';
+@import 'objects.layout';
 
-@import 'style-guide/__style-guide-dir';
+// classes for any component, big or small
+@import 'components.blockquote';
+@import 'components.box';
+@import 'components.buttons';
+@import 'components.container';
+@import 'components.footer';
+@import 'components.forms';
+@import 'components.header';
+@import 'components.hero';
+@import 'components.house-address';
+@import 'components.logos';
+@import 'components.menu-icon';
+@import 'components.nav-list';
+@import 'components.tables';
+@import 'components.testimonials';
 
-// load utilities last
-@import 'core/utilities/__utilities-dir';
+// floorplan docs styles
+@import 'style-guide/components.docs-examples';
+@import 'style-guide/components.docs-highlighter';
+@import 'style-guide/components.docs-layout';
+@import 'style-guide/components.docs-misc';
+@import 'style-guide/components.swatches';
+
+// utility classes
+@import 'utils.colors';
+@import 'utils.layout';
+@import 'utils.spacing';
+@import 'utils.text';

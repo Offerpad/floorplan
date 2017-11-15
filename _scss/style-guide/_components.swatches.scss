@@ -1,9 +1,9 @@
 // borrowed from https://codepen.io/FStop/pen/ojrAq
 
-.swatches {
+.c-swatches {
     @each $color-name, $color-value in $op-colors {
         &--#{$color-name}{
-            .swatches__swatch {
+            .c-swatches__swatch {
                 background-color: $color-value;
             }
         }

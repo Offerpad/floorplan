@@ -12,52 +12,52 @@ $op-spacing: (
 
 @each $prop, $abbr in (margin: m, padding: p) {
     @each $size, $length in $op-spacing {
-        .#{$abbr}-#{$size} {
+        .u-#{$abbr}-#{$size} {
             #{$prop}: $length * 1.5rem !important;
         }
-        .#{$abbr}t-#{$size},
-        .#{$abbr}y-#{$size} {
+        .u-#{$abbr}t-#{$size},
+        .u-#{$abbr}y-#{$size} {
             #{$prop}-top: $length * 1.5rem !important;
         }
-        .#{$abbr}r-#{$size},
-        .#{$abbr}x-#{$size} {
+        .u-#{$abbr}r-#{$size},
+        .u-#{$abbr}x-#{$size} {
             #{$prop}-right: $length * 1.5rem !important;
         }
-        .#{$abbr}b-#{$size},
-        .#{$abbr}y-#{$size} {
+        .u-#{$abbr}b-#{$size},
+        .u-#{$abbr}y-#{$size} {
             #{$prop}-bottom: $length * 1.5rem !important;
         }
-        .#{$abbr}l-#{$size},
-        .#{$abbr}x-#{$size} {
+        .u-#{$abbr}l-#{$size},
+        .u-#{$abbr}x-#{$size} {
             #{$prop}-left: $length * 1.5rem !important;
         }
     }
 }
 
-.m-auto {
+.u-m-auto {
     margin: auto !important;
 }
-.mt-auto,
-.my-auto {
+.u-mt-auto,
+.u-my-auto {
     margin-top: auto !important;
 }
-.mr-auto,
-.mx-auto {
+.u-mr-auto,
+.u-mx-auto {
     margin-right: auto !important;
 }
-.mb-auto,
-.my-auto {
+.u-mb-auto,
+.u-my-auto {
     margin-bottom: auto !important;
 }
-.ml-auto,
-.mx-auto {
+.u-ml-auto,
+.u-mx-auto {
     margin-left: auto !important;
 }
 
 // spacing elements
 
 @each $size, $length in $op-spacing {
-    .spacer-#{$size} {
+    .u-spacer-#{$size} {
         display: block;
         width: 100%;
         height: $length * 1.5rem;

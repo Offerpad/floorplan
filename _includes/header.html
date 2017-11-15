@@ -1,37 +1,37 @@
-<header class="site-header site-header--dark">
-    <div class="menu-icon menu-icon--dark js-menu-button mr-s">
+<header class="c-header c-header--dark">
+    <div class="c-menu-icon c-menu-icon--dark js-menu-button mr-s">
         <span></span>
     </div>
-    <a class="site-header__link mr-s" href="{{ site.baseurl }}/">
-        <div class="site-header__logo offerpad-logo">
+    <a class="c-header__link mr-s" href="{{ site.baseurl }}/">
+        <div class="c-header__logo c-logo--offerpad">
             OfferPad Style Guide
         </div>
     </a>
-    <nav class="site-header__nav site-header__nav--mobile js-nav-menu">
-        <ul class="list--unstyled">
+    <nav class="c-header__nav c-header__nav--mobile js-nav-menu">
+        <ul class="u-list-unstyled">
             <!-- <li>
-                <a class="js-nav-link site-header__link" tabindex="0">
+                <a class="js-nav-link c-header__link" tabindex="0">
                     Branding
                 </a>
             </li>
             <li>
-                <a class="js-nav-link site-header__link" tabindex="0">
+                <a class="js-nav-link c-header__link" tabindex="0">
                     Marketing
                 </a>
             </li> -->
             <li>
-                <a class="js-nav-link site-header__link" tabindex="0">
+                <a class="js-nav-link c-header__link" tabindex="0">
                     Development
                 </a>
-                <div class="js-nav-drawer site-header__drawer">
-                    <button class="js-drawer-close site-header__drawer__close">
+                <div class="js-nav-drawer c-header__drawer">
+                    <button class="js-drawer-close c-header__drawer__close">
                         <i class="fa fa-chevron-left"></i>
                         Go back
                     </button>
-                    <div class="site-header__drawer__inner">
+                    <div class="c-header__drawer__inner">
                         {% assign base = site.docs | where: 'type', 'base' | sort: 'name' %}
-                        <ul class="nav-list" media-nav-bp="w-25">
-                            <li class="list-header">Base Styling</li>
+                        <ul class="c-nav-list" media-nav-bp="u-w-25">
+                            <li class="c-nav-list__header">Base Styling</li>
                             {% for doc in base %}
                             <li>
                                 <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
@@ -39,8 +39,8 @@
                             {% endfor %}
                         </ul>
                         {% assign elements = site.docs | where: 'type', 'elements' | sort: 'name' %}
-                        <ul class="nav-list" media-nav-bp="w-25">
-                            <li class="list-header">Page Elements</li>
+                        <ul class="c-nav-list" media-nav-bp="u-w-25">
+                            <li class="c-nav-list__header">Page Elements</li>
                             {% for doc in elements %}
                             <li>
                                 <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
@@ -48,8 +48,8 @@
                             {% endfor %}
                         </ul>
                         {% assign patterns = site.docs | where: 'type', 'patterns' | sort: 'name' %}
-                        <ul class="nav-list" media-nav-bp="w-25">
-                            <li class="list-header">Design Patterns</li>
+                        <ul class="c-nav-list" media-nav-bp="u-w-25">
+                            <li class="c-nav-list__header">Design Patterns</li>
                             {% for doc in patterns %}
                             <li>
                                 <a href="{{ site.baseurl }}{{ doc.url }}"{% if doc.url == page.url %} class="active"{% endif %}>{{ doc.title }}</a>
@@ -57,8 +57,8 @@
                             {% endfor %}
                         </ul>
                         <!-- {% assign examples = site.examples | where: 'type', 'examples' | sort: 'name' %}
-                        <ul class="nav-list" media-nav-bp="w-25">
-                            <li class="list-header">Example Pages</li>
+                        <ul class="c-nav-list" media-nav-bp="u-w-25">
+                            <li class="c-nav-list__header">Example Pages</li>
                             {% for example in examples %}
                             <li>
                                 <a href="{{ site.baseurl }}{{ example.url }}"{% if example.url == page.url %} class="active"{% endif %}>{{ example.title }}</a>

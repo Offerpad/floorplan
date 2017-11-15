@@ -12,10 +12,10 @@
 }
 
 @each $color, $value in $op-colors {
-  @include bg-variant('.bg-#{$color}', $value);
+  @include bg-variant('.u-bg-#{$color}', $value);
 }
 
-.bg-transparent { background-color: transparent !important; }
+.u-bg-transparent { background-color: transparent !important; }
 
 
 // text colors
@@ -35,7 +35,7 @@
   @include text-color-variant('.text-#{$color}', $value);
 }
 
-.text-muted { color: $text-color-muted !important; }
+.u-text-muted { color: $text-color-muted !important; }
 
 @each $color, $value in $op-colors {
   @include text-color-variant('.text-#{$color}', $value);

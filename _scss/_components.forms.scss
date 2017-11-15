@@ -12,13 +12,13 @@ $input-height: calc(#{$input-height-inner} + #{$input-height-border});
 
 
 // input parents
-.form-group {
+.c-form-group {
     @include margin-bottom(1);
 }
 
 // input elements
 
-.form-control { // via bootstrap
+.c-form-control { // via bootstrap
     display: block;
     width: 100%;
     font-size: $input-font-size;
@@ -52,7 +52,7 @@ $input-height: calc(#{$input-height-inner} + #{$input-height-border});
     }
 }
 
-select.form-control {
+select.c-form-control {
     &:not([size]):not([multiple]) {
         height: $input-height;
     }
@@ -62,7 +62,7 @@ select.form-control {
     }
 }
 
-.form-check {
+.c-form-check {
     position: relative;
     display: block;
     @include margin-bottom(1);
@@ -79,22 +79,22 @@ select.form-control {
 
 // form layouts
 
-.form-inline {
+.c-form-inline {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    .form-check {
+    .c-form-check {
         width: 100%;
     }
     @include bp-mobile-large {
-        .form-group {
+        .c-form-group {
             display: flex;
             flex: 0 0 auto;
             flex-flow: row wrap;
             align-items: center;
             margin-bottom: 0;
         }
-        .form-control {
+        .c-form-control {
             display: inline-block;
             width: auto;
             vertical-align: middle;

@@ -1,4 +1,4 @@
-.table {
+.c-table {
     width: 100%;
     max-width: 100%;
     @include margin-bottom(1);
@@ -15,7 +15,7 @@
     tbody + tbody {
         border-top: $border-width-2 solid $border-color;
     }
-    .table {
+    .c-table {
         background-color: $bg-color;
     }
 }

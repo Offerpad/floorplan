@@ -70,11 +70,11 @@ var OP = (function (op, $) {
     }
 
     function hamToX() {
-        $menuButton.addClass('menu-icon--x');
+        $menuButton.addClass('c-menu-icon--x');
     }
 
     function xToHam() {
-        $menuButton.removeClass('menu-icon--x');
+        $menuButton.removeClass('c-menu-icon--x');
     }
 
     // nav drawers

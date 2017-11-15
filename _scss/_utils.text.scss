@@ -1,49 +1,56 @@
 @each $size, $value in $font-size {
-    .text-size-#{$size} {
+    .u-text-size-#{$size} {
         @include font-size($size);
         line-height: 1;
     }
 }
 
-.text-headline {
+.u-text-headline {
     @include typeface(headline);
 }
-.text-copy {
+.u-text-copy {
     @include typeface(body);
 }
 
-p.lead {
+.u-h {
+    &1, &2, &3,
+    &4, &5, &6 {
+        @include headline-style;
+    }
+}
+
+.u-para-lead {
     @include type-layout(l, 1.25);
     @include margin(1 0, l);
 }
-p.small {
+.u-para-small {
     @include type-layout(s, 1);
     @include margin(1 0, s);
 }
-p.fine-print {
+.u-para-fine {
     @include type-layout(xs, 0.75);
     @include margin(1 0, xs);
 }
 
-.list--unstyled {
+.u-list-unstyled {
     padding-left: 0;
     list-style: none;
     margin: 0;
 }
 
-.text-left   { text-align: left !important; }
-.text-right  { text-align: right !important; }
-.text-center { text-align: center !important; }
+.u-text-left   { text-align: left !important; }
+.u-text-right  { text-align: right !important; }
+.u-text-center { text-align: center !important; }
 
-.text-nowrap { white-space: nowrap !important; }
+.u-text-nowrap { white-space: nowrap !important; }
 
-.text-lowercase  { text-transform: lowercase !important; }
-.text-uppercase  { text-transform: uppercase !important; }
-.text-capitalize { text-transform: capitalize !important; }
+.u-text-lowercase  { text-transform: lowercase !important; }
+.u-text-uppercase  { text-transform: uppercase !important; }
+.u-text-capitalize { text-transform: capitalize !important; }
 
-.font-weight-light  { font-weight: 300 !important; }
-.font-weight-normal { font-weight: 400 !important; }
-.font-weight-bold   { font-weight: 700 !important; }
+.u-font-weight-light  { font-weight: 300 !important; }
+.u-font-weight-normal { font-weight: 400 !important; }
+.u-font-weight-bold   { font-weight: 700 !important; }
 
-.font-style-italic { font-style: italic; }
-.font-style-normal { font-style: normal; }
+.u-font-style-italic { font-style: italic; }
+.u-font-style-normal { font-style: normal; }

@@ -2,8 +2,8 @@
 ---
 
 // these files contain global variables and other settings
-@import "settings.fonts";
 @import "settings.colors";
+@import "settings.fonts";
 @import "settings.measurements";
 
 // vendors required for global functionality
@@ -56,7 +56,6 @@
 @import 'style-guide/components.docs-examples';
 @import 'style-guide/components.docs-highlighter';
 @import 'style-guide/components.docs-layout';
-@import 'style-guide/components.docs-misc';
 @import 'style-guide/components.swatches';
 
 // utility classes

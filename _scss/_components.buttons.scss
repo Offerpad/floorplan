@@ -21,7 +21,7 @@ $button-border-width: $border-width-1;
     }
 }
 
-.btn {
+.c-button {
     display: inline-block;
     text-align: center;
     white-space: nowrap;
@@ -52,7 +52,7 @@ $button-border-width: $border-width-1;
 }
 
 @each $color, $value in $op-color-theme {
-    .btn--#{$color} {
+    .c-button--#{$color} {
         @include button-variant($value);
     }
 }

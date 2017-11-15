@@ -30,7 +30,7 @@ font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospac
 
 ## Headings
 
-You can apply these styles to any text element by using the appropriate matching class. For example, use the class `.h2` to emulate an `h2` style.
+You can apply these styles to any text element by using the appropriate matching class. For example, use the class `.u-h2` to emulate an `h2` style.
 
 <div class="op-example">
     <h1>Heading 1</h1>
@@ -54,31 +54,31 @@ You can apply these styles to any text element by using the appropriate matching
 These styles double the size of each heading class inside hero units and other similar patterns, for pronounced effects. Be mindful of their use in small devices.
 
 <div class="op-example">
-    <h1 class="hero-heading-1">Heading 1</h1>
-    <h2 class="hero-heading-2">Heading 2</h2>
-    <h3 class="hero-heading-3">Heading 3</h3>
-    <h4 class="hero-heading-4">Heading 4</h4>
-    <h5 class="hero-heading-5">Heading 5</h5>
-    <h6 class="hero-heading-6">Heading 6</h6>
+    <h1 class="c-hero-heading-1">Heading 1</h1>
+    <h2 class="c-hero-heading-2">Heading 2</h2>
+    <h3 class="c-hero-heading-3">Heading 3</h3>
+    <h4 class="c-hero-heading-4">Heading 4</h4>
+    <h5 class="c-hero-heading-5">Heading 5</h5>
+    <h6 class="c-hero-heading-6">Heading 6</h6>
 </div>
 {% highlight html %}
-<h1 class="display-1">Display 1</h1>
-<h2 class="display-2">Display 2</h2>
-<h3 class="display-3">Display 3</h3>
-<h4 class="display-4">Display 4</h4>
-<h5 class="display-5">Display 5</h5>
-<h6 class="display-6">Display 6</h6>
+<h1 class="c-hero-heading-1">Heading 1</h1>
+<h2 class="c-hero-heading-2">Heading 2</h2>
+<h3 class="c-hero-heading-3">Heading 3</h3>
+<h4 class="c-hero-heading-4">Heading 4</h4>
+<h5 class="c-hero-heading-5">Heading 5</h5>
+<h6 class="c-hero-heading-6">Heading 6</h6>
 {% endhighlight %}
 
 ## Lead paragraph
 
-Add the `.lead` class to a paragraph to help it stand out, especially in introductory contexts.
+Add the `.u-para-lead` class to a paragraph to help it stand out, especially in introductory contexts.
 
 <div class="op-example">
-    <p class="lead">Hey, I'm a lead paragraph. Check me out!</p>
+    <p class="u-para-lead">Hey, I'm a lead paragraph. Check me out!</p>
 </div>
 {% highlight html %}
-<p class="lead">Hey, I'm a lead paragraph. Check me out!</p>
+<p class="u-para-lead">Hey, I'm a lead paragraph. Check me out!</p>
 {% endhighlight %}
 
 ## Inline text
@@ -108,20 +108,20 @@ Add the `.lead` class to a paragraph to help it stand out, especially in introdu
 
 ## Blockquotes
 
-As blockquotes can have additional uses besides their common form in text content, use `.blockquote` as a class for complete styling. It will increase the font size of child elements and add a border.
+As blockquotes can have additional uses besides their common form in text content, use `.c-blockquote` as a class for complete styling. It will increase the font size of child elements and add a border.
 
-Add citations by wrapping them in a `<footer>` with class `.blockquote__footer`, and wrapping the citation source name with `<cite>`.
+Add citations by wrapping them in a `<footer>` with class `.c-blockquote__footer`, and wrapping the citation source name with `<cite>`.
 
 <div class="op-example">
-    <blockquote class="blockquote">
+    <blockquote class="c-blockquote">
         <p>Mollit do ipsum nisi eiusmod veniam dolore amet est amet officia laboris id irure nisi. Deserunt enim velit veniam velit qui eiusmod esse elit non do Lorem in anim.</p>
-        <footer class="blockquote__footer">A person, <cite title="Title">Title</cite></footer>
+        <footer class="c-blockquote__footer">A person, <cite title="Title">Title</cite></footer>
     </blockquote>
 </div>
 {% highlight html %}
-<blockquote class="blockquote">
+<blockquote class="c-blockquote">
     <p>Mollit do ipsum nisi eiusmod veniam dolore amet est amet officia laboris id irure nisi. Deserunt enim velit veniam velit qui eiusmod esse elit non do Lorem in anim.</p>
-    <footer class="blockquote__footer">A person, <cite title="Title">Title</cite></footer>
+    <footer class="c-blockquote__footer">A person, <cite title="Title">Title</cite></footer>
 </blockquote>
 {% endhighlight %}
 
@@ -131,13 +131,13 @@ There are four types of lists available: unstyled, unordered, ordered, and descr
 
 ### Unstyled lists
 
-Unstyled lists, borrowed from Bootstrap, use the `.list--unstyled` class to remove padding and `list-style` from a list. This styling only applies to immediate child list items, so you'll need to add the class to nested lists as well.
+Unstyled lists, borrowed from Bootstrap, use the `.u-list-unstyled` class to remove padding and `list-style` from a list. This styling only applies to immediate child list items, so you'll need to add the class to nested lists as well.
 
 <div class="op-example">
-    <ul class="list--unstyled">
+    <ul class="u-list-unstyled">
         <li>List item 1</li>
         <li>List item 2
-            <ul class="list--unstyled">
+            <ul class="u-list-unstyled">
                 <li>List item A</li>
                 <li>List item B</li>
             </ul>
@@ -146,10 +146,10 @@ Unstyled lists, borrowed from Bootstrap, use the `.list--unstyled` class to remo
     </ul>
 </div>
 {% highlight html %}
-<ul class="list--unstyled">
+<ul class="u-list-unstyled">
     <li>List item 1</li>
     <li>List item 2
-        <ul class="list--unstyled">
+        <ul class="u-list-unstyled">
             <li>List item A</li>
             <li>List item B</li>
         </ul>

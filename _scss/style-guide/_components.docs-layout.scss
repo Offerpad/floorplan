@@ -1,10 +1,10 @@
 $floorplan-color: op-color(gray-200);
 
-.hero-floorplan {
+.c-hero-floorplan {
     position: relative;
     background-color: op-color(gray-50);
     border-bottom: 1rem solid $floorplan-color;
-    .container {
+    .c-container {
         position: relative;
     }
     &::before {

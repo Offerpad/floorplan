@@ -4,18 +4,18 @@
         {% include head-tags.html %}
     </head>
     <body>
-        <div class="page">
+        <div class="o-page">
             {% include header.html %}
-            <div class="page__main">
-                <div class="bg-gray-50">
-                    <div class="container">
-                        <div class="spacer-m"></div>
+            <div class="o-page__main">
+                <div class="u-bg-gray-50">
+                    <div class="c-container">
+                        <div class="u-spacer-m"></div>
                         <h1>{{ page.title }}</h1>
                         {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
-                        <div class="spacer-m"></div>
+                        <div class="u-spacer-m"></div>
                     </div>
                 </div>
-                <div class="container pt-m pb-m">
+                <div class="c-container u-pt-m u-pb-m">
                     {{ content }}
                 </div>
             </div>

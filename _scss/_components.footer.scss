@@ -1,4 +1,4 @@
-.site-footer {
+.c-footer {
     @include padding(4 0 0.5);
     background-color: $bg-color-dark;
     background-image: url('../images/offerpad-logo-icon.svg');
@@ -6,10 +6,6 @@
     background-position: center 2rem;
     background-size: 3rem auto;
     color: $text-color-light;
-    .content {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
     &__nav {
         display: flex;
         flex-flow: row wrap;
@@ -19,7 +15,7 @@
             justify-content: space-between;
         }
     }
-    .nav-list {
+    .c-nav-list {
         width: 50%;
         @include margin-bottom(1);
         @include bp-tablet {
@@ -55,7 +51,7 @@
         }
     }
     &--no-nav {
-        .site-footer__nav {
+        .c-footer__nav {
             display: none;
         }
     }

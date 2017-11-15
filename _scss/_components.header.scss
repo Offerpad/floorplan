@@ -1,20 +1,20 @@
 @mixin nav-link-color {
     color: $link-color-alt;
     cursor: pointer;
-    .site-header--dark & {
+    .c-header--dark & {
         color: $link-color-light;
     }
     @include hover-focus {
         color: $link-color-hover;
         background-color: op-color('gray-50');
-        .site-header--dark & {
+        .c-header--dark & {
             color: $link-color-light-hover;
             background-color: op-color('gray-800');
         }
     }
 }
 
-.site-header {
+.c-header {
     display: flex;
     position: absolute;
     z-index: 2;
@@ -26,7 +26,7 @@
     background: $bg-color;
     @include type-layout(s, 1);
     @include box_shadow(1);
-    .menu-icon {
+    .c-menu-icon {
         align-self: center;
         @include bp-navigation {
             display: none;
@@ -118,16 +118,16 @@
     }
     &--dark {
         background: $bg-color-dark;
-        .site-header__nav,
-        .site-header__drawer,
-        .site-header__drawer__close,
-        .site-header__drawer__inner {
+        .c-header__nav,
+        .c-header__drawer,
+        .c-header__drawer__close,
+        .c-header__drawer__inner {
             background: $bg-color-dark;
         }
     }
 }
 
-.fancy-drawer {
+.c-fancy-drawer {
     @include padding(2 0 0);
     @include bp-navigation {
         padding: 0;

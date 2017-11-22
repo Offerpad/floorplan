@@ -2,9 +2,15 @@
 @import 'vendor/bourbon/functions/tint';
 
 // core brand colors
-$op-color-orange: #ff6c2c;
-$op-color-blue:   #2cbfff;
-$op-color-space:  #2c3238;
+$op-color-orange:   #ff6c2c;
+$op-color-blue:     #2cbfff;
+$op-color-space:    #2c3238;
+
+// bootstrap state colors
+$bs-color-cyan:     #17a2b8;
+$bs-color-green:    #28a745;
+$bs-color-yellow:   #ffc107;
+$bs-color-red:      #dc3545;
 
 $op-colors: ();
 // use tint() and shade() to develop color maps

@@ -31,7 +31,7 @@
   }
 }
 
-@each $color, $value in $op-color-theme {
+@each $color, $value in $op-colors-ui {
   @include text-color-variant('.text-#{$color}', $value);
 }
 

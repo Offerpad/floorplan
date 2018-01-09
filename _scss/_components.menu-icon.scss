@@ -12,7 +12,7 @@ $menu-bar-height: 0.1875rem;
     color: $link-color-alt;
     @include hover-focus {
         color: $link-color-hover;
-        background: op-color('gray-100');
+        background: op-color('teal-200');
     }
     span,
     span:before,
@@ -67,7 +67,7 @@ $menu-bar-height: 0.1875rem;
     }
     &--dark {
         @include hover-focus {
-            background: op-color('gray-800');
+            background: op-color('teal-700');
         }
     }
 }

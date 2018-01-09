@@ -113,5 +113,5 @@
 @mixin headline-style {
     @include typeface(headline);
     font-weight: 500;
-    color: op-color('gray-800');
+    color: op-color('teal-600');
 }

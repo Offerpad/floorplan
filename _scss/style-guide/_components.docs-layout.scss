@@ -1,8 +1,8 @@
-$floorplan-color: op-color(gray-200);
+$floorplan-color: op-color("teal-300");
 
 .c-hero-floorplan {
     position: relative;
-    background-color: op-color(gray-50);
+    background-color: op-color("teal-100");
     border-bottom: 1rem solid $floorplan-color;
     .c-container {
         position: relative;
@@ -52,9 +52,9 @@ $floorplan-color: op-color(gray-200);
         height: 2rem;
         @include margin(0.5 0.5 1);
         text-align: center;
-        border: 0.25rem solid op-color(blue-200);
+        border: 0.25rem solid op-color("moonstone");
         border-top: 0;
-        color: op-color(blue-200);
+        color: op-color("moonstone");
         &::after {
             display: inline-block;
             position: absolute;

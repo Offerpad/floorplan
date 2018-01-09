@@ -3,58 +3,26 @@ title: Colors
 description: All the colors used in OfferPad digital branding.
 ---
 
-## Brand colors
+## Palettes
 
-OfferPad has an official orange color to represent the brand, <code>#ff6c2c</code>. This color is supplemented with blue <code>#2cbfff</code> and space <code>#2c3238</code>.
+### Orange
+
+OfferPad has an official orange color to represent the brand, "pumpkin" (`#ff6c2c`). Additionally, a richer, higher-contrast orange, "tangelo" (`#fa4b00`), is used for text emphasis and other uses.
 
 <ul class="c-swatches">
-    <li class="c-swatches__item c-swatches--orange-500">
+    <li class="c-swatches__item c-swatches--pumpkin">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">op-color-orange</code>
+        <code class="c-swatches__label">pumpkin</code>
         <code class="c-swatches__hex">#ff6c2c</code>
     </li>
-    <li class="c-swatches__item c-swatches--blue-500">
+    <li class="c-swatches__item c-swatches--tangelo">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">op-color-blue</code>
-        <code class="c-swatches__hex">#2cbfff</code>
-    </li>
-    <li class="c-swatches__item c-swatches--gray-900">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">op-color-space</code>
-        <code class="c-swatches__hex">#2c3238</code>
+        <code class="c-swatches__label">tangelo</code>
+        <code class="c-swatches__hex">#fa4b00</code>
     </li>
 </ul>
 
-## UI color theme
-
-This is a Bootstrap-inspired color theme for UI elements (buttons, links, etc.) using an established hierarchy of colors based on the colors above.
-
-<ul class="c-swatches">
-    <li class="c-swatches__item c-swatches--blue-600">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">primary</code>
-        <code class="c-swatches__hex">#2399cc</code>
-    </li>
-    <li class="c-swatches__item c-swatches--gray-600">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">secondary</code>
-        <code class="c-swatches__hex">#72767a</code>
-    </li>
-    <li class="c-swatches__item c-swatches--gray-100">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">neutral</code>
-        <code class="c-swatches__hex">#e6e6e7</code>
-    </li>
-    <li class="c-swatches__item c-swatches--orange-600">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">special</code>
-        <code class="c-swatches__hex">#cc5623</code>
-    </li>
-</ul>
-
-## Shade palettes
-
-### Space grays
+### Teal
 
 This palette is used for most backgrounds and text colors, as well as secondary or less important UI elements.
 
@@ -62,57 +30,47 @@ This palette is used for most backgrounds and text colors, as well as secondary 
     <li class="c-swatches__item c-swatches--black">
         <span class="c-swatches__swatch"></span>
         <code class="c-swatches__label">black</code>
-        <code class="c-swatches__hex">#272d32</code>
+        <code class="c-swatches__hex">#030f11</code>
     </li>
-    <li class="c-swatches__item c-swatches--gray-900">
+    <li class="c-swatches__item c-swatches--teal-800">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">gray-900</code>
-        <code class="c-swatches__hex">#2c3238</code>
+        <code class="c-swatches__label">teal-800</code>
+        <code class="c-swatches__hex">#082c32</code>
     </li>
-    <li class="c-swatches__item c-swatches--gray-800">
+    <li class="c-swatches__item c-swatches--teal-700">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">gray-800</code>
-        <code class="c-swatches__hex">#43494e</code>
+        <code class="c-swatches__label">teal-700</code>
+        <code class="c-swatches__hex">#126774</code>
     </li>
-    <li class="c-swatches__item c-swatches--gray-700">
+    <li class="c-swatches__item c-swatches--teal-600">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">gray-700</code>
-        <code class="c-swatches__hex">#5a5f64</code>
+        <code class="c-swatches__label">teal-600</code>
+        <code class="c-swatches__hex">#1ca1b5</code>
     </li>
-    <li class="c-swatches__item c-swatches--gray-600">
+    <li class="c-swatches__item c-swatches--teal-500">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">gray-600</code>
-        <code class="c-swatches__hex">#72767a</code>
+        <code class="c-swatches__label">teal-500</code>
+        <code class="c-swatches__hex">#6ec3cf</code>
     </li>
-    <li class="c-swatches__item c-swatches--gray-500">
+    <li class="c-swatches__item c-swatches--teal-400">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">gray-500</code>
-        <code class="c-swatches__hex">#898c90</code>
+        <code class="c-swatches__label">teal-400</code>
+        <code class="c-swatches__hex">#83cbd6</code>
     </li>
-    <li class="c-swatches__item c-swatches--gray-400">
+    <li class="c-swatches__item c-swatches--teal-300">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">gray-400</code>
-        <code class="c-swatches__hex">#a0a3a5</code>
+        <code class="c-swatches__label">teal-300</code>
+        <code class="c-swatches__hex">#acdce4</code>
     </li>
-    <li class="c-swatches__item c-swatches--gray-300">
+    <li class="c-swatches__item c-swatches--teal-200">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">gray-300</code>
-        <code class="c-swatches__hex">#b7b9bb</code>
+        <code class="c-swatches__label">teal-200</code>
+        <code class="c-swatches__hex">#d5edf1</code>
     </li>
-    <li class="c-swatches__item c-swatches--gray-200">
+    <li class="c-swatches__item c-swatches--teal-100">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">gray-200</code>
-        <code class="c-swatches__hex">#ced0d1</code>
-    </li>
-    <li class="c-swatches__item c-swatches--gray-100">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">gray-100</code>
-        <code class="c-swatches__hex">#e6e6e7</code>
-    </li>
-    <li class="c-swatches__item c-swatches--gray-50">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">gray-50</code>
-        <code class="c-swatches__hex">#f4f5f5</code>
+        <code class="c-swatches__label">teal-100</code>
+        <code class="c-swatches__hex">#eaf6f8</code>
     </li>
     <li class="c-swatches__item c-swatches--white">
         <span class="c-swatches__swatch"></span>
@@ -121,104 +79,57 @@ This palette is used for most backgrounds and text colors, as well as secondary 
     </li>
 </ul>
 
-### Orange
+### Blue
 
-The official OfferPad orange and its variants are used to direct attention, being used in call to action colors, and sparingly as a design element.
+The color used to represent most links and interactive elements is "cerulean" (`#ff6c2c`). The color "moonstone" (`#6facc7`), is used for softer interactive contexts such as element focus.
 
 <ul class="c-swatches">
-    <li class="c-swatches__item c-swatches--orange-900">
+    <li class="c-swatches__item c-swatches--cerulean">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">orange-900</code>
-        <code class="c-swatches__hex">#331609</code>
+        <code class="c-swatches__label">cerulean</code>
+        <code class="c-swatches__hex">#1d7ea7</code>
     </li>
-    <li class="c-swatches__item c-swatches--orange-800">
+    <li class="c-swatches__item c-swatches--moonstone">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">orange-800</code>
-        <code class="c-swatches__hex">#662b12</code>
-    </li>
-    <li class="c-swatches__item c-swatches--orange-700">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">orange-700</code>
-        <code class="c-swatches__hex">#99411a</code>
-    </li>
-    <li class="c-swatches__item c-swatches--orange-600">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">orange-600</code>
-        <code class="c-swatches__hex">#cc5623</code>
-    </li>
-    <li class="c-swatches__item c-swatches--orange-500">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">orange-500</code>
-        <code class="c-swatches__hex">#ff6c2c</code>
-    </li>
-    <li class="c-swatches__item c-swatches--orange-400">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">orange-400</code>
-        <code class="c-swatches__hex">#ff8956</code>
-    </li>
-    <li class="c-swatches__item c-swatches--orange-300">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">orange-300</code>
-        <code class="c-swatches__hex">#ffa780</code>
-    </li>
-    <li class="c-swatches__item c-swatches--orange-200">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">orange-200</code>
-        <code class="c-swatches__hex">#ffc4ab</code>
-    </li>
-    <li class="c-swatches__item c-swatches--orange-100">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">orange-100</code>
-        <code class="c-swatches__hex">#ffe2d5</code>
+        <code class="c-swatches__label">moonstone</code>
+        <code class="c-swatches__hex">#6facc7</code>
     </li>
 </ul>
 
-### Blue
+
+## UI color theme
+
+This is a Bootstrap-inspired color theme for UI elements (buttons, links, etc.) using an established hierarchy of colors based on the colors above, as well as the Bootstrap state colors.
 
 <ul class="c-swatches">
-    <li class="c-swatches__item c-swatches--blue-900">
+    <li class="c-swatches__item c-swatches--cerulean">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">blue-900</code>
-        <code class="c-swatches__hex">#092633</code>
+        <code class="c-swatches__label">primary</code>
+        <code class="c-swatches__hex">#1d7ea7</code>
     </li>
-    <li class="c-swatches__item c-swatches--blue-800">
+    <li class="c-swatches__item c-swatches--teal-200">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">blue-800</code>
-        <code class="c-swatches__hex">#124c66</code>
+        <code class="c-swatches__label">secondary</code>
+        <code class="c-swatches__hex">#d5edf1</code>
     </li>
-    <li class="c-swatches__item c-swatches--blue-700">
+    <li class="c-swatches__item c-swatches--tangelo">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">blue-700</code>
-        <code class="c-swatches__hex">#1a7399</code>
+        <code class="c-swatches__label">special</code>
+        <code class="c-swatches__hex">#fa4b00</code>
     </li>
-    <li class="c-swatches__item c-swatches--blue-600">
+    <li class="c-swatches__item c-swatches--bs-green">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">blue-600</code>
-        <code class="c-swatches__hex">#2399cc</code>
+        <code class="c-swatches__label">success</code>
+        <code class="c-swatches__hex">#28a745</code>
     </li>
-    <li class="c-swatches__item c-swatches--blue-500">
+    <li class="c-swatches__item c-swatches--bs-yellow">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">blue-500</code>
-        <code class="c-swatches__hex">#2cbfff</code>
+        <code class="c-swatches__label">warning</code>
+        <code class="c-swatches__hex">#ffc107</code>
     </li>
-    <li class="c-swatches__item c-swatches--blue-400">
+    <li class="c-swatches__item c-swatches--bs-red">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">blue-400</code>
-        <code class="c-swatches__hex">#56ccff</code>
-    </li>
-    <li class="c-swatches__item c-swatches--blue-300">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">blue-300</code>
-        <code class="c-swatches__hex">#80d9ff</code>
-    </li>
-    <li class="c-swatches__item c-swatches--blue-200">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">blue-200</code>
-        <code class="c-swatches__hex">#abe5ff</code>
-    </li>
-    <li class="c-swatches__item c-swatches--blue-100">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">blue-100</code>
-        <code class="c-swatches__hex">#d5f2ff</code>
+        <code class="c-swatches__label">danger</code>
+        <code class="c-swatches__hex">#dc3545</code>
     </li>
 </ul>

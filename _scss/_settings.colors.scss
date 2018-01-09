@@ -1,72 +1,67 @@
 @import 'vendor/bourbon/functions/shade';
 @import 'vendor/bourbon/functions/tint';
 
-// core brand colors
-$op-color-orange:   #ff6c2c;
-$op-color-blue:     #2cbfff;
-$op-color-space:    #2c3238;
+// oranges (for branding and emphasis)
+$color-op-pumpkin:      #ff6c2c;
+$color-op-tangelo:      #fa4b00;
+
+// teals (for layout and text)
+$color-op-white:        #ffffff;
+$color-op-whitesmoke:   #eaf6f8; // 100
+$color-op-azurewhite:   #d5edf1; // 200
+$color-op-lightblue:    #acdce4; // 300
+$color-op-darksky:      #83cbd6; // 400
+$color-op-iceberg:      #6ec3cf; // 500
+$color-op-pacific:      #1ca1b5; // 600
+$color-op-sapphire:     #126774; // 700
+$color-op-darkgreen:    #082c32; // 800
+$color-op-black:        #030f11;
+
+// blues (for links and ui)
+$color-op-cerulean:     #1d7ea7;
+$color-op-moonstone:    #6facc7;
 
 // bootstrap state colors
-$bs-color-cyan:     #17a2b8;
-$bs-color-green:    #28a745;
-$bs-color-yellow:   #ffc107;
-$bs-color-red:      #dc3545;
+$color-bs-cyan:     #17a2b8;
+$color-bs-green:    #28a745;
+$color-bs-yellow:   #ffc107;
+$color-bs-red:      #dc3545;
 
-$op-colors: ();
-// use tint() and shade() to develop color maps
-
-$op-colors-gray: (
-    'black':        shade($op-color-space, 11%),
-    'gray-900':     $op-color-space,
-    'gray-800':     tint($op-color-space, 11%),
-    'gray-700':     tint($op-color-space, 22%),
-    'gray-600':     tint($op-color-space, 33%),
-    'gray-500':     tint($op-color-space, 44%),
-    'gray-400':     tint($op-color-space, 55%),
-    'gray-300':     tint($op-color-space, 66%),
-    'gray-200':     tint($op-color-space, 77%),
-    'gray-100':     tint($op-color-space, 88%),
-    'gray-50':      tint($op-color-space, 95%),
-    'white':        #ffffff,
+$op-colors: (
+    "pumpkin":      $color-op-pumpkin,
+    "tangelo":      $color-op-tangelo,
+    "white":        $color-op-white,
+    "teal-100":     $color-op-whitesmoke,
+    "teal-200":     $color-op-azurewhite,
+    "teal-300":     $color-op-lightblue,
+    "teal-400":     $color-op-darksky,
+    "teal-500":     $color-op-iceberg,
+    "teal-600":     $color-op-pacific,
+    "teal-700":     $color-op-sapphire,
+    "teal-800":     $color-op-darkgreen,
+    "black":        $color-op-black,
+    "cerulean":     $color-op-cerulean,
+    "moonstone":    $color-op-moonstone,
+    "bs-green":     $color-bs-green,
+    "bs-yellow":    $color-bs-yellow,
+    "bs-red":       $color-bs-red
 );
-$op-colors: map-merge($op-colors, $op-colors-gray);
 
-$op-colors-orange: (
-    'orange-900':     shade($op-color-orange, 80%),
-    'orange-800':     shade($op-color-orange, 60%),
-    'orange-700':     shade($op-color-orange, 40%),
-    'orange-600':     shade($op-color-orange, 20%),
-    'orange-500':     $op-color-orange,
-    'orange-400':     tint($op-color-orange, 20%),
-    'orange-300':     tint($op-color-orange, 40%),
-    'orange-200':     tint($op-color-orange, 60%),
-    'orange-100':     tint($op-color-orange, 80%)
+$op-colors-ui: (
+    "special":      $color-op-tangelo,
+    "primary":      $color-op-cerulean,
+    "secondary":    $color-op-azurewhite,
+    "success":      $color-bs-green,
+    "warning":      $color-bs-yellow,
+    "danger":       $color-bs-red
 );
-$op-colors: map-merge($op-colors, $op-colors-orange);
 
-$op-colors-blue: (
-    'blue-900':     shade($op-color-blue, 80%),
-    'blue-800':     shade($op-color-blue, 60%),
-    'blue-700':     shade($op-color-blue, 40%),
-    'blue-600':     shade($op-color-blue, 20%),
-    'blue-500':     $op-color-blue,
-    'blue-400':     tint($op-color-blue, 20%),
-    'blue-300':     tint($op-color-blue, 40%),
-    'blue-200':     tint($op-color-blue, 60%),
-    'blue-100':     tint($op-color-blue, 80%)
-);
-$op-colors: map-merge($op-colors, $op-colors-blue);
-
-@function op-color($key: 'gray') {
+@function op-color($key: 'pumpkin') {
     @return map-get($op-colors, $key);
 }
-
-$op-color-theme: (
-    special: op-color('orange-600'),
-    primary: op-color('blue-600'),
-    secondary: op-color('gray-600'),
-    neutral: op-color('gray-100')
-);
+@function op-color-ui($key: 'special') {
+    @return map-get($op-colors-ui, $key);
+}
 
 @function link-hover-focus($color) {
     @return lighten($color, 15%);
@@ -75,30 +70,30 @@ $op-color-theme: (
 // layout colors
 
 $bg-color: op-color('white');
-$bg-color-dark: op-color('gray-900');
-$border-color: op-color('gray-100');
+$bg-color-dark: op-color('teal-800');
+$border-color: op-color('teal-200');
 
 // text colors
 
-$text-color: op-color('black');
-$text-color-muted: op-color('gray-400');
+$text-color: op-color('teal-800');
+$text-color-muted: op-color('teal-500');
 $text-color-light: op-color('white');
 
-$link-color: op-color('blue-700');
+$link-color: op-color('cerulean');
 $link-color-hover: link-hover-focus($link-color);
-$link-color-alt: op-color('gray-600');
+$link-color-alt: op-color('teal-600');
 $link-color-alt-hover: link-hover-focus($link-color-alt);
-$link-color-light: op-color('gray-200');
+$link-color-light: op-color('teal-300');
 $link-color-light-hover: link-hover-focus($link-color-light);
 
-$placeholder-color: op-color('gray-300');
+$placeholder-color: op-color('teal-400');
 
 $code-bg-color: #f8f8f8;
 $code-text-color: #dd1144;
 
 // miscellaneous colors
 
-$focus-color: op-color('blue-300');
-$focus-shadow: 0 0 10px op-color('blue-300'),
-    0 0 5px op-color('blue-300');
-$disabled-bg-color: op-color('gray-100');
+$focus-color: op-color('moonstone');
+$focus-shadow: 0 0 10px op-color('moonstone'),
+    0 0 5px op-color('moonstone');
+$disabled-bg-color: op-color('teal-200');

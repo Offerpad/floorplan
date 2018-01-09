@@ -13,7 +13,7 @@
         transform: translateY(-50%);
         width: 6.25rem;
         height: 6.25rem;
-        border: $border-width-2 solid op-color("gray-200");
+        border: $border-width-2 solid op-color("teal-300");
         border-radius: 50%;
         @include box_shadow(2);
     }
@@ -22,7 +22,7 @@
         margin: 0;
         @include margin-left(2);
         @include padding(0.5 1 0.5 3);
-        border: $border-width-2 solid op-color("gray-200");
+        border: $border-width-2 solid op-color("teal-300");
         border-right-width: 0;
         background-color: transparentize($bg-color-dark, 0.2);
         @include box_shadow(1);

@@ -10,47 +10,47 @@ $op-spacing: (
     xxl: 8
 );
 
-@each $prop, $abbr in (margin: m, padding: p) {
+@each $prop in (margin, padding) {
     @each $size, $length in $op-spacing {
-        .u-#{$abbr}-#{$size} {
+        .u-#{$prop}-#{$size} {
             #{$prop}: $length * 1.5rem !important;
         }
-        .u-#{$abbr}t-#{$size},
-        .u-#{$abbr}y-#{$size} {
+        .u-#{$prop}-t-#{$size},
+        .u-#{$prop}-y-#{$size} {
             #{$prop}-top: $length * 1.5rem !important;
         }
-        .u-#{$abbr}r-#{$size},
-        .u-#{$abbr}x-#{$size} {
+        .u-#{$prop}-r-#{$size},
+        .u-#{$prop}-x-#{$size} {
             #{$prop}-right: $length * 1.5rem !important;
         }
-        .u-#{$abbr}b-#{$size},
-        .u-#{$abbr}y-#{$size} {
+        .u-#{$prop}-b-#{$size},
+        .u-#{$prop}-y-#{$size} {
             #{$prop}-bottom: $length * 1.5rem !important;
         }
-        .u-#{$abbr}l-#{$size},
-        .u-#{$abbr}x-#{$size} {
+        .u-#{$prop}-l-#{$size},
+        .u-#{$prop}-x-#{$size} {
             #{$prop}-left: $length * 1.5rem !important;
         }
     }
 }
 
-.u-m-auto {
+.u-margin-auto {
     margin: auto !important;
 }
-.u-mt-auto,
-.u-my-auto {
+.u-margin-t-auto,
+.u-margin-y-auto {
     margin-top: auto !important;
 }
-.u-mr-auto,
-.u-mx-auto {
+.u-margin-r-auto,
+.u-margin-x-auto {
     margin-right: auto !important;
 }
-.u-mb-auto,
-.u-my-auto {
+.u-margin-b-auto,
+.u-margin-y-auto {
     margin-bottom: auto !important;
 }
-.u-ml-auto,
-.u-mx-auto {
+.u-margin-l-auto,
+.u-margin-x-auto {
     margin-left: auto !important;
 }
 

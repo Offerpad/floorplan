@@ -30,6 +30,7 @@ $button-border-width: $border-width-1;
     border: $button-border-width solid transparent;
     padding: 0.5rem 0.75rem;
     @include typeface(body);
+    font-weight: weight(bold);
     font-size: 1rem;
     line-height: 1.25;
     border-radius: 0.25rem;

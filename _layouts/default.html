@@ -8,14 +8,14 @@
             {% include header.html %}
             <div class="o-page__main">
                 <div class="u-bg-gray-50">
-                    <div class="c-container">
+                    <div class="c-container" media-tablet="!c-container c-container-medium">
                         <div class="u-spacer-m"></div>
                         <h1>{{ page.title }}</h1>
                         {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
                         <div class="u-spacer-m"></div>
                     </div>
                 </div>
-                <div class="c-container u-pt-m u-pb-m">
+                <div class="c-container u-pt-m u-pb-m" media-tablet="!c-container c-container-medium">
                     {{ content }}
                 </div>
             </div>

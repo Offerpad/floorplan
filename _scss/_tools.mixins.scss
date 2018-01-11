@@ -30,25 +30,25 @@
 }
 
 @mixin container($width: none) {
-    padding-left: $content-padding;
-    padding-right: $content-padding;
-    @if $width == normal {
-        @include bp-tablet {
-            padding-left: calc(50% - (#{$content-width} * 0.5));
-            padding-right: calc(50% - (#{$content-width} * 0.5));
-        }
-    }
     @if $width == small {
-        @include bp-mobile-large {
-            padding-left: calc(50% - (#{$content-width-small} * 0.5));
-            padding-right: calc(50% - (#{$content-width-small} * 0.5));
-        }
+        padding-left: calc(50% - (#{$content-width-small} * 0.5));
+        padding-right: calc(50% - (#{$content-width-small} * 0.5));
     }
-    @if $width == large {
-        @include bp-desktop-large {
-            padding-left: calc(50% - (#{$content-width-large} * 0.5));
-            padding-right: calc(50% - (#{$content-width-large} * 0.5));
-        }
+    @else if $width == medium {
+        padding-left: calc(50% - (#{$content-width-medium} * 0.5));
+        padding-right: calc(50% - (#{$content-width-medium} * 0.5));
+    }
+    @else if $width == large {
+        padding-left: calc(50% - (#{$content-width-large} * 0.5));
+        padding-right: calc(50% - (#{$content-width-large} * 0.5));
+    }
+    @else if $width == xlarge {
+        padding-left: calc(50% - (#{$content-width-xlarge} * 0.5));
+        padding-right: calc(50% - (#{$content-width-xlarge} * 0.5));
+    }
+    @else {
+        padding-left: $content-padding;
+        padding-right: $content-padding;
     }
 }
 

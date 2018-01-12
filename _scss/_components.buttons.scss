@@ -2,21 +2,44 @@ $button-border-width: $border-width-1;
 
 @mixin button-variant($background) {
     $hover-background: link-hover-focus($background);
-    @include color-yiq($background);
+    color: color-yiq($background);
     background-color: $background;
-    border-color: darken($background, 5%);
-    background-repeat: repeat-x;
+    border-color: $background;
     @include hover-focus {
         background-color: $hover-background;
+        border-color: $hover-background;
     }
     &:disabled,
     &.disabled {
         background-color: $background;
+        border-color: $background;
     }
     &:active,
     &.is-active {
         background-color: $hover-background;
-        background-image: none;
+        border-color: $hover-background;
+        box-shadow: inset 0 3px 8px rgba(0,0,0,0.25);
+    }
+}
+
+@mixin button-outline-variant($color) {
+    background-color: transparent;
+    color: $color;
+    border-color: $color;
+    @include hover-focus {
+        color: color-yiq($color);
+        background-color: $color;
+        border-color: $color;
+    }
+    &:disabled,
+    &.disabled {
+        background-color: transparent;
+        color: $color;
+    }
+    &:active,
+    &.is-active {
+        background-color: $color;
+        border-color: $color;
         box-shadow: inset 0 3px 8px rgba(0,0,0,0.25);
     }
 }
@@ -34,7 +57,7 @@ $button-border-width: $border-width-1;
     font-size: 1rem;
     line-height: 1.25;
     border-radius: 0.25rem;
-    @include box_shadow(1);
+    //@include box_shadow(1);
     cursor: pointer;
     &:focus {
         outline: 0;
@@ -55,5 +78,11 @@ $button-border-width: $border-width-1;
 @each $color, $value in $op-colors-ui {
     .c-button--#{$color} {
         @include button-variant($value);
+    }
+}
+
+@each $color, $value in $op-colors-ui {
+    .c-button-outline--#{$color} {
+        @include button-outline-variant($value);
     }
 }

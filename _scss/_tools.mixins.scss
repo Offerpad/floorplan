@@ -66,7 +66,7 @@
 }
 
 // Color contrast via bootstrap
-@mixin color-yiq($color) {
+@function color-yiq($color) {
   $r: red($color);
   $g: green($color);
   $b: blue($color);
@@ -74,9 +74,9 @@
   $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
 
   @if ($yiq >= 150) {
-      color: op-color('black');
+      @return op-color('black');
   } @else {
-      color: op-color('white');
+      @return op-color('white');
   }
 }
 

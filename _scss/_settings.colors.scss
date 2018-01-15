@@ -1,6 +1,8 @@
 @import 'vendor/bourbon/functions/shade';
 @import 'vendor/bourbon/functions/tint';
 
+$are-colors-muted:      true !default;
+
 // oranges (for branding and emphasis)
 $color-op-pumpkin:      #ff6c2c;
 $color-op-tangelo:      #fa4b00;
@@ -27,10 +29,7 @@ $color-bs-green:    #28a745;
 $color-bs-yellow:   #ffc107;
 $color-bs-red:      #dc3545;
 
-$op-colors: (
-    "pumpkin":      $color-op-pumpkin,
-    "tangelo":      $color-op-tangelo,
-    "white":        $color-op-white,
+$op-colors-teals: (
     "teal-100":     $color-op-whitesmoke,
     "teal-200":     $color-op-azurewhite,
     "teal-300":     $color-op-lightblue,
@@ -40,6 +39,22 @@ $op-colors: (
     "teal-700":     $color-op-sapphire,
     "teal-800":     $color-op-darkgreen,
     "black":        $color-op-black,
+);
+$op-colors-grays: (
+    "teal-100":     desaturate($color-op-whitesmoke, 25%),
+    "teal-200":     desaturate($color-op-azurewhite, 25%),
+    "teal-300":     desaturate($color-op-lightblue, 25%),
+    "teal-400":     desaturate($color-op-darksky, 25%),
+    "teal-500":     desaturate($color-op-iceberg, 25%),
+    "teal-600":     desaturate($color-op-pacific, 25%),
+    "teal-700":     desaturate($color-op-sapphire, 25%),
+    "teal-800":     desaturate($color-op-darkgreen, 25%),
+    "black":        desaturate($color-op-black, 25%),
+);
+$op-colors: (
+    "pumpkin":      $color-op-pumpkin,
+    "tangelo":      $color-op-tangelo,
+    "white":        $color-op-white,
     "cerulean":     $color-op-cerulean,
     "moonstone":    $color-op-moonstone,
     "bs-green":     $color-bs-green,
@@ -47,10 +62,15 @@ $op-colors: (
     "bs-red":       $color-bs-red
 );
 
+@if ($are-colors-muted) {
+    $op-colors: map-merge($op-colors-grays, $op-colors);
+} @else {
+    $op-colors: map-merge($op-colors-teals, $op-colors);
+}
+
 $op-colors-ui: (
     "special":      $color-op-tangelo,
     "primary":      $color-op-cerulean,
-    "secondary":    $color-op-azurewhite,
     "success":      $color-bs-green,
     "warning":      $color-bs-yellow,
     "danger":       $color-bs-red

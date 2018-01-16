@@ -104,3 +104,16 @@ description: How buttons and related UI elements are displayed and used on the O
 <button type="button" class="c-button c-button-outline--warning" disabled>Warning</button>
 <button type="button" class="c-button c-button-outline--danger" disabled>Danger</button>
 {% endhighlight %}
+
+## Button sizes
+
+<div class="op-example">
+    <button type="button" class="c-button c-button--primary c-button--small">Small Button</button>
+    <button type="button" class="c-button c-button--primary">Normal Button</button>
+    <button type="button" class="c-button c-button--primary c-button--large">Large Button</button>
+</div>
+{% highlight html %}
+<button type="button" class="c-button c-button--primary c-button--small">Small</button>
+<button type="button" class="c-button c-button--primary">Normal</button>
+<button type="button" class="c-button c-button--primary c-button--large">Large</button>
+{% endhighlight %}

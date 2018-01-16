@@ -52,11 +52,12 @@ $button-border-width: $border-width-1;
     vertical-align: middle;
     user-select: none;
     border: $button-border-width solid transparent;
-    padding: 0.5rem 0.75rem;
+    @include padding(1/3 0.5);
     @include typeface(body);
-    font-weight: weight(bold);
+    font-weight: weight(semibold);
     font-size: 1rem;
     line-height: 1.25;
+    letter-spacing: 0.01em;
     border-radius: 0.25rem;
     //@include box_shadow(1);
     cursor: pointer;
@@ -73,6 +74,18 @@ $button-border-width: $border-width-1;
     &:active,
     &.is-active {
         box-shadow: none;
+    }
+    &--small {
+        @include font-size(xs);
+    }
+    &--large {
+        @include font-size(l);
+        @include padding(0.5 1);
+    }
+    &__subtext {
+        display: block;
+        font-size: 50%;
+        font-weight: weight(normal);
     }
 }
 

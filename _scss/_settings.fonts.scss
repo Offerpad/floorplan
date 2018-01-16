@@ -1,13 +1,56 @@
-//@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i');
-//@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i');
-@import url("https://use.typekit.net/pgk7dzx.css");
-
-$fa-font-path: '../fonts/font-awesome';
-@import 'vendor/fontawesome/font-awesome';
+// @font-face {
+//     font-family: "Verb";
+//     font-weight: 300;
+//     font-style: normal;
+//     src: url('/floorplan/assets/fonts/verb/verblight-webfont.woff') format('woff');
+// }
+// @font-face {
+//     font-family: "Verb";
+//     font-weight: 300;
+//     font-style: italic;
+//     src: url('/floorplan/assets/fonts/verb/verblight-italic-webfont.woff') format('woff');
+// }
+@font-face {
+    font-family: "Verb";
+    font-weight: 400;
+    font-style: normal;
+    src: url('/floorplan/assets/fonts/verb/verbregular-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: "Verb";
+    font-weight: 400;
+    font-style: italic;
+    src: url('/floorplan/assets/fonts/verb/verbregular-italic-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: "Verb";
+    font-weight: 600;
+    font-style: normal;
+    src: url('/floorplan/assets/fonts/verb/verbsemibold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: "Verb";
+    font-weight: 600;
+    font-style: italic;
+    src: url('/floorplan/assets/fonts/verb/verbsemibold-italic-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: "Verb";
+    font-weight: 700;
+    font-style: normal;
+    src: url('/floorplan/assets/fonts/verb/verbbold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: "Verb";
+    font-weight: 700;
+    font-style: italic;
+    src: url('/floorplan/assets/fonts/verb/verbbold-italic-webfont.woff') format('woff');
+}
 
 $font-weight: (
-    bold: 600,
-    normal: 300
+    bold: 700,
+    semibold: 600,
+    normal: 400
 );
 
 $base-font-size: 16px;
@@ -41,18 +84,15 @@ $op-monospace: Menlo,
     "Courier New",
     monospace;
 
-$op-roboto: join("Roboto", $op-sans-serif, comma);
-$op-rubik: join("Rubik", $op-sans-serif, comma);
-$op-ffmark: join("FFMark", $op-sans-serif, comma);
-$op-basic: join("basic-sans", $op-sans-serif, comma);
+$op-verb: join("Verb", $op-sans-serif, comma);
 
 $typefaces: (
     body: (
-        font-family: $op-basic,
+        font-family: $op-verb,
         weight: normal
     ),
     headline: (
-        font-family: $op-basic,
+        font-family: $op-verb,
         weight: normal
     ),
     monospace: (

@@ -65,7 +65,6 @@ select.c-form-control {
 .c-form-check {
     position: relative;
     display: block;
-    @include margin-bottom(1);
     &__label {
         @include padding-left(1);
         margin-bottom: 0;

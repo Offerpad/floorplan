@@ -1,19 +1,19 @@
 .c-house-address {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     @include padding(0.5 1 0.5 0);
     font-style: normal;
-    font-weight: bold;
-    @include box_shadow(1);
     border-radius: 0.25rem;
     @include typeface(headline);
-    &::before {
-        display: block;
-        content: '\f015';
-        font-family: FontAwesome;
+    border: $border-width-2 solid $border-color;
+    .svg-inline--fa {
         font-weight: normal;
         @include type-layout(xl, 1);
         @include margin(0 0.5);
         color: $text-color-muted;
+    }
+    &__street {
+        font-weight: weight(bold);
+        display: block;
     }
 }

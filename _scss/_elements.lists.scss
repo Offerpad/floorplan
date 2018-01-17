@@ -1,3 +1,8 @@
+li {
+    @include margin-top(0.125);
+    @include margin-bottom(0.125);
+}
+
 dl {
     margin-bottom: 0;
 }

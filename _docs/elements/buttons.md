@@ -117,3 +117,14 @@ description: How buttons and related UI elements are displayed and used on the O
 <button type="button" class="c-button c-button--primary">Normal</button>
 <button type="button" class="c-button c-button--primary c-button--large">Large</button>
 {% endhighlight %}
+
+## Arrow buttons
+
+<div class="op-example">
+    <button type="button" class="c-button c-button--primary c-button--arrow-left">Previous</button>
+    <button type="button" class="c-button c-button--primary c-button--arrow-right">Next</button>
+</div>
+{% highlight html %}
+<button type="button" class="c-button c-button--primary c-button--arrow-left">Previous</button>
+<button type="button" class="c-button c-button--primary c-button--arrow-right">Next</button>
+{% endhighlight %}

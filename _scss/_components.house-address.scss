@@ -1,19 +1,16 @@
 .c-house-address {
-    display: inline-flex;
-    align-items: center;
-    @include padding(0.5 1 0.5 0);
+    @include padding(0.5 0.75);
     font-style: normal;
+    line-height: line-height(0.75);
     border-radius: 0.25rem;
     @include typeface(headline);
     border: $border-width-2 solid $border-color;
-    .svg-inline--fa {
-        font-weight: normal;
-        @include type-layout(xl, 1);
-        @include margin(0 0.5);
-        color: $text-color-muted;
-    }
     &__street {
         font-weight: weight(bold);
+        display: block;
+    }
+    &__market {
+        font-size: font-size(s);
         display: block;
     }
 }

@@ -44,42 +44,6 @@ section {
   display: block;
 }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1, .u-h1 {
-  @include type-layout(xxl, 2);
-
-  /* Set 1 unit of vertical rhythm on the top and bottom margins. */
-  @include margin(1 0, xxl);
-}
-
-h2, .u-h2 {
-  @include type-layout(xl, 1.5);
-  @include margin(1 0, xl);
-}
-
-h3, .u-h3 {
-  @include type-layout(l, 1);
-  @include margin(1 0, l);
-}
-
-h4, .u-h4 {
-  @include type-layout(m, 1);
-  @include margin(1 0, m);
-}
-
-h5, .u-h5 {
-  @include type-layout(s, 1);
-  @include margin(1 0, s);
-}
-
-h6, .u-h6 {
-  @include type-layout(xs, 1);
-  @include margin(1 0, xs);
-}
 
 /* Grouping content
    ========================================================================== */

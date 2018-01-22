@@ -6,3 +6,39 @@ h5,
 h6 {
     @include headline-style;
 }
+
+h1, .u-h1 {
+    @include type-layout(xxl, 2);
+    @include margin(1 0, xxl);
+    letter-spacing: -0.03em;
+}
+
+h2, .u-h2 {
+    @include type-layout(xl, 1.5);
+    @include margin(1 0, xl);
+    letter-spacing: -0.03em;
+}
+
+h3, .u-h3 {
+    @include type-layout(l, 1);
+    @include margin(1 0, l);
+    letter-spacing: -0.01em;
+}
+
+h4, .u-h4 {
+  @include type-layout(m, 1);
+  @include margin(1 0, m);
+  letter-spacing: 0;
+}
+
+h5, .u-h5 {
+    @include type-layout(s, 1);
+    @include margin(1 0, s);
+    letter-spacing: 0;
+}
+
+h6, .u-h6 {
+    @include type-layout(xs, 1);
+    @include margin(1 0, xs);
+    letter-spacing: 0;
+}

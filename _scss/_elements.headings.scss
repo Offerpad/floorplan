@@ -10,19 +10,19 @@ h6 {
 h1, .u-h1 {
     @include type-layout(xxl, 2);
     @include margin(1 0, xxl);
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
 }
 
 h2, .u-h2 {
     @include type-layout(xl, 1.5);
     @include margin(1 0, xl);
-    letter-spacing: -0.03em;
+    letter-spacing: -0.02em;
 }
 
 h3, .u-h3 {
     @include type-layout(l, 1);
     @include margin(1 0, l);
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
 }
 
 h4, .u-h4 {

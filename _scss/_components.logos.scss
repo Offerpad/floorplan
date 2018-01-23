@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     @include hide-text;
-    height: 1.125rem; // default sizes. overwritten where implemented
-    width: 8.625rem;
+     // default sizes. overwritten where implemented
+    height: 1rem;
+    width: 7.75rem;
 }

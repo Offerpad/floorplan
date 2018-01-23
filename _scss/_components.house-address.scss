@@ -2,7 +2,7 @@
     @include padding(0.5 0.75);
     font-style: normal;
     line-height: line-height(0.75);
-    border-radius: 0.25rem;
+    border-radius: $radius;
     @include typeface(headline);
     border: $border-width-2 solid $border-color;
     &__street {

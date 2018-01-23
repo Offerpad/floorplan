@@ -31,3 +31,6 @@
 .u-border-right-4  { border-right-width: $border-width-2 * 2 !important; }
 .u-border-bottom-4 { border-bottom-width: $border-width-2 * 2 !important; }
 .u-border-left-4   { border-left-width: $border-width-2 * 2 !important; }
+
+.u-radius               { border-radius: $radius !important; }
+.u-radius-interactive   { border-radius: $radius-int !important; }

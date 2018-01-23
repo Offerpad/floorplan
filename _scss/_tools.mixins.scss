@@ -74,9 +74,9 @@
   $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
 
   @if ($yiq >= 150) {
-      @return op-color('black');
+      @return $color-op-black;
   } @else {
-      @return op-color('white');
+      @return $color-op-white;
   }
 }
 

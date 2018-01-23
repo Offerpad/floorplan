@@ -20,7 +20,7 @@
         @include margin-bottom(0.25);
         @include margin-right(0.25);
         @include padding(0.25);
-        border: $border-width-1 solid op-color('mist');
+        border: $border-width-1 solid $color-op-mist;
         border-radius: $radius;
     }
     &__swatch {

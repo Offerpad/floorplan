@@ -67,31 +67,31 @@ $op-colors-ui: (
 
 // layout colors
 
-$bg-color: op-color('white');
-$bg-color-dark: op-color('steel');
-$border-color: op-color('mist');
+$bg-color: $color-op-white;
+$bg-color-dark: $color-op-steel;
+$border-color: $color-op-mist;
 
 // text colors
 
-$text-color: op-color('steel');
-$text-color-muted: op-color('pewter');
-$text-color-light: op-color('white');
+$text-color: $color-op-steel;
+$text-color-muted: $color-op-pewter;
+$text-color-light: $color-op-white;
 
-$link-color: op-color('cerulean');
+$link-color: $color-op-cerulean;
 $link-color-hover: link-hover-focus($link-color);
-$link-color-alt: op-color('pacific');
+$link-color-alt: $color-op-pacific;
 $link-color-alt-hover: link-hover-focus($link-color-alt);
-$link-color-light: op-color('silver');
+$link-color-light: $color-op-silver;
 $link-color-light-hover: link-hover-focus($link-color-light);
 
-$placeholder-color: op-color('pewter');
+$placeholder-color: $color-op-pewter;
 
 $code-bg-color: #f8f8f8;
 $code-text-color: #dd1144;
 
 // miscellaneous colors
 
-$focus-color: op-color('moonstone');
-$focus-shadow: 0 0 10px op-color('moonstone'),
-    0 0 5px op-color('moonstone');
-$disabled-bg-color: op-color('mist');
+$focus-color: $color-op-moonstone;
+$focus-shadow: 0 0 10px $color-op-moonstone,
+    0 0 5px $color-op-moonstone;
+$disabled-bg-color: $color-op-mist;

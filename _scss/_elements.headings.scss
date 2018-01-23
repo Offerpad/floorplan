@@ -1,6 +1,6 @@
 @mixin headline-style {
     @include typeface(headline);
-    color: op-color('pacific');
+    color: $color-op-pacific;
 }
 
 h1,

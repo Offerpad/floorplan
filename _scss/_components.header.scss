@@ -6,10 +6,10 @@
     }
     @include hover-focus {
         color: $link-color-hover;
-        background-color: op-color('white-smoke');
+        background-color: $color-op-white-smoke;
         .c-header--dark & {
             color: $link-color-light-hover;
-            background-color: op-color('black');
+            background-color: $color-op-black;
         }
     }
 }

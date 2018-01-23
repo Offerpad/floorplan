@@ -12,7 +12,7 @@ $menu-bar-height: 0.1875rem;
     color: $link-color-alt;
     @include hover-focus {
         color: $link-color-hover;
-        background: op-color('azure-white');
+        background: op-color('mist');
     }
     span,
     span:before,

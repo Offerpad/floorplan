@@ -1,3 +1,8 @@
+@mixin headline-style {
+    @include typeface(headline);
+    color: op-color('pacific');
+}
+
 h1,
 h2,
 h3,

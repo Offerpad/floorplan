@@ -2,18 +2,18 @@
 @import 'vendor/bourbon/functions/tint';
 
 // oranges (for branding and emphasis)
-$color-op-pumpkin:      #ff6c2c;
-$color-op-tangelo:      #fa4b00;
+$color-op-saffron:      #ff6c2c;
+$color-op-magma:        #fa4b00;
 
 // teals (headlines and accents)
 $color-op-pacific:      #1ca1b5;
 
 // grays (for layout and text)
 $color-op-black:        #060d0f;
-$color-op-space-gray:   #0f272b;
+$color-op-steel:        #0f272b;
 $color-op-pewter:       #86b1b7;
-$color-op-pale-aqua:    #bad2d6;
-$color-op-azure-white:  #dce8ea;
+$color-op-silver:       #bad2d6;
+$color-op-mist:         #dce8ea;
 $color-op-white-smoke:  #eef4f5;
 $color-op-white:        #ffffff;
 
@@ -28,14 +28,14 @@ $color-bs-yellow:   #ffc107;
 $color-bs-red:      #dc3545;
 
 $op-colors: (
-    "pumpkin":      $color-op-pumpkin,
-    "tangelo":      $color-op-tangelo,
+    "saffron":      $color-op-saffron,
+    "magma":        $color-op-magma,
     "pacific":      $color-op-pacific,
     "black":        $color-op-black,
-    "space-gray":   $color-op-space-gray,
+    "steel":        $color-op-steel,
     "pewter":       $color-op-pewter,
-    "pale-aqua":    $color-op-pale-aqua,
-    "azure-white":  $color-op-azure-white,
+    "silver":       $color-op-silver,
+    "mist":         $color-op-mist,
     "white-smoke":  $color-op-white-smoke,
     "white":        $color-op-white,
     "cerulean":     $color-op-cerulean,
@@ -46,14 +46,15 @@ $op-colors: (
 );
 
 $op-colors-ui: (
-    "special":      $color-op-tangelo,
+    "special":      $color-op-magma,
     "primary":      $color-op-cerulean,
+    "neutral":      $color-op-silver,
     "success":      $color-bs-green,
     "warning":      $color-bs-yellow,
     "danger":       $color-bs-red
 );
 
-@function op-color($key: 'pumpkin') {
+@function op-color($key: 'saffron') {
     @return map-get($op-colors, $key);
 }
 @function op-color-ui($key: 'special') {
@@ -67,12 +68,12 @@ $op-colors-ui: (
 // layout colors
 
 $bg-color: op-color('white');
-$bg-color-dark: op-color('space-gray');
-$border-color: op-color('azure-white');
+$bg-color-dark: op-color('steel');
+$border-color: op-color('mist');
 
 // text colors
 
-$text-color: op-color('space-gray');
+$text-color: op-color('steel');
 $text-color-muted: op-color('pewter');
 $text-color-light: op-color('white');
 
@@ -80,7 +81,7 @@ $link-color: op-color('cerulean');
 $link-color-hover: link-hover-focus($link-color);
 $link-color-alt: op-color('pacific');
 $link-color-alt-hover: link-hover-focus($link-color-alt);
-$link-color-light: op-color('pale-aqua');
+$link-color-light: op-color('silver');
 $link-color-light-hover: link-hover-focus($link-color-light);
 
 $placeholder-color: op-color('pewter');
@@ -93,4 +94,4 @@ $code-text-color: #dd1144;
 $focus-color: op-color('moonstone');
 $focus-shadow: 0 0 10px op-color('moonstone'),
     0 0 5px op-color('moonstone');
-$disabled-bg-color: op-color('azure-white');
+$disabled-bg-color: op-color('mist');

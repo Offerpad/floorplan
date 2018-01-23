@@ -17,7 +17,7 @@
         justify-content: space-between;
         @include margin-bottom(0.25);
         @include padding(0.25);
-        border: $border-width-1 solid op-color('teal-200');
+        border: $border-width-1 solid op-color('azure-white');
     }
     &__swatch {
         display: block;

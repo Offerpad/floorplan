@@ -112,6 +112,5 @@
 
 @mixin headline-style {
     @include typeface(headline);
-    //font-weight: 500;
-    color: op-color('teal-600');
+    color: op-color('pacific');
 }

@@ -24,60 +24,89 @@ OfferPad has an official orange color to represent the brand, "pumpkin" (`#ff6c2
 
 ### Teal
 
-This palette is used for most backgrounds and text colors, as well as secondary or less important UI elements.
+An alternate branding color is a teal color found complementary to our orange, "pacific" (`#1ca1b5`). It's used for headlines, alternate link colors, iconography, some backgrounds, and other accents.
+
+<ul class="c-swatches">
+    <li class="c-swatches__item c-swatches--pacific">
+        <span class="c-swatches__swatch"></span>
+        <code class="c-swatches__label">pacific</code>
+        <code class="c-swatches__hex">#1ca1b5</code>
+    </li>
+</ul>
+
+### Gray
+
+This palette is used for most backgrounds, borders, and text colors.
 
 <ul class="c-swatches">
     <li class="c-swatches__item c-swatches--black">
         <span class="c-swatches__swatch"></span>
         <code class="c-swatches__label">black</code>
-        <code class="c-swatches__hex">#030f11</code>
+        <code class="c-swatches__hex">#060d0f</code>
     </li>
-    <li class="c-swatches__item c-swatches--teal-800">
+</ul>
+
+Black is used for shadow colors.
+
+<ul class="c-swatches">
+    <li class="c-swatches__item c-swatches--space-gray">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">teal-800</code>
-        <code class="c-swatches__hex">#082c32</code>
+        <code class="c-swatches__label">space-gray</code>
+        <code class="c-swatches__hex">#0f272b</code>
     </li>
-    <li class="c-swatches__item c-swatches--teal-700">
+</ul>
+
+Space gray is used for text colors and dark backgrounds.
+
+<ul class="c-swatches">
+    <li class="c-swatches__item c-swatches--pewter">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">teal-700</code>
-        <code class="c-swatches__hex">#126774</code>
+        <code class="c-swatches__label">pewter</code>
+        <code class="c-swatches__hex">#86b1b7</code>
     </li>
-    <li class="c-swatches__item c-swatches--teal-600">
+</ul>
+
+Pewter is used for muted and placeholder text colors.
+
+<ul class="c-swatches">
+    <li class="c-swatches__item c-swatches--pale-aqua">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">teal-600</code>
-        <code class="c-swatches__hex">#1ca1b5</code>
+        <code class="c-swatches__label">pale-aqua</code>
+        <code class="c-swatches__hex">#bad2d6</code>
     </li>
-    <li class="c-swatches__item c-swatches--teal-500">
+</ul>
+
+Pale aqua is used as an alternate accent color or a fill color for some subtle elements.
+
+<ul class="c-swatches">
+    <li class="c-swatches__item c-swatches--azure-white">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">teal-500</code>
-        <code class="c-swatches__hex">#6ec3cf</code>
+        <code class="c-swatches__label">azure-white</code>
+        <code class="c-swatches__hex">#dce8ea</code>
     </li>
-    <li class="c-swatches__item c-swatches--teal-400">
+</ul>
+
+Azure white is the color used for borders, as well as an alternate shade for some backgrounds.
+
+<ul class="c-swatches">
+    <li class="c-swatches__item c-swatches--white-smoke">
         <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">teal-400</code>
-        <code class="c-swatches__hex">#83cbd6</code>
+        <code class="c-swatches__label">white-smoke</code>
+        <code class="c-swatches__hex">#eef4f5</code>
     </li>
-    <li class="c-swatches__item c-swatches--teal-300">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">teal-300</code>
-        <code class="c-swatches__hex">#acdce4</code>
-    </li>
-    <li class="c-swatches__item c-swatches--teal-200">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">teal-200</code>
-        <code class="c-swatches__hex">#d5edf1</code>
-    </li>
-    <li class="c-swatches__item c-swatches--teal-100">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">teal-100</code>
-        <code class="c-swatches__hex">#eaf6f8</code>
-    </li>
+</ul>
+
+White smoke is the alternative background color.
+
+<ul class="c-swatches">
     <li class="c-swatches__item c-swatches--white">
         <span class="c-swatches__swatch"></span>
         <code class="c-swatches__label">white</code>
         <code class="c-swatches__hex">#ffffff</code>
     </li>
 </ul>
+
+White is the principal background color, as well as the text color for dark contexts.
 
 ### Blue
 
@@ -106,11 +135,6 @@ This is a Bootstrap-inspired color theme for UI elements (buttons, links, etc.) 
         <span class="c-swatches__swatch"></span>
         <code class="c-swatches__label">primary</code>
         <code class="c-swatches__hex">#1d7ea7</code>
-    </li>
-    <li class="c-swatches__item c-swatches--teal-200">
-        <span class="c-swatches__swatch"></span>
-        <code class="c-swatches__label">secondary</code>
-        <code class="c-swatches__hex">#d5edf1</code>
     </li>
     <li class="c-swatches__item c-swatches--tangelo">
         <span class="c-swatches__swatch"></span>

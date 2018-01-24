@@ -41,6 +41,9 @@
                 display: flex;
             }
         }
+        li {
+            margin: 0;
+        }
         &--mobile {
             display: none;
             position: absolute;

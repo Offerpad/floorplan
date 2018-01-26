@@ -6,36 +6,9 @@ This documentation is built currently with Jekyll and Sass, which means you will
 
 ### Windows
 
-Install directly into Windows using Ruby for Windows. (More instructions to come.)
+Install directly into Windows using Ruby for Windows. 
 
-### Windows Linux Subsystem
-
-Install using the Linux subsystem (Ubuntu) in Windows 10.
-
-Prequisites:
-- Windows 10 Creators Update
-- Windows Linux Subsystem
-
-#### 1. Install ruby, node, and git.
-
-Open Bash and use the following commands:
-
-```curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -```
-
-```sudo apt-get update && sudo apt-get install build-essential ruby ruby-bundler nodejs git npm ruby-dev```
-
-If you are prompted to install nodejs as root, do so separately, as `sudo`.
-
-#### 2. Navigate to the StyleGuide project.
-
-In Ubuntu for Windows you can navigate to your C drive via `/mnt/c`. Use this path to find your StyleGuide folder.
-
-#### 3. Install gems
-
-Run this command:
-
-```sudo gem install bundler```
-
-and then
-
-```sudo bundle install```
+1. Install Ruby 2.4 via RubyInstaller along with the MSYS kit.
+2. In Git Bash, navigate to the project once cloned and `gem install bundler`. Bundler will now install.
+3. `bundle install` to install the gems needed. Verify jekyll is installed with `jekyll -v` or `jekyll build`.
+4. Note: there is a bug with the eventmachine dependency in Windows which causes issues with `jekyll serve --livereload`. You'll need to `gem uninstall eventmachine --force` and then `gem install eventmachine --platform ruby` to get a version that does work.

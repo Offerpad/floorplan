@@ -43,6 +43,7 @@
 @import 'components.container';
 @import 'components.footer';
 @import 'components.forms';
+@import 'components.grid';
 @import 'components.header';
 @import 'components.hero';
 @import 'components.house-address';
@@ -50,7 +51,6 @@
 @import 'components.menu-icon';
 @import 'components.nav-list';
 @import 'components.tables';
-@import 'components.testimonials';
 
 // floorplan docs styles
 @import 'style-guide/components.docs-examples';
@@ -59,6 +59,7 @@
 @import 'style-guide/components.swatches';
 
 // utility classes
+@import 'utils.borders';
 @import 'utils.colors';
 @import 'utils.layout';
 @import 'utils.spacing';

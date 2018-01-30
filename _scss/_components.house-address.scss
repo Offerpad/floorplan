@@ -1,19 +1,15 @@
 .c-house-address {
-    display: flex;
-    align-items: center;
-    @include padding(0.5 1 0.5 0);
+    @include padding(0.5 0 0.5 0.75);
     font-style: normal;
-    font-weight: bold;
-    @include box_shadow(1);
-    border-radius: 0.25rem;
+    line-height: line-height(0.75);
     @include typeface(headline);
-    &::before {
+    border-left: $border-width-2 solid $border-color;
+    &__street {
+        font-weight: weight(bold);
         display: block;
-        content: '\f015';
-        font-family: FontAwesome;
-        font-weight: normal;
-        @include type-layout(xl, 1);
-        @include margin(0 0.5);
-        color: $text-color-muted;
+    }
+    &__market {
+        font-size: font-size(s);
+        display: block;
     }
 }

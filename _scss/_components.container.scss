@@ -1,12 +1,15 @@
 .c-container {
-    @include container(normal);
-    &-base {
-        @include container();
+    @include container();
+    &-small {
+        @include container(small);
+    }
+    &-medium {
+        @include container(medium);
     }
     &-large {
         @include container(large);
     }
-    &-small {
-        @include container(small);
+    &-xlarge {
+        @include container(xlarge);
     }
 }

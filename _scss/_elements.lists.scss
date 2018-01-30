@@ -1,3 +1,12 @@
+li {
+    @include margin-top(0.125);
+    @include margin-bottom(0.125);
+}
+
+ul {
+    list-style-type: square;
+}
+
 dl {
     margin-bottom: 0;
 }

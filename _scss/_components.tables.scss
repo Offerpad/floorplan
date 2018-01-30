@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 100%;
     @include margin-bottom(1);
-    background-color: op-color('white'); //TODO: make a variable
+    background-color: $color-op-white; //TODO: make a variable
     th, td {
         @include padding(1);
         vertical-align: top;

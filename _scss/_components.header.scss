@@ -6,10 +6,10 @@
     }
     @include hover-focus {
         color: $link-color-hover;
-        background-color: op-color('teal-100');
+        background-color: $color-op-white-smoke;
         .c-header--dark & {
             color: $link-color-light-hover;
-            background-color: op-color('teal-700');
+            background-color: $color-op-black;
         }
     }
 }
@@ -41,6 +41,9 @@
                 display: flex;
             }
         }
+        li {
+            margin: 0;
+        }
         &--mobile {
             display: none;
             position: absolute;
@@ -69,7 +72,7 @@
         display: flex;
         align-items: center;
         @include padding(0.5);
-        font-weight: 500;
+        font-weight: weight(bold);
         @include nav-link-color();
         text-decoration: none;
     }

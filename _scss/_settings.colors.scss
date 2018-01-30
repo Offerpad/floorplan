@@ -2,20 +2,20 @@
 @import 'vendor/bourbon/functions/tint';
 
 // oranges (for branding and emphasis)
-$color-op-pumpkin:      #ff6c2c;
-$color-op-tangelo:      #fa4b00;
+$color-op-saffron:      #ff6c2c;
+$color-op-magma:        #fa4b00;
 
-// teals (for layout and text)
+// teals (headlines and accents)
+$color-op-pacific:      #1ca1b5;
+
+// grays (for layout and text)
+$color-op-black:        #060d0f;
+$color-op-steel:        #0f272b;
+$color-op-pewter:       #86b1b7;
+$color-op-silver:       #bad2d6;
+$color-op-mist:         #dce8ea;
+$color-op-white-smoke:  #eef4f5;
 $color-op-white:        #ffffff;
-$color-op-whitesmoke:   #eaf6f8; // 100
-$color-op-azurewhite:   #d5edf1; // 200
-$color-op-lightblue:    #acdce4; // 300
-$color-op-darksky:      #83cbd6; // 400
-$color-op-iceberg:      #6ec3cf; // 500
-$color-op-pacific:      #1ca1b5; // 600
-$color-op-sapphire:     #126774; // 700
-$color-op-darkgreen:    #082c32; // 800
-$color-op-black:        #030f11;
 
 // blues (for links and ui)
 $color-op-cerulean:     #1d7ea7;
@@ -28,18 +28,16 @@ $color-bs-yellow:   #ffc107;
 $color-bs-red:      #dc3545;
 
 $op-colors: (
-    "pumpkin":      $color-op-pumpkin,
-    "tangelo":      $color-op-tangelo,
-    "white":        $color-op-white,
-    "teal-100":     $color-op-whitesmoke,
-    "teal-200":     $color-op-azurewhite,
-    "teal-300":     $color-op-lightblue,
-    "teal-400":     $color-op-darksky,
-    "teal-500":     $color-op-iceberg,
-    "teal-600":     $color-op-pacific,
-    "teal-700":     $color-op-sapphire,
-    "teal-800":     $color-op-darkgreen,
+    "saffron":      $color-op-saffron,
+    "magma":        $color-op-magma,
+    "pacific":      $color-op-pacific,
     "black":        $color-op-black,
+    "steel":        $color-op-steel,
+    "pewter":       $color-op-pewter,
+    "silver":       $color-op-silver,
+    "mist":         $color-op-mist,
+    "white-smoke":  $color-op-white-smoke,
+    "white":        $color-op-white,
     "cerulean":     $color-op-cerulean,
     "moonstone":    $color-op-moonstone,
     "bs-green":     $color-bs-green,
@@ -48,15 +46,15 @@ $op-colors: (
 );
 
 $op-colors-ui: (
-    "special":      $color-op-tangelo,
+    "special":      $color-op-magma,
     "primary":      $color-op-cerulean,
-    "secondary":    $color-op-azurewhite,
+    "neutral":      $color-op-silver,
     "success":      $color-bs-green,
     "warning":      $color-bs-yellow,
     "danger":       $color-bs-red
 );
 
-@function op-color($key: 'pumpkin') {
+@function op-color($key: 'saffron') {
     @return map-get($op-colors, $key);
 }
 @function op-color-ui($key: 'special') {
@@ -69,31 +67,31 @@ $op-colors-ui: (
 
 // layout colors
 
-$bg-color: op-color('white');
-$bg-color-dark: op-color('teal-800');
-$border-color: op-color('teal-200');
+$bg-color: $color-op-white;
+$bg-color-dark: $color-op-steel;
+$border-color: $color-op-mist;
 
 // text colors
 
-$text-color: op-color('teal-800');
-$text-color-muted: op-color('teal-500');
-$text-color-light: op-color('white');
+$text-color: $color-op-steel;
+$text-color-muted: $color-op-pewter;
+$text-color-light: $color-op-white;
 
-$link-color: op-color('cerulean');
+$link-color: $color-op-cerulean;
 $link-color-hover: link-hover-focus($link-color);
-$link-color-alt: op-color('teal-600');
+$link-color-alt: $color-op-pacific;
 $link-color-alt-hover: link-hover-focus($link-color-alt);
-$link-color-light: op-color('teal-300');
+$link-color-light: $color-op-silver;
 $link-color-light-hover: link-hover-focus($link-color-light);
 
-$placeholder-color: op-color('teal-400');
+$placeholder-color: $color-op-pewter;
 
 $code-bg-color: #f8f8f8;
 $code-text-color: #dd1144;
 
 // miscellaneous colors
 
-$focus-color: op-color('moonstone');
-$focus-shadow: 0 0 10px op-color('moonstone'),
-    0 0 5px op-color('moonstone');
-$disabled-bg-color: op-color('teal-200');
+$focus-color: $color-op-moonstone;
+$focus-shadow: 0 0 10px $color-op-moonstone,
+    0 0 5px $color-op-moonstone;
+$disabled-bg-color: $color-op-mist;

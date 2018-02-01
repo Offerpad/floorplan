@@ -1,50 +1,40 @@
-// @font-face {
-//     font-family: "Verb";
-//     font-weight: 300;
-//     font-style: normal;
-//     src: url('/floorplan/assets/fonts/verb/verblight-webfont.woff') format('woff');
-// }
-// @font-face {
-//     font-family: "Verb";
-//     font-weight: 300;
-//     font-style: italic;
-//     src: url('/floorplan/assets/fonts/verb/verblight-italic-webfont.woff') format('woff');
-// }
+$font-path: '/floorplan/assets/fonts' !default;
+
 @font-face {
     font-family: "Verb";
     font-weight: 400;
     font-style: normal;
-    src: url('/floorplan/assets/fonts/verb/verbregular-webfont.woff') format('woff');
+    src: url('#{$font-path}/verb/verbregular-webfont.woff') format('woff');
 }
 @font-face {
     font-family: "Verb";
     font-weight: 400;
     font-style: italic;
-    src: url('/floorplan/assets/fonts/verb/verbregular-italic-webfont.woff') format('woff');
+    src: url('#{$font-path}/verb/verbregular-italic-webfont.woff') format('woff');
 }
 @font-face {
     font-family: "Verb";
     font-weight: 600;
     font-style: normal;
-    src: url('/floorplan/assets/fonts/verb/verbsemibold-webfont.woff') format('woff');
+    src: url('#{$font-path}/verb/verbsemibold-webfont.woff') format('woff');
 }
 @font-face {
     font-family: "Verb";
     font-weight: 600;
     font-style: italic;
-    src: url('/floorplan/assets/fonts/verb/verbsemibold-italic-webfont.woff') format('woff');
+    src: url('#{$font-path}/verb/verbsemibold-italic-webfont.woff') format('woff');
 }
 @font-face {
     font-family: "Verb";
     font-weight: 700;
     font-style: normal;
-    src: url('/floorplan/assets/fonts/verb/verbbold-webfont.woff') format('woff');
+    src: url('#{$font-path}/verb/verbbold-webfont.woff') format('woff');
 }
 @font-face {
     font-family: "Verb";
     font-weight: 700;
     font-style: italic;
-    src: url('/floorplan/assets/fonts/verb/verbbold-italic-webfont.woff') format('woff');
+    src: url('#{$font-path}/verb/verbbold-italic-webfont.woff') format('woff');
 }
 
 $font-weight: (

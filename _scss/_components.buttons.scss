@@ -8,6 +8,8 @@ $button-border-width: $border-width-1;
     @include hover {
         background-color: $hover-background;
         border-color: $hover-background;
+    }
+    @include hover-focus {
         color: color-yiq($background);
     }
     &:disabled,
@@ -30,9 +32,11 @@ $button-border-width: $border-width-1;
     color: $color;
     border-color: $color;
     @include hover {
-        color: $color;
         background-color: transparentize($color, 0.9);
         border-color: $color;
+    }
+    @include hover-focus {
+        color: $color;
     }
     &:disabled,
     &.disabled {

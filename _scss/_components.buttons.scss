@@ -63,7 +63,7 @@ $button-border-width: $border-width-1;
     letter-spacing: 0.01em;
     border-radius: $radius-int;
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
     &:focus {
         outline: 0;
         box-shadow: $focus-shadow;

@@ -76,6 +76,30 @@ select.c-form-control {
     }
 }
 
+.c-form-check-icon {
+    display: block;
+    input[type=checkbox],
+    input[type=radio] {
+        display: none;
+        ~ label {
+            .svg-inline--unchecked {
+                display: inline-block;
+            }
+            .svg-inline--checked {
+                display: none;
+            }
+        }
+        &:checked ~ label {
+            .svg-inline--unchecked {
+                display: none;
+            }
+            .svg-inline--checked {
+                display: inline-block;
+            }
+        }
+    }
+}
+
 // form layouts
 
 .c-form-inline {

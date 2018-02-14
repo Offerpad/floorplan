@@ -1,5 +1,15 @@
 $button-border-width: $border-width-1;
 
+@keyframes spin { // TODO: move to somewhere else
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(359deg)
+    }
+}
+
 @mixin button-variant($background) {
     $hover-background: link-hover-focus($background);
     color: color-yiq($background);
@@ -87,7 +97,6 @@ $button-border-width: $border-width-1;
     }
     &--large {
         @include font-size(l);
-        @include padding(0.5 1.5);
     }
     &--full-width {
         width: 100%;
@@ -98,7 +107,8 @@ $button-border-width: $border-width-1;
         font-weight: weight(normal);
     }
     &--arrow-left::before,
-    &--arrow-right::after {
+    &--arrow-right::after,
+    &--progress::after {
         display: none;
         font-family: "Font Awesome 5 Solid";
     }
@@ -133,6 +143,17 @@ $button-border-width: $border-width-1;
             .svg-inline--fa {
                 transform: translateX(0.5em);
             }
+        }
+    }
+    &--progress {
+        @include padding-left(0.5);
+        @include padding-right(0.5);
+        .svg-inline--fa {
+            margin-left: 0.5em;
+            animation: spin 1s infinite steps(8);
+        }
+        &::after {
+            content: '\f110';
         }
     }
 }

@@ -1,41 +1,42 @@
-$font-path: '/floorplan/assets/fonts' !default;
+@import url("https://use.typekit.net/ijj8uyw.css");
+// $font-path: '/floorplan/assets/fonts' !default;
 
-@font-face {
-    font-family: "Verb";
-    font-weight: 400;
-    font-style: normal;
-    src: url('#{$font-path}/verb/verbregular-webfont.woff') format('woff');
-}
-@font-face {
-    font-family: "Verb";
-    font-weight: 400;
-    font-style: italic;
-    src: url('#{$font-path}/verb/verbregular-italic-webfont.woff') format('woff');
-}
-@font-face {
-    font-family: "Verb";
-    font-weight: 600;
-    font-style: normal;
-    src: url('#{$font-path}/verb/verbsemibold-webfont.woff') format('woff');
-}
-@font-face {
-    font-family: "Verb";
-    font-weight: 600;
-    font-style: italic;
-    src: url('#{$font-path}/verb/verbsemibold-italic-webfont.woff') format('woff');
-}
-@font-face {
-    font-family: "Verb";
-    font-weight: 700;
-    font-style: normal;
-    src: url('#{$font-path}/verb/verbbold-webfont.woff') format('woff');
-}
-@font-face {
-    font-family: "Verb";
-    font-weight: 700;
-    font-style: italic;
-    src: url('#{$font-path}/verb/verbbold-italic-webfont.woff') format('woff');
-}
+// @font-face {
+//     font-family: "Verb";
+//     font-weight: 400;
+//     font-style: normal;
+//     src: url('#{$font-path}/verb/verbregular-webfont.woff') format('woff');
+// }
+// @font-face {
+//     font-family: "Verb";
+//     font-weight: 400;
+//     font-style: italic;
+//     src: url('#{$font-path}/verb/verbregular-italic-webfont.woff') format('woff');
+// }
+// @font-face {
+//     font-family: "Verb";
+//     font-weight: 600;
+//     font-style: normal;
+//     src: url('#{$font-path}/verb/verbsemibold-webfont.woff') format('woff');
+// }
+// @font-face {
+//     font-family: "Verb";
+//     font-weight: 600;
+//     font-style: italic;
+//     src: url('#{$font-path}/verb/verbsemibold-italic-webfont.woff') format('woff');
+// }
+// @font-face {
+//     font-family: "Verb";
+//     font-weight: 700;
+//     font-style: normal;
+//     src: url('#{$font-path}/verb/verbbold-webfont.woff') format('woff');
+// }
+// @font-face {
+//     font-family: "Verb";
+//     font-weight: 700;
+//     font-style: italic;
+//     src: url('#{$font-path}/verb/verbbold-italic-webfont.woff') format('woff');
+// }
 
 $font-weight: (
     bold: 700,
@@ -74,16 +75,18 @@ $op-monospace: Menlo,
     "Courier New",
     monospace;
 
-$op-verb: join("Verb", $op-sans-serif, comma);
+$op-font: join("faricy-new-web", $op-sans-serif, comma) !default;
 
 $typefaces: (
     body: (
-        font-family: $op-verb,
-        weight: normal
+        font-family: $op-font,
+        weight: normal,
+        //letter-spacing: 1px
     ),
     headline: (
-        font-family: $op-verb,
-        weight: normal
+        font-family: $op-font,
+        weight: normal,
+        //letter-spacing: 1px
     ),
     monospace: (
         font-family: $op-monospace

@@ -14,12 +14,12 @@ Typography is a critical part of web design. The goals for text are to create a 
 
 OfferPad uses a sans-serif font stack for most type, with the exception being code and other elements where a monospace font stack is more appropriate.
 
-The typeface we use specifically is Roboto.
+The typeface we use specifically is Soleil.
 
 ### Sans-serif
 
 {% highlight css %}
-font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+font-family: "Soleil", "Helvetica Neue", Helvetica, sans-serif;
 {% endhighlight %}
 
 ### Monospace

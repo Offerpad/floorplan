@@ -3,7 +3,10 @@ body {
     height: 100%;
 }
 
-body {
+html {
     @include typeface(body);
     color: $text-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }

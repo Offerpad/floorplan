@@ -1,42 +1,4 @@
 @import url("https://use.typekit.net/ijj8uyw.css");
-// $font-path: '/floorplan/assets/fonts' !default;
-
-// @font-face {
-//     font-family: "Verb";
-//     font-weight: 400;
-//     font-style: normal;
-//     src: url('#{$font-path}/verb/verbregular-webfont.woff') format('woff');
-// }
-// @font-face {
-//     font-family: "Verb";
-//     font-weight: 400;
-//     font-style: italic;
-//     src: url('#{$font-path}/verb/verbregular-italic-webfont.woff') format('woff');
-// }
-// @font-face {
-//     font-family: "Verb";
-//     font-weight: 600;
-//     font-style: normal;
-//     src: url('#{$font-path}/verb/verbsemibold-webfont.woff') format('woff');
-// }
-// @font-face {
-//     font-family: "Verb";
-//     font-weight: 600;
-//     font-style: italic;
-//     src: url('#{$font-path}/verb/verbsemibold-italic-webfont.woff') format('woff');
-// }
-// @font-face {
-//     font-family: "Verb";
-//     font-weight: 700;
-//     font-style: normal;
-//     src: url('#{$font-path}/verb/verbbold-webfont.woff') format('woff');
-// }
-// @font-face {
-//     font-family: "Verb";
-//     font-weight: 700;
-//     font-style: italic;
-//     src: url('#{$font-path}/verb/verbbold-italic-webfont.woff') format('woff');
-// }
 
 $font-weight: (
     bold: 700,
@@ -75,18 +37,16 @@ $op-monospace: Menlo,
     "Courier New",
     monospace;
 
-$op-font: join("faricy-new-web", $op-sans-serif, comma) !default;
+$op-soleil: join("soleil", $op-sans-serif, comma);
 
 $typefaces: (
     body: (
-        font-family: $op-font,
-        weight: normal,
-        //letter-spacing: 1px
+        font-family: $op-soleil,
+        weight: normal
     ),
     headline: (
-        font-family: $op-font,
-        weight: normal,
-        //letter-spacing: 1px
+        font-family: $op-soleil,
+        weight: normal
     ),
     monospace: (
         font-family: $op-monospace

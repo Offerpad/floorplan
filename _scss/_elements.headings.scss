@@ -15,13 +15,11 @@ h6 {
 h1, .u-h1 {
     @include type-layout(xxl, 2);
     @include margin(1 0, xxl);
-    letter-spacing: -0.02em;
 }
 
 h2, .u-h2 {
     @include type-layout(xl, 1.5);
     @include margin(1 0, xl);
-    letter-spacing: -0.02em;
 }
 
 h3, .u-h3 {

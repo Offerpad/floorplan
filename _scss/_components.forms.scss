@@ -78,24 +78,65 @@ select.c-form-control {
 
 .c-form-check-icon {
     display: block;
+    position: relative;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
     input[type=checkbox],
     input[type=radio] {
-        display: none;
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
         ~ label {
-            .svg-inline--unchecked {
-                display: inline-block;
-            }
-            .svg-inline--checked {
-                display: none;
+            &::before,
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 1rem;
+                height: 1rem;
+                left: 0;
+                top: 0.25rem;
             }
         }
-        &:checked ~ label {
-            .svg-inline--unchecked {
-                display: none;
+        ~ label::before {
+            pointer-events: none;
+            user-select: none;
+            background-color: $color-op-mist;
+        }
+        ~ label::after {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+        }
+        &:checked ~ label::before {
+            background-color: $color-op-magma;
+            color: $color-op-white;
+        }
+        &:disabled ~ label::before {
+            background-color: $color-op-white-smoke;
+        }
+        &:focus ~ label::before {
+            box-shadow: 0 0 0 1px $color-op-white, $focus-shadow;
+        }
+    }
+    input[type=checkbox] {
+        ~ label {
+            &::before {
+                border-radius: $radius-int;
             }
-            .svg-inline--checked {
-                display: inline-block;
+        }
+        &:checked ~ label::after {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{$color-op-white}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+        }
+    }
+    input[type=radio] {
+        ~ label {
+            &::before {
+                border-radius: 50%;
             }
+        }
+        &:checked ~ label::after {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='#{$color-op-white}'/%3E%3C/svg%3E");
         }
     }
 }

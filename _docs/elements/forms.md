@@ -151,3 +151,87 @@ description: How forms and inputs are displayed on the OfferPad website.
     <button type="submit" class="btn btn--primary">Continue</button>
 </form>
 {% endhighlight %}
+
+## Custom checkboxes & radio buttons
+
+<div class="op-example">
+    <form>
+        <h3>Free local move?</h3>
+        <div class="c-form-group" role="radiogroup">
+            <div class="c-form-check-icon">
+                <input type="radio" name="freeLocalMove" id="freeLocalMoveYes" aria-hidden="true" />
+                <label for="freeLocalMoveYes">
+                    Yes, I need it!
+                </label>
+            </div>
+            <div class="c-form-check-icon">
+                <input type="radio" name="freeLocalMove" id="freeLocalMoveNo" aria-hidden="true" />
+                <label for="freeLocalMoveNo">
+                    Not needed
+                </label>
+            </div>
+        </div>
+        <h3>Available options</h3>
+        <div class="c-form-group">
+            <div class="c-form-check-icon">
+                <input type="checkbox" name="availOptions" id="availOptions1" />
+                <label for="availOptions1">
+                    Option A
+                </label>
+            </div>
+            <div class="c-form-check-icon">
+                <input type="checkbox" name="availOptions" id="availOptions2" />
+                <label for="availOptions2">
+                    Option B
+                </label>
+            </div>
+            <div class="c-form-check-icon">
+                <input type="checkbox" name="availOptions" id="availOptions3" />
+                <label for="availOptions3">
+                    Option C
+                </label>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% highlight html %}
+<form>
+    <h3>Free local move?</h3>
+    <div class="c-form-group">
+        <div class="c-form-check-icon">
+            <input type="radio" name="freeLocalMove" id="freeLocalMoveYes"/>
+            <label for="freeLocalMoveYes">
+                Yes, I need it!
+            </label>
+        </div>
+        <div class="c-form-check-icon">
+            <input type="radio" name="freeLocalMove" id="freeLocalMoveNo"/>
+            <label for="freeLocalMoveNo">
+                Not needed
+            </label>
+        </div>
+    </div>
+    <h3>Available options</h3>
+    <div class="c-form-group">
+        <div class="c-form-check-icon">
+            <input type="checkbox" name="availOptions" id="availOptions1" />
+            <label for="availOptions1">
+                Option A
+            </label>
+        </div>
+        <div class="c-form-check-icon">
+            <input type="checkbox" name="availOptions" id="availOptions2" />
+            <label for="availOptions2">
+                Option B
+            </label>
+        </div>
+        <div class="c-form-check-icon">
+            <input type="checkbox" name="availOptions" id="availOptions3" />
+            <label for="availOptions3">
+                Option C
+            </label>
+        </div>
+    </div>
+</form>
+{% endhighlight %}

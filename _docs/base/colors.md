@@ -83,21 +83,21 @@ This palette is used for most backgrounds, borders, and text colors.
     <li class="c-swatches__item c-swatches--silver">
         <div class="c-swatches__swatch">
             <span class="c-swatches__label">silver</span>
-            <span class="c-swatches__hex">#bad2d6</span>
+            <span class="c-swatches__hex">#a7c6ca</span>
         </div>
         <p class="c-swatches__description">Fill for subtle elements; accents; neutral alerts</p>
     </li>
     <li class="c-swatches__item c-swatches--mist">
         <div class="c-swatches__swatch">
             <span class="c-swatches__label">mist</span>
-            <span class="c-swatches__hex">#dce8ea</span>
+            <span class="c-swatches__hex">#ccdee1</span>
         </div>
         <p class="c-swatches__description">Borders; tertiary background color</p>
     </li>
     <li class="c-swatches__item c-swatches--white-smoke">
         <div class="c-swatches__swatch">
             <span class="c-swatches__label">white-smoke</span>
-            <span class="c-swatches__hex">#eef4f5</span>
+            <span class="c-swatches__hex">#dce8ea</span>
         </div>
         <p class="c-swatches__description">Secondary background color</p>
     </li>
@@ -133,7 +133,7 @@ This is a Bootstrap-inspired color theme for UI elements (buttons, links, etc.) 
     <li class="c-swatches__item c-swatches--silver">
         <div class="c-swatches__swatch">
             <span class="c-swatches__label">neutral</span>
-            <span class="c-swatches__hex">#bad2d6</span>
+            <span class="c-swatches__hex">#a7c6ca</span>
         </div>
         <p class="c-swatches__description">Neutral informational alerts and subtle buttons</p>
     </li>

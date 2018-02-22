@@ -2,7 +2,7 @@
 
 $font-weight: (
     bold: 600,
-    semibold: 600,
+    semibold: 500,
     normal: 300
 );
 
@@ -46,7 +46,7 @@ $typefaces: (
     ),
     headline: (
         font-family: $op-soleil,
-        weight: normal
+        weight: semibold
     ),
     monospace: (
         font-family: $op-monospace

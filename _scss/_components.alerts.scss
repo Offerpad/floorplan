@@ -1,0 +1,17 @@
+.c-alert {
+    @include padding(0.5 1);
+    @include margin-bottom(1);
+    border: $border-width-2 solid transparent;
+    border-radius: $radius;
+    @each $color, $value in $op-colors-ui {
+        &--#{$color} {
+            border-color: $value;
+            $background: tint($value, 80%);
+            background-color: $background;
+            color: color-yiq($background);
+        }
+    }
+    &__heading {
+        color: inherit;
+    }
+}

@@ -112,6 +112,9 @@ select.c-form-control {
             background-color: $color-op-magma;
             color: $color-op-white;
         }
+        &:disabled ~ label {
+            color: $text-color-muted;
+        }
         &:disabled ~ label::before {
             background-color: $color-op-white-smoke;
         }

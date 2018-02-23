@@ -45,14 +45,13 @@ description: Alert indicators and banners
 <div class="op-example">
     <div class="c-alert c-alert--neutral">
         <p><strong>We're working on renewing your offer.</strong></p>
-        <p>The OfferPad team is working on an offer renewal. You can expect to see it within 24 hours.</p>
+        <p>The OfferPad team is working on an offer renewal. We'll send you an email when it's ready.</p>
     </div>
     <div class="c-alert c-alert--success">
         <p><strong>Congratulations!</strong> You've accepted our offer.</p>
-        <p>Look for our contract in your email inbox.</p>
     </div>
     <div class="c-alert c-alert--warning">
-        <p><strong>We're sorry, but this offer is expired</strong>.</p>
+        <p><strong>This offer is expired</strong>.</p>
         <p>Renewing your expired offer is simple: just click below and get a new offer from us in your inbox.</p>
         <button class="c-button c-button--primary u-margin-b-m">Renew offer</button>
     </div>
@@ -69,14 +68,13 @@ description: Alert indicators and banners
 {% highlight html %}
 <div class="c-alert c-alert--neutral">
     <p><strong>We're working on renewing your offer.</strong></p>
-    <p>The OfferPad team is working on an offer renewal. You can expect to see it within 24 hours.</p>
+    <p>The OfferPad team is working on an offer renewal. We'll send you an email when it's ready.</p>
 </div>
 <div class="c-alert c-alert--success">
-    <p><strong>Congratulations!</strong> You've accepted our offer.</p>
-    <p>Look for our contract in your email inbox.</p>
+    <p><strong>Congratulations!</strong> You've accepted our offer.</p
 </div>
 <div class="c-alert c-alert--warning">
-    <p><strong>We're sorry, but this offer is expired</strong>.</p>
+    <p><strong>This offer is expired</strong>.</p>
     <p>Renewing your expired offer is simple: just click below and get a new offer from us in your inbox.</p>
     <button class="c-button c-button--primary u-margin-b-m">Renew offer</button>
 </div>

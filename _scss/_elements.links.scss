@@ -1,6 +1,5 @@
 a {
     color: $link-color;
-    font-weight: weight(semibold);
     @include hover-focus {
         color: $link-color-hover;
         text-decoration: none;

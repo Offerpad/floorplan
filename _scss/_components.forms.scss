@@ -114,6 +114,7 @@ select.c-form-control {
         }
         &:disabled ~ label {
             color: $text-color-muted;
+            cursor: not-allowed;
         }
         &:disabled ~ label::before {
             background-color: $color-op-white-smoke;
